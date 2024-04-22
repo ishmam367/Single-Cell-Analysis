@@ -5,7 +5,8 @@ import scanpy as sc
 import requests
 import tarfile
 import matplotlib.pyplot as plt
-
+import configparser
+import subprocess
 
 def download_data(url, data_fname, save_dir,extracted_file_path):
     os.makedirs(save_dir, exist_ok=True)
@@ -29,8 +30,7 @@ def preprocessing(extracted_file_path, min_mean, max_mean, images_dir):
     # Step 1: Read in the count matrix into an AnnData object
     adata = sc.read_10x_mtx(
         extracted_file_path,
-        var_names='gene_symbols',
-        cache=True
+        var_names='gene_symbols'
     )
     adata.var_names_make_unique()
     
@@ -119,6 +119,7 @@ def run_pca(adata, n_pcs,images_dir):
     return adata
     
     
+
 def computing_and_embedding_neighbourhood_graphs(adata, num_neighbors_values, num_pcs_values, images_dir):
     num_subplots = len(num_neighbors_values) * len(num_pcs_values)
     fig, axes = plt.subplots(len(num_pcs_values), len(num_neighbors_values), figsize=(15, 5 * len(num_pcs_values)))
@@ -132,21 +133,32 @@ def computing_and_embedding_neighbourhood_graphs(adata, num_neighbors_values, nu
             sc.tl.umap(adata, init_pos='paga')
             sc.tl.umap(adata)
             title_str = f"PCA-{num_pcs}_Neighbors-{num_neighbors}"
-            sc.pl.umap(adata, color=['CST3'], use_raw=False, title=title_str, ax=axes[i, j])
             
-     #Save the UMAP figure with the custom title
-    umap_path = os.path.join(images_dir,'UMAP.png')
+            # Adjust indexing based on the number of num_neighbors_values and num_pcs_values
+            if len(num_neighbors_values) == 1:
+                if len(num_pcs_values) == 1:
+                    sc.pl.umap(adata, color=['CST3'], use_raw=False, title=title_str, ax=axes)
+                else:
+                    sc.pl.umap(adata, color=['CST3'], use_raw=False, title=title_str, ax=axes[i])
+            elif len(num_pcs_values) == 1:
+                sc.pl.umap(adata, color=['CST3'], use_raw=False, title=title_str, ax=axes[j])
+            else:
+                sc.pl.umap(adata, color=['CST3'], use_raw=False, title=title_str, ax=axes[i, j])
+                
+    # Save the UMAP figure with the custom title
+    umap_path = os.path.join(images_dir, f'UMAP_PCA-{num_pcs}_Neighbors-{num_neighbors}.png')
     plt.savefig(umap_path, dpi=300)
-    plt.close()
+    plt.close()           
     return adata
     
-# def ClusteringNeighbourhoodGraphs(adata,images_dir):
-#     sc.tl.leiden(adata)
-#     sc.pl.umap(adata, color=['leiden', 'CST3', 'NKG7'])
-#     UMAP_path_leiden = os.path.join(images_dir, 'UMAP_WITH_LEIDEN.png')
-#     plt.savefig(UMAP_path_leiden, dpi=300)
-#     plt.close()
-#     return adata
+def ClusteringNeighbourhoodGraphs(adata,images_dir):
+    sc.tl.leiden(adata, key_added='leiden')
+    
+    sc.pl.umap(adata, color=['leiden', 'CST3', 'NKG7'])
+    UMAP_path_leiden = os.path.join(images_dir, 'UMAP_WITH_LEIDEN.png')
+    plt.savefig(UMAP_path_leiden, dpi=300)
+    plt.close()
+    return adata
 
 '''
 methods to try: 
@@ -158,14 +170,29 @@ kruskal (Kruskal-Wallis Test)
 fisher (Fisher's Exact Test)
 '''
 
-# def finding_marker_genes(num_genes,method, adata,images_dir): 
-#     sc.tl.rank_genes_groups(adata, 'leiden', method=method)
-#     sc.pl.rank_genes_groups(adata, n_genes=num_genes, sharey=False)
-#     marker_genes_path = os.path.join(images_dir, 'Finding_marker_genes.png')
-#     plt.savefig(marker_genes_path, dpi=300)
-#     plt.close()
-#     save_adata(adata, "processed_adata.h5ad")
-    
+def finding_marker_genes(num_genes,method, adata,images_dir): 
+    sc.tl.rank_genes_groups(adata, 'leiden', method=method)
+    sc.pl.rank_genes_groups(adata, n_genes=num_genes, sharey=False)
+    marker_genes_path = os.path.join(images_dir, 'Finding_marker_genes.png')
+    plt.savefig(marker_genes_path, dpi=300)
+    plt.close()
+    result = adata.uns["rank_genes_groups"]
+    groups = result["names"].dtype.names
+
+    df = pd.DataFrame({group + '_' + key[:1]: result[key][group] for group in groups for key in ['names', 'logfoldchanges','scores','pvals']})
+    df.to_csv("diff_exp_result.csv")
+    script_path = "./run_scsa.sh"
+
+    # Run the script using subprocess
+    try:
+        subprocess.run(["bash", script_path], check=True)
+        print("run_scsa.sh executed successfully.")
+    except subprocess.CalledProcessError as e:
+        print("Error executing run_scsa.sh:", e)
+    save_adata(adata, "processed_adata.h5ad")
+    return adata
+
+
     
 def save_adata(adata, file_path):
     """
@@ -181,10 +208,40 @@ def save_adata(adata, file_path):
     else:
         print(f"AnnData object saved to {file_path}")
 
+def annotation(adata, images_dir):
+    df = pd.read_csv('scsa_result.txt', sep='\t')
+    # Group the data by "Cluster" and find the cell type with the highest Z-score in each group
+    highest_zscores = df.groupby('Cluster')['Z-score'].idxmax()
+    print ('******************************************************************')
+    print ('highest Z_score is ', highest_zscores)
+
+    # Extract the corresponding cell types for the highest Z-scores
+    cell_types_with_highest_zscores = df.loc[highest_zscores, 'Cell Type'].tolist()
+    print ('cell type with highest Z-Score ' , cell_types_with_highest_zscores)
+    
+    #  Create a dictionary of cluster value (number) and corresponding identified cell type. 
+    #  We will add a column to adata with cell types for each cluster number.
+    cluster_to_cell_type = {cluster_num: cell_type for cluster_num, cell_type in enumerate(cell_types_with_highest_zscores)}
+    print('Cluster_to_cell_type ', cluster_to_cell_type)
+    print ('printing df',df)
+    print("***********************")
+    print(adata)
+    print("***********************")
+   
+    adata.obs['leiden'] = adata.obs['leiden'].astype(int)
+    # Map cluster numbers to cell type 
+    adata.obs['cell_types'] = adata.obs['leiden'].map(cluster_to_cell_type)
+    #unique cell types 
+    print('unique cell types', adata.obs['cell_types'].unique())
+    sc.pl.umap(adata, color=["leiden", "cell_types"])
+    spatial_cell_type_data = os.path.join(images_dir, 'specieal_cell_type.png')
+    plt.savefig(spatial_cell_type_data, dpi=300)
+    plt.close()
+
 ##################################################################################################################################################################################
 
 
-import configparser
+
 
 def read_config(file_path):
     config = configparser.ConfigParser()
@@ -216,23 +273,30 @@ def main():
 
     # # Step 4: Computing and embedding neighbourhood graphs
     
-    num_neighbors_values = [5, 10, 12]  
-    num_pcs_values = [20, 30]  
+    num_neighbors_values =  [10]    
+    num_pcs_values =[20,40]   
     adata = computing_and_embedding_neighbourhood_graphs(adata, num_neighbors_values, num_pcs_values, images_dir)
     
-    #num_pcs = int(config['NeighbourhoodGraphs']['num_pcs'])
-    #adata = computing_and_embedding_neighbourhood_graphs(adata, num_neighbors_values, num_pcs, images_dir)
+    # num_pcs = int(config['NeighbourhoodGraphs']['num_pcs'])
+    # adata = computing_and_embedding_neighbourhood_graphs(adata, num_neighbors_values, num_pcs, images_dir)
 
-    # # # Step 5: Clustering neighbourhood graph
-    # adata = ClusteringNeighbourhoodGraphs(adata, images_dir)
+    # # Step 5: Clustering neighbourhood graph
+    adata = ClusteringNeighbourhoodGraphs(adata, images_dir)
 
-    # # # Step 6: finding marker genes
-    # num_genes = int(config['FindingMarkerGenes']['num_genes'])
-    # method = config['FindingMarkerGenes']['method']
-    # adata = finding_marker_genes(num_genes, method, adata, images_dir)
-
+    # # Step 6: finding marker genes
+    num_genes = int(config['FindingMarkerGenes']['num_genes'])
+    method = config['FindingMarkerGenes']['method']
+    adata = finding_marker_genes(num_genes, method, adata, images_dir)
+    
+    
+    # # step 7: saving results before annotation
     results_path = "pbmc3k_processed.h5ad"
     save_adata(adata, results_path)
+    # # Step 7: annotation
+    annotation(adata,images_dir)
+    
+    
+   
     
     
 if __name__ == "__main__":

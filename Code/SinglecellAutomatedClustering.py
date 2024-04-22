@@ -5,6 +5,8 @@ import scanpy as sc
 import requests
 import tarfile
 import matplotlib.pyplot as plt
+import subprocess
+from sklearn.cluster import KMeans
 
 
 def download_data(url, data_fname, save_dir,extracted_file_path):
@@ -44,7 +46,7 @@ def preprocessing(extracted_file_path, min_mean, max_mean, images_dir):
     highest_expr_genes_path = os.path.join(images_dir, 'highest_expr_genes.png')
     # Plot the figure
     sc.pl.highest_expr_genes(adata, n_top=20, show=False)
-    
+    plt.title('Highest Expressed genes')
     # Save the figure
     plt.savefig(highest_expr_genes_path, dpi=300)
     plt.close()    
@@ -102,8 +104,7 @@ def preprocessing(extracted_file_path, min_mean, max_mean, images_dir):
     
     # Scale the data to unit variance
     sc.pp.scale(adata, max_value=10)
-    
-    
+
     # Return the processed AnnData object
     return adata
 
@@ -114,8 +115,11 @@ def run_pca(adata, n_pcs,images_dir):
     sc.tl.pca(adata, svd_solver='arpack', n_comps=n_pcs)
     sc.pl.pca(adata, color='CST3')
     PCA_path = os.path.join(images_dir, 'PCA.png')
+    plt.title('Principal Component Analysis(PCA)')
     plt.savefig(PCA_path, dpi=300)
     plt.close()
+   
+    print('Adata Obs before Annotation\n',adata.obs)
     return adata
     
     
@@ -124,7 +128,14 @@ def run_pca(adata, n_pcs,images_dir):
 def computing_and_embedding_neighbourhood_graphs(adata, numberOf_neighbors, numberOf_pcs, images_dir):
     sc.pp.neighbors(adata, n_neighbors=numberOf_neighbors, n_pcs=numberOf_pcs)
     # Step 2: Run Leiden clustering
-    sc.tl.leiden(adata)
+    #sc.tl.leiden(adata)
+    # Step 2: Perform KMeans clustering
+    kmeans = KMeans(n_clusters=10, random_state=0)  
+    adata.obs['kmeans_labels'] = kmeans.fit_predict(adata.obsm['X_pca'])
+    # Convert KMeans labels to categorical variables
+    adata.obs['kmeans_labels'] = pd.Categorical(kmeans_labels.astype(str))
+    # Run PAGA computation with KMeans labels
+    sc.tl.paga(adata, groups='kmeans_labels')
     sc.tl.paga(adata)
     sc.pl.paga(adata, plot=False)  # remove `plot=False` if you want to see the coarse-grained graph
     sc.tl.umap(adata, init_pos='paga')
@@ -137,9 +148,9 @@ def computing_and_embedding_neighbourhood_graphs(adata, numberOf_neighbors, numb
     
     # Save the UMAP figure with the custom title
     UMAP_path = os.path.join(images_dir, f'UMAP_{title_str}.png')
+    plt.title('UMAP Cluster variation with changing PCA and Num of Neighbour',pad=20)
     plt.savefig(UMAP_path, dpi=300)
     plt.close()
-    
     return adata
 
 
@@ -147,9 +158,12 @@ def computing_and_embedding_neighbourhood_graphs(adata, numberOf_neighbors, numb
     
     
 def ClusteringNeighbourhoodGraphs(adata,images_dir):
-    sc.tl.leiden(adata)
-    sc.pl.umap(adata, color=['leiden', 'CST3', 'NKG7'])
+    #sc.tl.leiden(adata)
+    kmeans = KMeans(n_clusters=5)  # You can adjust the number of clusters as needed
+    adata.obs['kmeans_labels'] = kmeans.fit_predict(adata.obsm['X_pca'])
+    sc.pl.umap(adata, color=['kmeans_labels', 'CST3', 'NKG7'])
     UMAP_path_leiden = os.path.join(images_dir, 'UMAP_WITH_LEIDEN.png')
+    plt.title('UMAP using Leiden Clustering',pad=20)
     plt.savefig(UMAP_path_leiden, dpi=300)
     plt.close()
     return adata
@@ -165,12 +179,27 @@ fisher (Fisher's Exact Test)
 '''
 
 def finding_marker_genes(num_genes,method, adata,images_dir): 
-    sc.tl.rank_genes_groups(adata, 'leiden', method=method)
+    sc.tl.rank_genes_groups(adata, 'kmeans_labels', method=method)
     sc.pl.rank_genes_groups(adata, n_genes=num_genes, sharey=False)
     marker_genes_path = os.path.join(images_dir, 'Finding_marker_genes.png')
+    plt.title('Finding Marker genes',pad=20)
     plt.savefig(marker_genes_path, dpi=300)
     plt.close()
+    result = adata.uns["rank_genes_groups"]
+    groups = result["names"].dtype.names
+
+    df = pd.DataFrame({group + '_' + key[:1]: result[key][group] for group in groups for key in ['names', 'logfoldchanges','scores','pvals']})
+    df.to_csv("diff_exp_result.csv")
+    script_path = "./run_scsa.sh"
+
+    # Run the script using subprocess
+    try:
+        subprocess.run(["bash", script_path], check=True)
+        print("run_scsa.sh executed successfully.")
+    except subprocess.CalledProcessError as e:
+        print("Error executing run_scsa.sh:", e)
     save_adata(adata, "processed_adata.h5ad")
+    return adata
     
     
 def save_adata(adata, file_path):
@@ -185,7 +214,38 @@ def save_adata(adata, file_path):
         adata.write(file_path)
         print(f"AnnData object saved to {file_path}")
     else:
-        print(f"AnnData object saved to {file_path}")
+        print(f"AnnData object is none")
+
+
+def annotation(adata, images_dir):
+    df = pd.read_csv('scsa_result.txt', sep='\t')
+    # Group the data by "Cluster" and find the cell type with the highest Z-score in each group
+    highest_zscores = df.groupby('Cluster')['Z-score'].idxmax()
+    print ('******************************************************************')
+    print ('highest Z_score is ', highest_zscores)
+
+    # Extract the corresponding cell types for the highest Z-scores
+    cell_types_with_highest_zscores = df.loc[highest_zscores, 'Cell Type'].tolist()
+    print ('cell type with highest Z-Score ' , cell_types_with_highest_zscores)
+    
+    #  Create a dictionary of cluster value (number) and corresponding identified cell type. 
+    #  We will add a column to adata with cell types for each cluster number.
+    cluster_to_cell_type = {cluster_num: cell_type for cluster_num, cell_type in enumerate(cell_types_with_highest_zscores)}
+    print('Cluster_to_cell_type ', cluster_to_cell_type)
+    print ('printing df',df)
+    print("***********************")
+    print(adata)
+    print("***********************")
+   
+    adata.obs['kmeans_labels'] = adata.obs['kmeans_labels'].astype(int)
+    # Map cluster numbers to cell type 
+    adata.obs['cell_types'] = adata.obs['kmeans_labels'].map(cluster_to_cell_type)
+    #unique cell types 
+    print('unique cell types', adata.obs['cell_types'].unique())
+    sc.pl.umap(adata, color=["leiden", "cell_types"])
+    spatial_cell_type_data = os.path.join(images_dir, 'specieal_cell_type.png')
+    plt.savefig(spatial_cell_type_data, dpi=300)
+    plt.close()
 
 ##################################################################################################################################################################################
 
@@ -235,8 +295,9 @@ def main():
 
     results_path = "pbmc3k_processed.h5ad"
     save_adata(adata, results_path)
+    # # Step 7: annotation
+    annotation(adata,images_dir)
     
     
 if __name__ == "__main__":
     main()
-
