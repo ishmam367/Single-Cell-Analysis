@@ -1,0 +1,2797 @@
+Cell Type	Z-score	Cluster
+T cell	7.566411346854375	0
+CD4+ T cell	4.983099312688371	0
+CD8+ T cell	4.467372841610898	0
+Naive CD8+ T cell	4.2979127257043315	0
+Naive CD4+ T cell	3.594213256901979	0
+Naive T(Th0) cell	2.873888518043417	0
+Central memory CD8+ T cell	2.376476763874581	0
+Central memory CD4+ T cell	2.3477814857696395	0
+Effector memory T cell	1.9480905933437065	0
+Naive CD4 T cell	1.8662023103791479	0
+Natural killer cell	1.8396322248333425	0
+B cell	1.7122999718128449	0
+Regulatory T(Treg) cell	1.6153672236410341	0
+Central memory T cell	1.58423032643561	0
+Natural killer T (NKT) cell	1.2337206285989732	0
+Memory CD4+ T cell	1.1842620455108388	0
+Memory B cell	0.9680857904480814	0
+Natural killer T(NKT) cell	0.9407267694948322	0
+Plasma cell	0.6195927028525066	0
+Lymphocyte	0.5759600181537045	0
+Hematopoietic stem cell	0.4384132161058304	0
+Plasmablast	0.355851170298474	0
+Naive B cell	0.3186849319822712	0
+CD8 T cell	0.2226191426642295	0
+Gamma delta(γδ) T cell	0.2226191426642295	0
+Naive T cell	0.21610981541731492	0
+Cytotoxic T cell	0.2017917836425097	0
+Effector memory CD8+ T cell	0.16645081884959617	0
+Immune cell	0.16359693541508655	0
+Switched memory B cell(Sw MB)	0.14385019899239646	0
+Progenitor cell	0.1306795172629217	0
+Hematopoietic progenitor cell	0.1306795172629217	0
+Dendritic cell	0.09660230965934398	0
+Macrophage	0.09660230965934398	0
+Marginal zone(MZ)-like B cell	0.03539435797810039	0
+Non-switched memory B cell	0.03539435797810039	0
+Unswitched memory B cell(UnSw MB)	0.03539435797810039	0
+Memory T cell	0.005924325556231587	0
+Naive CD8 T cell	-0.015600907159148596	0
+Oligodendrocyte	-0.032271916794029645	0
+Regulatory CD4+ T cell	-0.03287567063042863	0
+Activated T cell	-0.035031016912925594	0
+Effector CD4+ T cell	-0.03991422511034845	0
+Memory CD8+ T cell	-0.04449216186416896	0
+Innate lymphoid cell	-0.048503634922008224	0
+Effector CD8+ T cell	-0.06309685052831696	0
+Monocyte	-0.0752753407324771	0
+Activated dendritic cell	-0.07715634744953023	0
+Stem memory T cell	-0.07715634744953023	0
+T follicular helper(Tfh) cell	-0.08782838666798437	0
+Resting memory B cell	-0.11655717667482779	0
+Terminal differentiated B cell	-0.11655717667482779	0
+IgM memory B cell	-0.11655717667482779	0
+Switched memory B cell	-0.11655717667482779	0
+Activated B cell	-0.11655717667482779	0
+Class-switched memory B cell	-0.11655717667482779	0
+Regulatory B(Breg) cell	-0.11655717667482779	0
+Principal cell	-0.11737424885467296	0
+Multilymphoid progenitor cell	-0.21789273234863685	0
+Mitotic arrest phase fetal germ cell	-0.26809089828190114	0
+Sertoli cell	-0.2967747397909436	0
+Mitotic fetal germ cell	-0.29996161309628167	0
+T helper cell	-0.30534259087917853	0
+Activated CD4+ T cell	-0.30534259087917853	0
+Oogenesis phase fetal germ cell	-0.31540317762319686	0
+Ionocyte cell	-0.3214728345646956	0
+Ciliated epithelial cell	-0.3248930491632861	0
+Astrocyte	-0.3254201643958489	0
+Stem cell	-0.326598531533996	0
+SLC16A7+ cell	-0.32755002760726515	0
+Memory Stem Cell(Tscm)	-0.32908542644664707	0
+CD4 T cell	-0.32997612351853695	0
+Activated CD8+ T cell	-0.32997612351853695	0
+CD4+ central memory like T (Tcm-like) cell	-0.33027545794482016	0
+Lake et al.Science.Ex6	-0.334142836259328	0
+Endothelial cell	-0.3455550122806572	0
+Dividing T cell	-0.34750817051859745	0
+Migratory langerhans cell	-0.3477456499058473	0
+Leydig precursor cell	-0.3484632207302346	0
+Proliferative CD8+ T cell	-0.34869820201677054	0
+Regulatory CD8+ T cell	-0.34869820201677054	0
+Exhausted CD4+ T cell	-0.34869820201677054	0
+Exhausted CD8+ T cell	-0.34869820201677054	0
+Proliferative CD4+ T cell	-0.34869820201677054	0
+Thymus seeding progenitor (TSP)	-0.35050677407023567	0
+Dendritic cell 2A	-0.3510176356662151	0
+Effector T(Teff) cell	-0.35104096192750656	0
+Plasmacytoid dendritic cell(pDC)	-0.35110281696654	0
+CD8+ recently activated effector memory or effector T cell (CTL)	-0.3515518235234859	0
+CD8+ mucosal-associated invariant T cell(CD8+ MAIT)	-0.3515518235234859	0
+Exhausted T(Tex) cell	-0.3515518235234859	0
+CD4+ cytotoxic T2 cell	-0.35161367856251935	0
+CD4+ cytotoxic T1 cell	-0.35161367856251935	0
+Hematopoietic cell	-0.3556368439451656	0
+Common lymphoid progenitor cell	-0.3556368439451656	0
+CD34+ hematopoietic stem cell	-0.3556368439451656	0
+Lymphoid-primed multipotent progenitor cell(LMPP)	-0.3556368439451656	0
+Hematopoietic-related cell	-0.3556368439451656	0
+Secretory progenitor cell	-0.3625282432484468	0
+Gonadal endothelial cell	-0.36271585405432055	0
+Trophectoderm cell	-0.36446518841935255	0
+Epithelial cell	-0.36446518841935255	0
+Liver bud hepatic cell	-0.3652324753819621	0
+Morula cell (Blastomere)	-0.36791863562547084	0
+Paneth cell	-0.3679897761737029	0
+Granulosa cell	-0.3687376376986257	0
+Lymphoid progenitor cell	-0.3690838705235464	0
+Resident memory CD8+ T cell	-0.3690838705235464	0
+Mucosa-associated invariant T (MAIT) cell	-0.3690838705235464	0
+Circulating fetal cell	-0.3690838705235464	0
+Mural cell	-0.3690838705235464	0
+Naive-like T cell	-0.3690838705235464	0
+Effector memory CD4+ T cell	-0.3690838705235464	0
+Helper innate lymphoid cell	-0.3690838705235464	0
+Lymphoid cell	-0.3690838705235464	0
+Innate Lymphoid cell	-0.3690838705235464	0
+Cardiomyocyte	-0.3695255610384904	0
+Early effector T cell	-0.3695255610384904	0
+Stromal cell	-0.3695255610384904	0
+Proliferative T cell	-0.3695255610384904	0
+Naive cytotoxic T cell	-0.3695255610384904	0
+NK and T cell	-0.3695255610384904	0
+CD4+ T helper cell	-0.3695255610384904	0
+Meiotic prophase fetal germ cell	-0.36960991988341296	0
+LGR5+ stem cell	-0.36960991988341296	0
+M1 macrophage	-0.36976304042574015	0
+Conventional dendritic cell(cDC)	-0.36976304042574015	0
+Memory CD4 T cell	-0.36976304042574015	0
+Recent thymic T-cell emigrant	-0.36976304042574015	0
+Central memory T helper 1 cell	-0.36976304042574015	0
+Circulating memory T cell	-0.36976304042574015	0
+CCR7+ dendritic cell	-0.36976304042574015	0
+T memory stem cell	-0.36976304042574015	0
+AIRE-enriched cell	-0.36976304042574015	0
+Effector CD4+ memory T (Tem) cell	-0.36976304042574015	0
+Migratory dendritic cell	-0.36976304042574015	0
+Tissue resident memory T(TRM) cell	-0.36976304042574015	0
+Cancer cell	-0.36976304042574015	0
+Epidermal cell	-0.36995414267158805	0
+Retinoid acid signaling-responsive fetal germ cell	-0.36995414267158805	0
+Lymphoblast	-0.36995414267158805	0
+Neural progenitor cell	-0.37013433416751695	0
+Ciliated cell	-0.37022494195236494	0
+Oligodendrocyte progenitor cell	-0.37022494195236494	0
+T helper(Th) cell	-0.3702739020217195	0
+Natural killer T(NKT)-like cell	-0.3702739020217195	0
+CD4+ recently activated effector memory or effector T cell (CTL)	-0.3702739020217195	0
+T cell & Natural killer cell	-0.3702739020217195	0
+Double-negative T cell	-0.3702739020217195	0
+Lake et al.Science.Ex4	-0.3708268440750482	0
+Distal tubule & loop of Henle cell	-0.3709673560933001	0
+Activated effector cell	-0.37114192932138346	0
+T helper 2(Th2) cell	-0.37114192932138346	0
+Neutrophil	-0.3711576457187878	0
+B progenitor cell	-0.37184499468793486	0
+Plasmacytoid dendritic cell	-0.37184499468793486	0
+Effector natural killer cell	-0.3723791825452057	0
+CD27+ memory B cell	-0.37244103758423913	0
+Senescent CD8+ T Cell	-0.37244103758423913	0
+Atypical memory B cell	-0.37244103758423913	0
+Antibody-secreting cell	-0.37244103758423913	0
+Antibody Secreting B cell	-0.37244103758423913	0
+B1 cell	-0.37244103758423913	0
+Tonsil cell	-0.37244103758423913	0
+Transitional memory cell	-0.37244103758423913	0
+IgM only B cell	-0.37244103758423913	0
+IgG memory B cell	-0.37244103758423913	0
+Non-switched B cell	-0.37244103758423913	0
+Double-negative B cell	-0.37244103758423913	0
+Non class-switched memory B cell	-0.37244103758423913	0
+Intermediate transition memory B cell	-0.37244103758423913	0
+Transitional memory T cell	-0.37244103758423913	0
+Transitional B cell	-0.37244103758423913	0
+Plasmablast B cell	-0.37244103758423913	0
+hMSC-treated B cell	-0.37244103758423913	0
+Class switched memory B IgGκ cell	-0.37244103758423913	0
+Activated memory B cell	-0.37244103758423913	0
+Unswitched plasmablast	-0.37244103758423913	0
+Tissue-like memory B cell	-0.37244103758423913	0
+Terminal effector memory T cell	-0.37244103758423913	0
+Class switched plasmablast	-0.37244103758423913	0
+Memory CD27+ B cell	-0.37244103758423913	0
+Memory CD27- B cell	-0.37244103758423913	0
+Leukocyte	-0.37244103758423913	0
+Live CD19+ cell	-0.37244103758423913	0
+Lymph node cell	-0.37244103758423913	0
+Effector T cell	-0.37244103758423913	0
+Memory T(Tm) cell	-0.37244103758423913	0
+Double-negative memory B cell	-0.37244103758423913	0
+Mantle B cell	-0.37244103758423913	0
+IgA memory B cell	-0.37244103758423913	0
+Marginal zone B cell	-0.37244103758423913	0
+Airway secretory cell	-0.37249657237929135	0
+Pancreatic polypeptide cell	-0.37249657237929135	0
+Gonadal mitotic phase fetal germ cell	-0.37249657237929135	0
+Basal cell	-0.37249657237929135	0
+Alpha cell (α cell)	-0.3725569226568712	0
+Monocyte	14.337214983315656	1
+Macrophage	7.115031268449089	1
+Microglial cell	4.927457985167721	1
+Myeloid cell	4.264559372563034	1
+Neutrophil	3.2395862607892827	1
+Dendritic cell	1.7917824043249129	1
+Classical monocyte	0.8997894993871607	1
+M2 macrophage	0.8435018284488619	1
+CD14+ monocyte	0.8271729941294194	1
+Astrocyte	0.6185730754412329	1
+Paneth cell	0.5740677273272906	1
+Natural killer cell	0.5449320936684753	1
+B cell	0.5448825063177526	1
+M1 macrophage	0.4576609198872791	1
+Kupffer cell	0.397164239039378	1
+Intermediate monocyte	0.38461107564790237	1
+Fibroblast	0.37063498296000075	1
+Endothelial cell	0.3452191170203274	1
+CD16+ monocyte	0.333650307512504	1
+CD1C-CD141- dendritic cell	0.3019515342835161	1
+Mesenchymal stem cell	0.29810188744080923	1
+CD4+ T cell	0.28314706841459475	1
+Oligodendrocyte	0.2565628716233684	1
+Monocyte-derived macrophage	0.238918455151336	1
+Leukocyte	0.22172466496905344	1
+Immune cell	0.1966586813522056	1
+Non-classical monocyte	0.1590830259549665	1
+T cell	0.1458397134297151	1
+Tumor‐associated macrophage (TAM)	0.1437395576144178	1
+Natural killer T(NKT) cell	0.13763624220410522	1
+Monocyte-derived dendritic cell	0.1283894304877558	1
+Mesenchymal stromal cell	0.12217855010618493	1
+Granulocyte	0.11698298629376025	1
+CD1C+_B dendritic cell	0.11586885635039114	1
+Oligodendrocyte progenitor cell	0.11094037389718542	1
+Natural killer T (NKT) cell	0.10862337727956764	1
+Regulatory T(Treg) cell	0.100870432105106	1
+Neuron	0.08769036645484118	1
+Histiocyte	0.0863681661966986	1
+Mononuclear phagocyte	0.0793108805005884	1
+Monocyte Myeloid-derived suppressor cell (M-MDSC)	0.07846832636829038	1
+Myeloid derived suppressor cell (MDSC)	0.0729979651264173	1
+Memory CD4+ T cell	0.06698226613876676	1
+Memory T cell	0.06690518819256738	1
+Cardiomyocyte	0.062294676387226224	1
+Alveolar macrophage	0.041196957318807015	1
+Dendritic cell lineage	0.028965905900202545	1
+Oligodendrocyte precursor cell	0.021671890074273444	1
+Naive CD4+ T cell	0.019266293282436318	1
+Effector memory T cell	0.011332685030358135	1
+CD14 monocyte	0.010377229792631035	1
+T helper(Th) cell	-0.004296145656835872	1
+T helper 17(Th17) cell	-0.015022801361369863	1
+Activated CD4+ T cell	-0.01572352282234159	1
+CD14+CD16+ monocyte	-0.01639421418608935	1
+Effector memory CD4+ T cell	-0.01921811727675512	1
+Regulatory T (Treg) cell	-0.027174131204620665	1
+Multilymphoid progenitor cell	-0.02940419346641733	1
+Antigen-presenting cell	-0.03463259656397328	1
+T helper cell	-0.035994786108948434	1
+Megakaryocyte	-0.03700596739874083	1
+Gonadal endothelial cell	-0.04006933148709411	1
+CD8+ T cell	-0.04531868064554715	1
+Oogenesis phase fetal germ cell	-0.047594284282048746	1
+Progenitor cell	-0.05348977419492764	1
+Mesenchymal cell	-0.05598600109487244	1
+Naive T(Th0) cell	-0.05773825450169577	1
+Mitotic fetal germ cell	-0.06217494863936327	1
+Mitotic arrest phase fetal germ cell	-0.06255722829329761	1
+Excitatory neuron	-0.06890677056779232	1
+Hepatocyte	-0.06980451549794756	1
+Central memory T cell	-0.06999756063621257	1
+Naive B cell	-0.0729323121992752	1
+Trophectoderm cell	-0.07598089927426731	1
+T follicular helper(Tfh) cell	-0.07795357456407812	1
+Central memory CD4+ T cell	-0.07795357456407812	1
+T helper 1(Th1) cell	-0.07795357456407812	1
+Pan-macrophage	-0.08008757990391535	1
+Activated microglial cell	-0.08008757990391535	1
+Liver bud hepatic cell	-0.09164917517204288	1
+Sertoli cell	-0.09334353672268816	1
+Granulocyte-monocyte progenitor	-0.09587119814121048	1
+Podocyte	-0.09629894019881495	1
+Granulosa cell	-0.09674690649375499	1
+Adipose-derived stem cell	-0.09863325217345079	1
+T helper 2(Th2) cell	-0.10393141420254154	1
+Regulatory CD4+ T cell	-0.10393141420254154	1
+Responder T cell	-0.10393141420254154	1
+Lymphocyte	-0.10393141420254154	1
+Type 3 dendritic cell (DC3)	-0.10556303873742522	1
+Delta cell	-0.10989454570865495	1
+Stem cell	-0.11008386055572984	1
+Hematopoietic stem cell	-0.11098258155248046	1
+SLC16A7+ cell	-0.12212408347859048	1
+Eosinophil	-0.12435976169379095	1
+Monocyte derived dendritic cell	-0.1260890521555536	1
+Ionocyte cell	-0.12695572893416449	1
+Effector T(Teff) cell	-0.12887693315758	1
+Leydig cell	-0.13139465508504072	1
+Follicular helper (Tfh) T cell	-0.13146381175509975	1
+Migration phase fetal germ cell	-0.13180795427092365	1
+Effector CD4+ T cell	-0.13266224072704738	1
+Enterocyte progenitor cell	-0.1344890910191513	1
+Secretory progenitor cell	-0.13670703844603133	1
+Follicular B cell	-0.13860212232996846	1
+Acinar cell	-0.14004345379290403	1
+Gamma delta(γδ) T cell	-0.14032754153985907	1
+Proliferative CD4+ T cell	-0.14032754153985907	1
+Mast cell	-0.1410606292060296	1
+Basal cell	-0.14385291974692657	1
+Hematopoietic cell	-0.14547575247836586	1
+Ciliated cell	-0.15000397087922404	1
+CD1C+_A dendritic cell	-0.15028344727410145	1
+Meiotic prophase fetal germ cell	-0.15278111858502136	1
+Homeostatic chondrocyte	-0.15418045791973908	1
+Plasmacytoid dendritic cell	-0.15794540104822746	1
+Lymphoid-primed multipotent progenitor cell(LMPP)	-0.15955127988178683	1
+Ciliated epithelial cell	-0.16025839677698991	1
+Gonadal mitotic phase fetal germ cell	-0.16118720995336525	1
+Fibrocartilage chondrocyte	-0.16142820860871482	1
+Meyloid cell	-0.16237078147032605	1
+Polymorphonuclear myeloid-derived suppressor(PMN-MDSC) cell	-0.16268890771949654	1
+Retinoid acid signaling-responsive fetal germ cell	-0.1643257292268593	1
+AXL+SIGLEC6+ dendritic cell	-0.16518186605334353	1
+Hofbauer cell	-0.16591945290024465	1
+CD141+CLEC9A+ dendritic cell	-0.16731078147963668	1
+Epithelial cell	-0.16812388308630816	1
+Myeloid dendritic cell	-0.16881050348696236	1
+Exhausted CD4+ T cell	-0.17031155255847827	1
+Pan monocyte	-0.1703960009648158	1
+Glial cell	-0.17125925444009507	1
+Leydig precursor cell	-0.17404740562088689	1
+DCLK1+ progenitor cell	-0.17496318703878366	1
+CLEC10A+ dendritic cell	-0.1757876437687201	1
+CLEC9A+ dendritic cell	-0.1757876437687201	1
+Naive CD8+ T cell	-0.17631221930485527	1
+Stromal cell	-0.17678262557636115	1
+Myofibroblast	-0.17693828082859372	1
+CD16 monocyte	-0.17707322206882403	1
+FOXN4+ cell	-0.17779721719076025	1
+Pro-inflammatory macrophage	-0.1780763170104012	1
+Beta cell(β cell)	-0.17871779259836942	1
+Conventional dendritic cell 2-B (cDC2-B)	-0.17947982330293644	1
+Monocyte progenitor cell	-0.17948069930774183	1
+Intermediate monocyte cell	-0.18052763336378544	1
+Granulocytic-UNK	-0.1816493414926095	1
+Natural regulatory T cell	-0.1819749087378827	1
+Immature neutrophil	-0.18259337911022322	1
+Plasmacytoid dendritic cell(pDC)	-0.1827642561329478	1
+Cancer cell	-0.18282243448460989	1
+AXL+ SIGLEC6+ dendritic cell	-0.1829085334121966	1
+Blood cell	-0.18327806411001674	1
+Effector CD8+ memory T (Tem) cell	-0.18398012706286185	1
+Activated memory B cell	-0.1840583244389739	1
+Inflammatory dendritic cell	-0.18440538258668993	1
+Alpha cell (α cell)	-0.18523874595898038	1
+Secretory cell	-0.18648069939782563	1
+Monocytic myeloid-derived suppressor cell	-0.1867468891263221	1
+Myeloid-derived suppressor cell	-0.1867468891263221	1
+Immature myeloid cell	-0.1867468891263221	1
+CD16+ dendritic cell	-0.1867468891263221	1
+Suppressive monocyte	-0.1867468891263221	1
+Epiblast cell	-0.18711310157016733	1
+Pelvic epithelial cell	-0.1871186988610343	1
+Cytotoxic CD4+ T cell	-0.1875222759366753	1
+Myoblast	-0.18962304466385216	1
+Circulating fetal cell	-0.18963352318881257	1
+Conventional dendritic cell 1(cDC1)	-0.19027281855750403	1
+Red blood cell (erythrocyte)	-0.19046395615884923	1
+Myeloid conventional dendritic cell	-0.1910127034332713	1
+Morula cell (Blastomere)	-0.19118089131116311	1
+Retinal pigment epithelial cell	-0.19146465781494007	1
+Neuroepithelial cell	-0.19148069535006965	1
+M1 microglial cell	-0.19151402478086824	1
+Prehypertrophic chondrocyte	-0.19161441605921442	1
+Brush cell (Tuft cell)	-0.19186801648287896	1
+Neuroendocrine cell	-0.19186801648287896	1
+Innate lymphoid cell	-0.19201807622474212	1
+Tissue resident macrophage	-0.1920603615583275	1
+Multipotent progenitor cell	-0.19206789603055274	1
+Interferon responsive secretory cell	-0.1924043830674346	1
+Pericyte	-0.19261565720606957	1
+Tuft progenitor cell	-0.19279039227028297	1
+Lake et al.Science.Ex8	-0.19361842601984144	1
+Neural progenitor cell	-0.19361842601984144	1
+Embryonic stem cell	-0.19374982139915725	1
+White blood cell	-0.19400922921240224	1
+Inflammatory monocyte	-0.19463698933082432	1
+Haematopoietic cell	-0.19463698933082432	1
+Urine-derived stem cell	-0.19463698933082432	1
+Mature dendritic cell	-0.19463698933082432	1
+Monocyte lineage	-0.19463698933082432	1
+CD14++CD16- monocyte	-0.19463698933082432	1
+Circulating progenitor cell	-0.19463698933082432	1
+Platelet	-0.19463698933082432	1
+Multipotent mesenchymal stroma cell	-0.19463698933082432	1
+Fully activated dendritic cell	-0.19463698933082432	1
+Bone marrow stem cell	-0.19463698933082432	1
+CD14+ CD1c+ dendritic cell	-0.19463698933082432	1
+CD14+ macrophage	-0.19463698933082432	1
+CD14+ monocyte-derived macrophage	-0.19463698933082432	1
+CD14+ endothelial progenitor cell	-0.19463698933082432	1
+Dental pulp stem cell	-0.19463698933082432	1
+Hematopoietic precursor cell	-0.19463698933082432	1
+Proliferative chondrocyte	-0.19480635144686484	1
+CD4+ cytotoxic T1 cell	-0.1948541560261736	1
+Adipocyte progenitor cell	-0.19542777418092921	1
+Adipocyte	-0.19542777418092921	1
+lmmLeydig cell	-0.19542777418092921	1
+Vascular smooth muscle cell(VSMC)	-0.1955976306817955	1
+M2c macrophage	-0.195855990968969	1
+Border-associated macrophage	-0.195855990968969	1
+Hepatic cell	-0.19595588934623734	1
+LGR5+ stem cell	-0.1960968409527713	1
+Macroglial cell	-0.19616991554061933	1
+1-cell stage cell (Blastomere)	-0.19616991554061933	1
+Sensory neuron	-0.1963536584387987	1
+Dorsal lateral ganglionic eminence precursor cell	-0.1963536584387987	1
+Airway basal cell	-0.1963536584387987	1
+Neutrophil lineage	-0.19652257335319906	1
+Polymorphonuclear neutrophil(PMN)	-0.19652257335319906	1
+Cardiosphere-derived cell	-0.1969243847687479	1
+Corneocyte-like cell	-0.19707776068733882	1
+Mesothelial cell	-0.197424224742365	1
+M0 macrophage	-0.1975236233933148	1
+Demyelinating macrophage	-0.1975236233933148	1
+Activated macrophage	-0.1975236233933148	1
+Demyelinating microglial cell	-0.1975236233933148	1
+Infiltrated mononuclear cell	-0.1975236233933148	1
+Stem-cell-derived-alpha cell	-0.19760153025157307	1
+Inflammatory Dendritic Epidermal Cell (IDEC)	-0.19760153025157307	1
+Reticular fibroblast	-0.19760153025157307	1
+Preadipocyte	-0.19760153025157307	1
+Venular endothelial cell	-0.1977503564053685	1
+Cancer stem cell	-0.1977503564053685	1
+MKI67+ progenitor cell	-0.1977503564053685	1
+Oligodendrocyte‐like cell	-0.1979677228131954	1
+Cardiac progenitor cell	-0.19800157185253542	1
+Effector CD8+ T cell	-0.19813158378523785	1
+Memory T-cell	-0.19813158378523785	1
+Axl+ CD11c+ Plasmacytoid dendritic cell (CD11c+ Axl+DC)	-0.19819749750860116	1
+Conventional dendritic cell	-0.19819749750860116	1
+Dendritic cell progenitor	-0.19819749750860116	1
+Conventional dendritic cell 2-A (cDC2-A)	-0.19819749750860116	1
+Granulocytic myeloid-derived suppressor cell(G-MDSC)	-0.19819749750860116	1
+Pre-conventional dendritic cell	-0.19819749750860116	1
+Naive progenitor cell	-0.19819749750860116	1
+Transitional dendritic cell	-0.19819749750860116	1
+Polymorphonuclear myeloid-derived suppressor cell	-0.19819749750860116	1
+Neural crest-derived cell	-0.19862547778721346	1
+Lake et al.Science.Ex6	-0.19870259321430095	1
+Subpallium cell	-0.19870259321430095	1
+Dorsal medial ganglionic eminence precursor cell	-0.19870259321430095	1
+Lateral ganglionic eminence cell	-0.19870259321430095	1
+Germline stem cell	-0.19874280575196304	1
+Germinal stem cell	-0.19874280575196304	1
+Dendritic cell 2A	-0.1990987292938393	1
+Neural stem cell	-0.19935698393815682	1
+Regulatory chondrocyte	-0.19944536130913643	1
+Fat cell	-0.19949727527684122	1
+Myeloid progenitor cell	-0.19949727527684122	1
+Human-induced pluripotent stem cell (iPSC)	-0.19956241181301437	1
+Naive human pluripotent stem cell	-0.19956241181301437	1
+Adipose-derived stromal cell	-0.19956241181301437	1
+Corneal epithelial cell	-0.19957042998707997	1
+Lake et al.Science.Ex2	-0.19968504180278357	1
+FGFR1LowNME5- epithelial cell	-0.19981548639639599	1
+Capillary cell	-0.19995799623505497	1
+Immature B cell	-0.20000868907817504	1
+Germinal center cell	-0.20000868907817504	1
+Mature B cell	-0.20000868907817504	1
+Follicular cell	-0.20000868907817504	1
+Activated effector cell	-0.20000868907817504	1
+Memory B cell	-0.2005130458773825	1
+CD16+ dendritic cell (CD16+ DC)	-0.2005130458773825	1
+Germinal center B cell	-0.2005335744208877	1
+Microglia‐like cell	-0.20063777893153378	1
+OxPhos monocyte	-0.20064356109739862	1
+Lymphoblastoid cell	-0.2007705046392854	1
+Exausted T(Tex) cell	-0.2007705046392854	1
+Erythroid lineage cell	-0.20096299897978046	1
+Spermatogonial stem cell	-0.20101556520309577	1
+Damage-associated transient progenitor cell	-0.20111809515577542	1
+Lake et al.Science.In6	-0.20132273753445412	1
+Interstitial macrophage	-0.20142789668854835	1
+Early T cell progenitor (ETP)	-0.20154419196470624	1
+Activated tissue resident memory CD4+ T cell	-0.20161801554853284	1
+Regulatory CD25+ T cell	-0.20161801554853284	1
+T helper2 (Th2) cell	-0.20161801554853284	1
+Naive CD4 T cell	-0.20161801554853284	1
+Exhausted T(Tex) cell	-0.20161801554853284	1
+Activated regulatory T cell	-0.20161801554853284	1
+Activated effector memory CD4+ T cell	-0.20161801554853284	1
+Naive T cell	-0.20161801554853284	1
+Chronically activated CD4+ T cell	-0.20161801554853284	1
+CD4+ Terminally Differentiated Effector Memory Cell	-0.20161801554853284	1
+CD4 T cell	-0.20161801554853284	1
+CD25+LAG3+ T cell	-0.20161801554853284	1
+CD25 LAG3+ T cell	-0.20161801554853284	1
+CD8+ mucosal-associated invariant T cell(CD8+ MAIT)	-0.20161801554853284	1
+CD4+ recently activated effector memory or effector T cell (CTL)	-0.20161801554853284	1
+CD4+ cytotoxic T2 cell	-0.20161801554853284	1
+CD4+ central memory like T (Tcm-like) cell	-0.20161801554853284	1
+Induced regulatory T (Treg) cell	-0.20161801554853284	1
+FOXP3+ natural regulatory T (Treg) cell	-0.20161801554853284	1
+Effector T cell	-0.20161801554853284	1
+Early activated CD4+ T cell	-0.20161801554853284	1
+Effector memory CD8+ T cell	-0.20161801554853284	1
+Double-positive T cell	-0.20161801554853284	1
+Effector regulatory T(eTreg) cell	-0.20161801554853284	1
+Pathogenic T peripheral helper cell	-0.20161801554853284	1
+Activated CD25+ regulatory T cell	-0.20161801554853284	1
+T helper17 (Th17) cell	-0.20161801554853284	1
+Activated T cell	-0.20161801554853284	1
+T helper 9(Th9) cell	-0.20161801554853284	1
+Suppressor T cell	-0.20161801554853284	1
+Peripheral blood mononuclear cell (PBMC)	-0.20161801554853284	1
+EMRA CD4+ T cell	-0.20161801554853284	1
+T helper1 (Th1) cell	-0.20161801554853284	1
+Central memory T helper 1 cell	-0.20161801554853284	1
+Circulating T follicular helper cell	-0.20161801554853284	1
+CD8+ recently activated effector memory or effector T cell (CTL)	-0.20161801554853284	1
+Memory regulatory T cell	-0.20161801554853284	1
+T peripheral helper(Tph) cell	-0.20161801554853284	1
+Tissue resident memory CD4+ T cell	-0.20161801554853284	1
+Lymphoid cell	-0.20161801554853284	1
+Inflammatory fibroblast	-0.2016277480450106	1
+Activated CD8+ T cell	2.7227873173562127	10
+Natural killer cell	2.7227873173562127	10
+T cell	1.5632545408071508	10
+Activated effector cell	-0.3893793986399767	10
+CD4+ cytotoxic T2 cell	-0.3893793986399767	10
+Cytotoxic CD4+ T cell	-0.3893793986399767	10
+CD8+ T cell	-0.3893793986399767	10
+Cytotoxic CD8 T cell	-0.3893793986399767	10
+Effector CD8 T cell	-0.3893793986399767	10
+Finally highly effector (TEMRA) memory T cell	-0.3893793986399767	10
+Gamma delta(γδ) T cell	-0.3893793986399767	10
+Effector memory CD8+ T cell	-0.3893793986399767	10
+Eosinophil	-0.3893793986399767	10
+Immune cell	-0.3893793986399767	10
+Hematopoietic cell	-0.3893793986399767	10
+M1 macrophage	-0.3893793986399767	10
+Megakaryocyte	-0.3893793986399767	10
+Natural killer T (NKT) cell	-0.3893793986399767	10
+NK and T cell	-0.3893793986399767	10
+SLC16A7+ cell	-0.3893793986399767	10
+Tissue resident memory T(TRM) cell	-0.3893793986399767	10
+T cell	6.655107623803498	11
+Natural killer cell	6.37648441227147	11
+CD8+ T cell	4.153829080304208	11
+Regulatory T(Treg) cell	3.823409555493457	11
+CD4+ T cell	1.9482085030185206	11
+Cytotoxic T cell	1.4122560726795639	11
+Natural killer T(NKT) cell	1.307193995571385	11
+Memory B cell	1.2996259667416061	11
+Microglial cell	1.1267023136366179	11
+B cell	1.0007490658387006	11
+Naive T(Th0) cell	0.9225659252636779	11
+Plasma cell	0.876962308079313	11
+Naive CD8+ T cell	0.8501260544632487	11
+Naive CD4+ T cell	0.8042466787566102	11
+Immune cell	0.7415409049660984	11
+T follicular helper(Tfh) cell	0.6817658401941418	11
+Regulatory CD4+ T cell	0.6791002112411965	11
+Natural killer T (NKT) cell	0.6269101512421866	11
+Activated CD8+ T cell	0.5418320936219241	11
+Plasmablast	0.5362247175912396	11
+Lymphocyte	0.5199969678164788	11
+Central memory T cell	0.5188724198142665	11
+Gamma delta(γδ) T cell	0.5019568279708984	11
+Effector memory T cell	0.48678377027233416	11
+Naive B cell	0.46064061001098106	11
+Exhausted CD4+ T cell	0.275644604333523	11
+Switched memory B cell(Sw MB)	0.2623327012507147	11
+Exhausted T(Tex) cell	0.2462227730620709	11
+Cytotoxic CD8+ T cell	0.22968590963566124	11
+Cytotoxic CD4+ T cell	0.1770014485318543	11
+Memory CD8+ T cell	0.16151178868611632	11
+Non-switched memory B cell	0.12221452728053075	11
+Unswitched memory B cell(UnSw MB)	0.12221452728053075	11
+Marginal zone(MZ)-like B cell	0.12221452728053075	11
+Central memory CD8+ T cell	0.12221452728053075	11
+Memory CD4+ T cell	0.06631609389733341	11
+CD8 T cell	0.004086258577496239	11
+Effector memory CD4+ T cell	-0.004915806726508771	11
+Monocyte	-0.018126668093672336	11
+IgM memory B cell	-0.0740973667439591	11
+Central memory CD4+ T cell	-0.0740973667439591	11
+Switched memory B cell	-0.0740973667439591	11
+Activated B cell	-0.0740973667439591	11
+Naive T cell	-0.0740973667439591	11
+Class-switched memory B cell	-0.0740973667439591	11
+Activated T cell	-0.0740973667439591	11
+Terminal differentiated B cell	-0.0740973667439591	11
+Resting memory B cell	-0.0740973667439591	11
+Regulatory B(Breg) cell	-0.0740973667439591	11
+Finally highly effector (TEMRA) memory T cell	-0.2697851887100561	11
+Effector CD8 T cell	-0.29090853851544135	11
+Memory T cell	-0.30809163593676836	11
+Hematopoietic cell	-0.32815170115765685	11
+Effector CD4+ T cell	-0.33243737793374345	11
+CD4+ cytotoxic T2 cell	-0.33373266545663793	11
+CD4+ cytotoxic T1 cell	-0.3439938473006948	11
+Effector memory CD8+ T cell	-0.35085147197720473	11
+Exhausted CD8+ T cell	-0.3534899726235384	11
+Senescent CD8+ T Cell	-0.35880396043975354	11
+SLC16A7+ cell	-0.35937045499358705	11
+M1 macrophage	-0.3594169299260376	11
+Tissue resident memory T(TRM) cell	-0.3594169299260376	11
+Effector T(Teff) cell	-0.35953623280709895	11
+NK and T cell	-0.35955163257035283	11
+Activated effector cell	-0.35992558676823344	11
+Early effector T cell	-0.3612473564655768	11
+Effector CD8+ T cell	-0.3612473564655768	11
+T helper cell	-0.3612473564655768	11
+Megakaryocyte	-0.36205064226508965	11
+Myeloid cell	-0.3681016907559318	11
+Terminal effector CD8+ T cell	-0.3688482461398658	11
+CD4+ recently activated effector memory or effector T cell (CTL)	-0.37073540309498393	11
+Neuroendocrine cell	-0.37810884029789366	11
+Brush cell (Tuft cell)	-0.37810884029789366	11
+T helper 2(Th2) cell	-0.38291180389499047	11
+Regulatory T (Treg) cell	-0.38291180389499047	11
+Cytotoxic CD8 T cell	-0.3889734638418049	11
+Eosinophil	-0.3889734638418049	11
+Transitional CD8+ T cell	-0.39066918773702897	11
+Mucosa-associated invariant T (MAIT) cell	-0.39066918773702897	11
+GZMK CD8 cell	-0.39066918773702897	11
+Effector memory CD8 T cell	-0.39066918773702897	11
+Cytotoxic CD4+ T2 cell	-0.39765822467169915	11
+CD34+ pre-T cell	-0.39765822467169915	11
+CD56+ natural killer cell	-0.39765822467169915	11
+Effector natural killer cell	-0.39765822467169915	11
+Granulocyte-monocyte progenitor	-0.39910237184741104	11
+Multilymphoid progenitor cell	-0.3991881707534113	11
+Meiotic prophase fetal germ cell	-0.3991881707534113	11
+OxPhos monocyte	-0.3991881707534113	11
+Mitotic arrest phase fetal germ cell	-0.3991881707534113	11
+Mast cell	-0.3992346456858618	11
+Interstitial macrophage	-0.3992346456858618	11
+Paneth cell	-0.3992346456858618	11
+T helper 1(Th1) cell	-0.3992346456858618	11
+Regulatory CD8+ T cell	-0.399369348330177	11
+Naive cytotoxic T cell	-0.399369348330177	11
+Activated CD4+ T cell	-0.399369348330177	11
+Cardiomyocyte	-0.399369348330177	11
+Stromal cell	-0.399369348330177	11
+Proliferative CD8+ T cell	-0.399369348330177	11
+Proliferative T cell	-0.399369348330177	11
+Proliferative CD4+ T cell	-0.399369348330177	11
+Dividing T cell	-0.399369348330177	11
+CD4 T cell	-0.399369348330177	11
+CD4+ T helper cell	-0.399369348330177	11
+Acinar cell	-0.3997433025280576	11
+Intestinal cell	-0.3997433025280576	11
+Enterocyte progenitor cell	-0.3997433025280576	11
+Sertoli cell	-0.3997433025280576	11
+T cell & Natural killer cell	-0.39998120106979573	11
+Effector regulatory T(eTreg) cell	-0.39998120106979573	11
+AXL+SIGLEC6+ dendritic cell	-0.4018683580249139	11
+Oogenesis phase fetal germ cell	-0.4018683580249139	11
+Double-negative memory B cell	-0.4046833361463921	11
+hMSC-treated B cell	-0.4046833361463921	11
+Antibody-secreting cell	-0.4046833361463921	11
+Atypical memory B cell	-0.4046833361463921	11
+CD27+ memory B cell	-0.4046833361463921	11
+B1 cell	-0.4046833361463921	11
+Effector T cell	-0.4046833361463921	11
+IgM only B cell	-0.4046833361463921	11
+Intermediate transition memory B cell	-0.4046833361463921	11
+IgA memory B cell	-0.4046833361463921	11
+Live CD19+ cell	-0.4046833361463921	11
+Lymph node cell	-0.4046833361463921	11
+Tissue-like memory B cell	-0.4046833361463921	11
+Terminal effector memory T cell	-0.4046833361463921	11
+Unswitched plasmablast	-0.4046833361463921	11
+Transitional memory cell	-0.4046833361463921	11
+Memory T(Tm) cell	-0.4046833361463921	11
+Class switched memory B IgGκ cell	-0.4046833361463921	11
+Tonsil cell	-0.4046833361463921	11
+Activated memory B cell	-0.4046833361463921	11
+Transitional B cell	-0.4046833361463921	11
+Memory Stem Cell(Tscm)	-0.4046833361463921	11
+Double-negative B cell	-0.4046833361463921	11
+Memory CD27- B cell	-0.4046833361463921	11
+Memory CD27+ B cell	-0.4046833361463921	11
+Marginal zone B cell	-0.4046833361463921	11
+Mantle B cell	-0.4046833361463921	11
+Class switched plasmablast	-0.4046833361463921	11
+CD4+ central memory like T (Tcm-like) cell	-0.4046833361463921	11
+Leukocyte	-0.4046833361463921	11
+Plasmablast B cell	-0.4046833361463921	11
+Non-switched B cell	-0.4046833361463921	11
+Plasmacytoid dendritic cell(pDC)	-0.4046833361463921	11
+IgG memory B cell	-0.4046833361463921	11
+Innate lymphoid cell	-0.4046833361463921	11
+Non class-switched memory B cell	-0.4046833361463921	11
+Antibody Secreting B cell	-0.4046833361463921	11
+Transitional memory T cell	-0.4046833361463921	11
+CD4+ T cell	4.858899065872486	12
+T cell	3.19152748190584	12
+Effector memory T cell	2.4205280681881747	12
+CD8+ T cell	2.131152760312847	12
+Central memory CD8+ T cell	1.1686625164071653	12
+Naive CD4 T cell	1.1594731724468716	12
+Naive CD8+ T cell	1.1126695353933274	12
+Central memory CD4+ T cell	1.1126695353933274	12
+Natural killer T (NKT) cell	0.5331063247646183	12
+B cell	0.4158859942893754	12
+Lymphocyte	0.3984868653370549	12
+Natural killer cell	0.3984868653370549	12
+Naive T(Th0) cell	0.35168322828351034	12
+Regulatory T(Treg) cell	0.3195003600894048	12
+Innate lymphoid cell	0.29736704040071477	12
+Memory CD4+ T cell	0.29736704040071477	12
+T follicular helper(Tfh) cell	0.1621660858653542	12
+Naive CD4+ T cell	-0.3431073706436762	12
+Memory T cell	-0.41613716770344655	12
+Multilymphoid progenitor cell	-0.4236497185326978	12
+Naive CD8 T cell	-0.4547310197649637	12
+Goblet cell	-0.4547310197649637	12
+Fibroblast	-0.4547310197649637	12
+Cancer cell	-0.4547310197649637	12
+Brush cell (Tuft cell)	-0.4547310197649637	12
+DCLK1+ progenitor cell	-0.4547310197649637	12
+Embryonic stem cell	-0.4547310197649637	12
+Intestinal stem cell	-0.4547310197649637	12
+Liver bud hepatic cell	-0.4547310197649637	12
+Neuroendocrine cell	-0.4547310197649637	12
+Red blood cell (erythrocyte)	-0.4547310197649637	12
+Trophectoderm cell	-0.4547310197649637	12
+T helper cell	-0.47045335558624213	12
+Lymphoid progenitor cell	-0.47045335558624213	12
+Memory Stem Cell(Tscm)	-0.47045335558624213	12
+Migratory langerhans cell	-0.47045335558624213	12
+Mucosa-associated invariant T (MAIT) cell	-0.47045335558624213	12
+Circulating fetal cell	-0.47045335558624213	12
+Effector memory CD4+ T cell	-0.47045335558624213	12
+Activated CD4+ T cell	-0.47045335558624213	12
+Activated T cell	-0.47045335558624213	12
+Immune cell	-0.47045335558624213	12
+Innate Lymphoid cell	-0.47045335558624213	12
+Dividing T cell	-0.47045335558624213	12
+Helper innate lymphoid cell	-0.47045335558624213	12
+Stem cell	-0.47045335558624213	12
+Natural killer T(NKT) cell	-0.47045335558624213	12
+Naive-like T cell	-0.47045335558624213	12
+Resident memory CD8+ T cell	-0.47045335558624213	12
+Lymphoid cell	-0.47045335558624213	12
+Mural cell	-0.47045335558624213	12
+Activated effector cell	-0.4721301487172844	12
+Acinar cell	-0.4721301487172844	12
+Monocyte	-0.4721301487172844	12
+Sertoli cell	-0.4721301487172844	12
+Enterocyte progenitor cell	-0.4721301487172844	12
+Intestinal cell	-0.4721301487172844	12
+Dendritic cell 2A	-0.4796426995465356	12
+B progenitor cell	-0.4796426995465356	12
+Plasmacytoid dendritic cell	-0.4796426995465356	12
+Thymus seeding progenitor (TSP)	-0.4796426995465356	12
+Dendritic cell	8.67447244941392	13
+Monocyte	5.979849145051774	13
+Conventional dendritic cell 2(cDC2)	4.169125603691012	13
+Microglial cell	4.120825178541049	13
+Macrophage	3.870259374746928	13
+B cell	2.8199930060923664	13
+Myeloid cell	2.4263601976801508	13
+Myeloid dendritic cell	2.138662196808338	13
+Astrocyte	1.6564236386765374	13
+Natural killer T (NKT) cell	0.7585343392459521	13
+Mast cell	0.6327632815846316	13
+Monocyte derived dendritic cell	0.5883783295463256	13
+Paneth cell	0.5102515810089684	13
+Antigen-presenting cell	0.4734961880723491	13
+CD14+ monocyte	0.41668632339422756	13
+Neutrophil	0.3976900035550878	13
+CD16+ monocyte	0.19729329038038937	13
+Natural killer cell	0.1869562890465493	13
+Mononuclear phagocyte	0.14375900784436968	13
+Mesenchymal cell	0.11323487686565559	13
+Fibroblast	0.10166774540521946	13
+Plasmacytoid dendritic cell(pDC)	0.09813076283739926	13
+Neuron	0.055090479028068545	13
+Progenitor cell	-0.019205010598629692	13
+Dendritic cell lineage	-0.02618064704401504	13
+Monocyte Myeloid-derived suppressor cell (M-MDSC)	-0.02618064704401504	13
+Granulocyte	-0.02618064704401504	13
+Stem cell	-0.041672805410314394	13
+Natural killer T(NKT) cell	-0.042595606727452204	13
+Secretory cell	-0.045477811332292416	13
+Classical monocyte	-0.05216820138827598	13
+Adipose-derived stem cell	-0.06501696097163615	13
+Mitotic fetal germ cell	-0.0696632130740679	13
+Mitotic arrest phase fetal germ cell	-0.10798773492678453	13
+Sertoli cell	-0.10867124929033294	13
+Oogenesis phase fetal germ cell	-0.11446278220639276	13
+CD1C+_A dendritic cell	-0.12024054255281957	13
+Multilymphoid progenitor cell	-0.12529659566071275	13
+Neural progenitor cell	-0.13150966933632816	13
+CLEC10A+ dendritic cell	-0.1335701985216067	13
+CD141+CLEC9A+ dendritic cell	-0.13739155727019467	13
+Delta cell	-0.14534748316911475	13
+Gonadal endothelial cell	-0.1524196677635776	13
+Plasmacytoid dendritic cell	-0.15447215547161425	13
+Endothelial cell	-0.15631085315010107	13
+Granulosa cell	-0.16850653654661704	13
+CD1C-CD141- dendritic cell	-0.17239480569777707	13
+CD1C+_B dendritic cell	-0.1827323839224178	13
+Meiotic prophase fetal germ cell	-0.18470832379066118	13
+Exhausted CD4+ T cell	-0.1885949319816197	13
+Natural regulatory T cell	-0.1912696470623268	13
+Retinoid acid signaling-responsive fetal germ cell	-0.19611622946606247	13
+Monocyte-derived dendritic cell	-0.1975190003805392	13
+Dendritic cell 2A	-0.1975190003805392	13
+Immature B cell	-0.2012287625885255	13
+Conventional dendritic cell(cDC)	-0.20245913209664898	13
+Liver bud hepatic cell	-0.20690945553665097	13
+Pre-dendritic cell	-0.2125945143188963	13
+Leydig cell	-0.21346389551663603	13
+Migration phase fetal germ cell	-0.21661933585710094	13
+CLEC9A+ dendritic cell	-0.22394565171771327	13
+Type 3 dendritic cell (DC3)	-0.22554289864628904	13
+Leydig precursor cell	-0.2260648817522273	13
+Megakaryocyte	-0.22794670223082197	13
+Ciliated cell	-0.22899411239095108	13
+Granulocyte-monocyte progenitor	-0.22942372594055518	13
+Oligodendrocyte progenitor cell	-0.23000376851587095	13
+Hematopoietic cell	-0.23028514125237154	13
+Fibrocartilage chondrocyte	-0.2318987348474825	13
+Naive CD8+ T cell	-0.23282968254894806	13
+Retinal pigment epithelial cell	-0.23433928999692838	13
+DCLK1+ progenitor cell	-0.23547255434718956	13
+Immune cell	-0.23667705625361674	13
+Blood cell	-0.23693400223801087	13
+Effector CD8+ memory T (Tem) cell	-0.23793651305673538	13
+Enterocyte progenitor cell	-0.23832756672684066	13
+Myeloid dendritic cell 1	-0.24001850249397325	13
+Basal cell	-0.24052624333817824	13
+M2 macrophage	-0.2417826287233474	13
+AXL+SIGLEC6+ dendritic cell	-0.24267254283358625	13
+Follicular cell	-0.2455819625962943	13
+Germinal center cell	-0.2455819625962943	13
+Mature B cell	-0.2455819625962943	13
+Trophectoderm cell	-0.24703566471180394	13
+1-cell stage cell (Blastomere)	-0.2476243358072903	13
+Cytotoxic CD4+ T cell	-0.24803952152073333	13
+Non-classical monocyte	-0.24887813189963628	13
+Eosinophil	-0.24887813189963628	13
+FOXN4+ cell	-0.24898130759765286	13
+Interneuron	-0.2494538284415776	13
+Naive B cell	-0.25277596112696576	13
+Acinar cell	-0.2532480772068159	13
+Lymphoid-primed multipotent progenitor cell(LMPP)	-0.2534592673524462	13
+SLC16A7+ cell	-0.25383141453407004	13
+Ciliated epithelial cell	-0.25567701622594774	13
+Meyloid cell	-0.2559760282032241	13
+Morula cell (Blastomere)	-0.25740503372391077	13
+Panneuron	-0.25808199404073123	13
+Ionocyte cell	-0.25867968092212973	13
+Zygote	-0.259870555310896	13
+Myeloid conventional dendritic cell	-0.259870555310896	13
+Classical dendritic cell b(cDCb)	-0.259870555310896	13
+Oligodendrocyte	-0.2598965131671528	13
+Mature dendritic cell	-0.2599780848704887	13
+CD1C+ dentritic cell	-0.2599780848704887	13
+Neuroepithelial cell	-0.2641065232488981	13
+Immature neutrophil	-0.264151749532843	13
+CD8+ T cell	-0.2645599133493876	13
+Activated effector cell	-0.2645599133493876	13
+Epithelial cell	-0.26465689555843547	13
+Embryonic stem cell	-0.26526774487021915	13
+Leukocyte	-0.26616448793520936	13
+Pan monocyte	-0.26666630651460943	13
+CD16 monocyte	-0.26666630651460943	13
+AXL+ SIGLEC6+ dendritic cell	-0.26666630651460943	13
+Granulocytic-UNK	-0.26666630651460943	13
+CD14 monocyte	-0.26666630651460943	13
+Memory T cell	-0.2674182545566785	13
+Goblet cell	-0.2676468928428673	13
+Naive CD4+ T cell	-0.26825210907282543	13
+Activated B cell	-0.2689165028235525	13
+Immune oligodendroglial cell(imOLG)	-0.2689165028235525	13
+Mesenchymal stem cell	-0.2689165028235525	13
+Follicular B cell	-0.2689165028235525	13
+Memory CD4+ T cell	-0.26933546034875333	13
+Homeostatic chondrocyte	-0.26997358127322707	13
+Activated langerhans cell	-0.27001293272205956	13
+Circulating fetal cell	-0.2701062789616727	13
+Multipotent progenitor cell	-0.2701062789616727	13
+Granulocytic myeloid-derived suppressor cell(G-MDSC)	-0.2701062789616727	13
+Monocyte progenitor cell	-0.2701062789616727	13
+Monocytic myeloid-derived suppressor cell	-0.2701062789616727	13
+Conventional dendritic cell 2-A (cDC2-A)	-0.2701062789616727	13
+Conventional dendritic cell 2-B (cDC2-B)	-0.2701062789616727	13
+Conventional dendritic cell 1(cDC1)	-0.2701062789616727	13
+Conventional dendritic cell	-0.2701062789616727	13
+Axl+ CD11c+ Plasmacytoid dendritic cell (CD11c+ Axl+DC)	-0.2701062789616727	13
+Pre-conventional dendritic cell	-0.2701062789616727	13
+Polymorphonuclear myeloid-derived suppressor cell	-0.2701062789616727	13
+Transitional dendritic cell	-0.2701062789616727	13
+Suppressive monocyte	-0.2701062789616727	13
+CD16+ dendritic cell	-0.2701062789616727	13
+Hematopoietic stem cell	-0.2701062789616727	13
+Immature myeloid cell	-0.2701062789616727	13
+Intermediate monocyte	-0.2701062789616727	13
+Naive progenitor cell	-0.2701062789616727	13
+Dendritic cell progenitor	-0.2701062789616727	13
+Myeloid-derived suppressor cell	-0.2701062789616727	13
+Gonadal mitotic phase fetal germ cell	-0.2721772149781519	13
+Naive human pluripotent stem cell	-0.2727459071215279	13
+Adipose-derived stromal cell	-0.2727459071215279	13
+Human-induced pluripotent stem cell (iPSC)	-0.2727459071215279	13
+Tissue resident macrophage	-0.2727459071215279	13
+CD4+ T cell	-0.273129102198121	13
+Regulatory T(Treg) cell	-0.2745289320111819	13
+Beta cell(β cell)	-0.27579552076650476	13
+Pretubular aggregate cell	-0.2759738568706891	13
+CAR-T cell	-0.27607525050161946	13
+Dividing T cell	-0.27617419436590945	13
+Cycling transient-amplifying cell	-0.27617419436590945	13
+Proliferative lymphocyte	-0.27617419436590945	13
+Plasmablast	-0.27617419436590945	13
+4-cell stage cell (Blastomere)	-0.2764128071624738	13
+Prehypertrophic chondrocyte	-0.2765255157681952	13
+Corneal epithelial cell	-0.2765255157681952	13
+Effector CD4+ T cell	-0.27681362260006215	13
+Activated memory B cell	-0.2768831540687464	13
+White blood cell	-0.27720417526526053	13
+T helper cell	-0.2772362662872848	13
+Epiblast cell	-0.2772362662872848	13
+Secretory progenitor cell	-0.277284689240406	13
+Proliferative chondrocyte	-0.2773661209570767	13
+M1 microglial cell	-0.27764380200576605	13
+Tumor‐associated macrophage (TAM)	-0.27811376026484985	13
+Red blood cell (erythrocyte)	-0.27811376026484985	13
+Megakaryocyte progenitor cell	-0.27825607420832393	13
+Regulatory T (Treg) cell	-0.2788636568575988	13
+Neural stem cell	-0.279255069704016	13
+Radial glial cell	-0.279255069704016	13
+Stromal cell	-0.279255069704016	13
+Somatic cell	-0.279255069704016	13
+Interstitial cell	-0.279255069704016	13
+Limbal stem cell	-0.279255069704016	13
+Epicardium-derived cell	-0.279255069704016	13
+Myofibroblast	-0.279255069704016	13
+Microglia‐like cell	-0.2800227565757847	13
+Proximal stem cell	-0.2802951982551442	13
+Lake et al.Science.Ex4	-0.2804162913253371	13
+Brush cell (Tuft cell)	-0.2804162913253371	13
+Neuroendocrine cell	-0.2804162913253371	13
+Immunosuppressive neutrophil	-0.2804162913253371	13
+Regulatory chondrocyte	-0.2804162913253371	13
+Parietal progenitor cell	-0.2804162913253371	13
+8-cell stage cell (Blastomere)	-0.28057209418125423	13
+A2 astrocyte	-0.28078377612214245	13
+Megakaryocyte	10.491159814681373	14
+Platelet	2.974305195573906	14
+Microglial cell	1.244943862414718	14
+Megakaryocyte progenitor cell	1.2247278208291972	14
+Astrocyte	1.1366585533598044	14
+Mast cell	0.8526725104917932	14
+Endothelial cell	0.8067114031550002	14
+Macrophage	0.6868088571444337	14
+Stem cell	0.4807576294349039	14
+Excitatory neuron	0.39615863554120484	14
+Monocyte	0.3788940312988738	14
+Natural killer T (NKT) cell	0.3436500952612638	14
+Fibrocartilage chondrocyte	0.29011216199728707	14
+Eosinophil	0.23855736919150322	14
+Mesenchymal stromal cell	0.21981349987169418	14
+Adipose-derived stem cell	0.21981349987169418	14
+Pericyte	0.1843496891027333	14
+Smooth muscle cell	0.1843496891027333	14
+Activated CD8+ T cell	0.17675041044476097	14
+Natural killer cell	0.17675041044476097	14
+Mitotic fetal germ cell	0.04464247248410488	14
+T cell	0.02411774156454599	14
+Effector memory T cell	0.001783391025065212	14
+Progenitor cell	-0.058122999774472266	14
+Migration phase fetal germ cell	-0.12082784540493782	14
+Mitotic arrest phase fetal germ cell	-0.12182957027641216	14
+Sertoli cell	-0.12808832817576668	14
+Gonadal endothelial cell	-0.1312704240613783	14
+Myeloid cell	-0.13494679192235343	14
+Patelet	-0.13511855028443934	14
+CD1C-CD141- dendritic cell	-0.14764388136933215	14
+Multilymphoid progenitor cell	-0.1502725609109454	14
+Gonadal mitotic phase fetal germ cell	-0.15216333578004151	14
+Oogenesis phase fetal germ cell	-0.15329240550542111	14
+Leydig cell	-0.15582953441724598	14
+Epithelial cell	-0.1658674601875371	14
+B cell	-0.16823380921713157	14
+Circulating fetal cell	-0.16999023265126614	14
+Paneth cell	-0.17221900295698517	14
+Fibroblast	-0.17574477969279947	14
+Lymphoid-primed multipotent progenitor cell(LMPP)	-0.17749971689197722	14
+Ionocyte cell	-0.17862840658557197	14
+Hematopoietic cell	-0.18289155011241778	14
+Oligodendrocyte progenitor cell	-0.18442300947932916	14
+CD141+CLEC9A+ dendritic cell	-0.1894422317338142	14
+Liver bud hepatic cell	-0.19058437787904567	14
+Embryonic stem cell	-0.19651983825149877	14
+Retinoid acid signaling-responsive fetal germ cell	-0.19707274495749671	14
+Trophectoderm cell	-0.19729076489314773	14
+Plasmacytoid dendritic cell	-0.20458950283710783	14
+Tissue resident memory T(TRM) cell	-0.20560379668714915	14
+Effector CD8+ memory T (Tem) cell	-0.209496243528706	14
+Neuron	-0.21005294019660734	14
+Granulosa cell	-0.21046669909621618	14
+Myofibroblast	-0.2109338510494145	14
+MKI67+ progenitor cell	-0.21180723218905542	14
+Oligodendrocyte	-0.21195547596677594	14
+Lymphoid cell	-0.21261218093303044	14
+Exhausted CD4+ T cell	-0.21645997670731412	14
+Idiopathic pulmonary fibrosis myofibroblast	-0.21646793603527262	14
+Osteocyte	-0.21646793603527262	14
+DCLK1+ progenitor cell	-0.21646793603527262	14
+Mature osteoblast	-0.21646793603527262	14
+Capillary cell	-0.21646793603527262	14
+Müller glial cell	-0.21647675898624663	14
+Alpha cell (α cell)	-0.21647675898624663	14
+Meiotic prophase fetal germ cell	-0.21675437330339745	14
+Dendritic cell	-0.21776808251329421	14
+FOXN4+ cell	-0.21897822359398678	14
+Enterocyte progenitor cell	-0.21941844224583906	14
+Spermatogonial cell	-0.2196120808359442	14
+CD16+ monocyte	-0.2196120808359442	14
+Disease-associated microglial cell	-0.2196120808359442	14
+Beta-like cell	-0.2196120808359442	14
+Periosteum-derived progenitor cell	-0.2196120808359442	14
+Classical monocyte	-0.2196120808359442	14
+Schwann cell	-0.2196120808359442	14
+Extravillous trophoblast	-0.2196120808359442	14
+Mesenchymal stem cell	-0.2196120808359442	14
+Dental pulp stem cell	-0.2196120808359442	14
+Delta cell	-0.2196120808359442	14
+Lipid-associated macrophage(LAM)	-0.2196120808359442	14
+Pluripotent stem cell	-0.2196120808359442	14
+Germinal center B cell	-0.2196120808359442	14
+Mesenchymal progenitor cell	-0.2196120808359442	14
+Spermatogenic cell	-0.2196120808359442	14
+Haematopoietic cell	-0.2196120808359442	14
+Cytotoxic CD4+ T cell	-0.22006238994362498	14
+FGFR1HighNME5- epithelial cell	-0.2219874520899919	14
+Myoid cell	-0.2220224865643557	14
+Mesangial cell	-0.2220224865643557	14
+Stromal cell	-0.2220224865643557	14
+m-Pericyte	-0.2220224865643557	14
+Leydig precursor cell	-0.22241003080240976	14
+Resident memory T cell	-0.2243476660069582	14
+Granulocyte-monocyte progenitor	-0.2243476660069582	14
+CD1C+_B dendritic cell	-0.2243476660069582	14
+CD1C+_A dendritic cell	-0.22609193344504339	14
+Mesenchymal cell	-0.22883167421605222	14
+Synthetic smooth muscle cell	-0.2290325164639773	14
+Effector chondrocyte	-0.2290325164639773	14
+FGFR1LowNME5- epithelial cell	-0.2290607489656446	14
+Basal cell	-0.23005475771695	14
+Naive CD4+ T cell	-0.23223877653411495	14
+Proliferative chondrocyte	-0.23223877653411495	14
+Naive CD8+ T cell	-0.23223877653411495	14
+Squamous epithelial cell	-0.23231838550452527	14
+Effector CD8 T cell	-0.2329131380720786	14
+Effector memory CD8+ T cell	-0.2329131380720786	14
+Activated effector cell	-0.2329131380720786	14
+M1 macrophage	-0.2329131380720786	14
+CD8+ T cell	-0.2329131380720786	14
+Cytotoxic CD8 T cell	-0.2329131380720786	14
+SLC16A7+ cell	-0.2329131380720786	14
+NK and T cell	-0.2329131380720786	14
+CD4+ cytotoxic T2 cell	-0.2329131380720786	14
+Gamma delta(γδ) T cell	-0.2329131380720786	14
+Immune cell	-0.2329131380720786	14
+Finally highly effector (TEMRA) memory T cell	-0.2329131380720786	14
+Ciliated cell	-0.2330637947848885	14
+Brush cell (Tuft cell)	-0.23358132872233273	14
+Neuroendocrine cell	-0.23358132872233273	14
+Activated B cell	-0.23552557133334598	14
+Neural progenitor cell	-0.23552557133334598	14
+Lake et al.Science.Ex8	-0.23790305896588806	14
+Acinar cell	-0.23847842771570132	14
+Epiblast cell	-0.23951181918283224	14
+Inflammatory fibroblast	-0.24056837187694646	14
+Homeostatic chondrocyte	-0.24056837187694646	14
+Memory T cell	-0.24216044709807397	14
+Pan-endothelial cell	-0.24216044709807397	14
+CD4+ T cell	-0.24276112263829963	14
+B cell	14.510935652829254	2
+Naive B cell	2.8670344817727256	2
+Dendritic cell	2.019663187963071	2
+Plasma cell	1.7062994543797594	2
+Plasmacytoid dendritic cell(pDC)	1.3998411772002803	2
+Macrophage	1.172697862855419	2
+Memory B cell	1.075427498141949	2
+Monocyte	0.906752708000146	2
+Microglial cell	0.8621164342167837	2
+Follicular B cell	0.8360493371581922	2
+Conventional dendritic cell 2(cDC2)	0.6557309622252372	2
+Plasmablast	0.502405193016171	2
+T follicular helper(Tfh) cell	0.3342357638835108	2
+Transitional B cell	0.2988501243460603	2
+Myeloid cell	0.2403994561063105	2
+Immune cell	0.2202441182254403	2
+Natural killer T (NKT) cell	0.2121194973753469	2
+T cell	0.20107955306026143	2
+Antigen-presenting cell	0.1870464626313732	2
+Mesenchymal stromal cell	0.17368325497977144	2
+Regulatory B(Breg) cell	0.16194534680127592	2
+M1 macrophage	0.15868162201777564	2
+Leukocyte	0.14546823706981743	2
+Astrocyte	0.10186831901843979	2
+Atypical memory B cell	0.10030288454666662	2
+Plasmacytoid dendritic cell	0.09785125555152077	2
+Non-switched memory B cell	0.09190735265426961	2
+Unswitched memory B cell(UnSw MB)	0.09190735265426961	2
+Immature B cell	0.08062229651706507	2
+Antibody-secreting cell	0.06313468077941127	2
+CD4+ T cell	0.023677180882816336	2
+Paneth cell	0.022976374910021052	2
+Endothelial cell	0.011487165665508302	2
+Pre-B cell	0.010075277761184743	2
+Inhibitory neuron	0.007579214419190368	2
+Multilymphoid progenitor cell	0.006741384986008441	2
+Pan-B cell	0.0020643832559280794	2
+Myeloid dendritic cell	-0.00027597815130709697	2
+Endocrine cell	-0.0019244849858888803	2
+Class-switched memory B cell	-0.006219042338578953	2
+Switched memory B cell(Sw MB)	-0.006219042338578953	2
+Oligodendrocyte	-0.015709498064067757	2
+Monocyte derived dendritic cell	-0.025245323879463533	2
+Alpha cell (α cell)	-0.04043667136796095	2
+Effector memory T cell	-0.04060081064934049	2
+Myoblast	-0.056439633067676284	2
+T helper(Th) cell	-0.06164019326193791	2
+Mitotic arrest phase fetal germ cell	-0.06475005529537127	2
+Secretory cell	-0.06843956694796575	2
+Oogenesis phase fetal germ cell	-0.06969896360144709	2
+CD141+CLEC9A+ dendritic cell	-0.07380336854916289	2
+Mast cell	-0.08332742265408433	2
+Cancer stem cell	-0.08354916966227555	2
+Meiotic prophase fetal germ cell	-0.09287512643637934	2
+SLC16A7+ cell	-0.09611177136314164	2
+Mitotic fetal germ cell	-0.09683670062361512	2
+Classical monocyte	-0.09995908104582822	2
+Marginal zone B cell	-0.11355991614349359	2
+Definitive endoderm cell	-0.11916404837734894	2
+Germinal center cell	-0.12046828867425602	2
+Follicular cell	-0.12046828867425602	2
+Muscle satellite cell	-0.12112317162839248	2
+Mesenchymal stem cell	-0.1221720067077657	2
+Natural killer cell	-0.12352475787005374	2
+Mature B cell	-0.12381199404600468	2
+Gonadal endothelial cell	-0.12430628930606402	2
+Secretory progenitor cell	-0.12476443810900724	2
+Granulosa cell	-0.12642795441664573	2
+Sertoli cell	-0.12776690411472297	2
+Stem cell	-0.1335308505733049	2
+Progenitor cell	-0.13980280030482223	2
+Lymphocyte	-0.14214580334429153	2
+Activated B cell	-0.14295526271169873	2
+Germinal center B cell	-0.1447205802308722	2
+Mononuclear phagocyte	-0.1448045044616521	2
+Leydig cell	-0.14504513983158332	2
+AXL+SIGLEC6+ dendritic cell	-0.15134875269243098	2
+Natural regulatory T cell	-0.15253704352321873	2
+Oligodendrocyte progenitor cell	-0.15318628888394292	2
+Retinoid acid signaling-responsive fetal germ cell	-0.15456864854413152	2
+Trophectoderm cell	-0.15481443282302168	2
+Ciliated epithelial cell	-0.15535108152593535	2
+Ionocyte cell	-0.155732545201912	2
+CD1C-CD141- dendritic cell	-0.15600376381908285	2
+Ciliated cell	-0.15652803826733735	2
+CAR-T cell	-0.15679731127963567	2
+Leydig precursor cell	-0.15814766956857945	2
+Hematopoietic stem cell	-0.15940829069413331	2
+CD8+ T cell	-0.15965383693170684	2
+Exhausted CD4+ T cell	-0.15968479735891714	2
+Goblet cell	-0.1597360351682509	2
+Hematopoietic cell	-0.16115237477211117	2
+Basophil	-0.16170396348799757	2
+Neutrophil	-0.16179143289899695	2
+Atypical B cell(ABC)	-0.16245180208360363	2
+Aged memory B cell	-0.16306673003750283	2
+Pre-dendritic cell	-0.163421514655337	2
+FGFR1HighNME5- epithelial cell	-0.163483513905044	2
+Fibroblast	-0.16378328060705283	2
+Lymphoid-primed multipotent progenitor cell(LMPP)	-0.1639859970595517	2
+4-cell stage cell (Blastomere)	-0.16446952958130262	2
+Enterocyte progenitor cell	-0.16469005578151294	2
+Pit progenitor cell	-0.16502338734751476	2
+Thymus seeding progenitor (TSP)	-0.16528640561005928	2
+Enterocyte	-0.16534521531379304	2
+Megakaryocyte	-0.16553218807184014	2
+B-2 cell	-0.16553218807184014	2
+Neural progenitor cell	-0.16618993309104899	2
+AXL+ SIGLEC6+ dendritic cell	-0.1664716382459166	2
+T helper cell	-0.16648345153298005	2
+Multipotent progenitor cell	-0.16657850893277595	2
+Gonadal mitotic phase fetal germ cell	-0.16691486494739288	2
+CD1C+_A dendritic cell	-0.16714705127831245	2
+Monocyte-derived dendritic cell	-0.16714705127831245	2
+Migration phase fetal germ cell	-0.16721823445794423	2
+Embryonic stem cell	-0.16721823445794423	2
+Fibrocartilage chondrocyte	-0.16726081971202622	2
+CLEC10A+ dendritic cell	-0.16746523048914194	2
+Naive CD8+ T cell	-0.16820505744990047	2
+Migratory langerhans cell	-0.16846935599573143	2
+Mural cell	-0.16865051114860183	2
+Lymphoblastoid cell	-0.16867144165172057	2
+Conventional dendritic cell 1(cDC1)	-0.1691145375213282	2
+Regulatory T (Treg) cell	-0.16918818599908872	2
+Acinar cell	-0.1695617769192848	2
+Epithelial cell	-0.16958412113342905	2
+CD34+ pre-B cell	-0.16973460010689911	2
+Interneuron	-0.17050201519961786	2
+Neuron	-0.1705244214550649	2
+Basal cell	-0.1705340007360532	2
+Hypertrophic chondrocyte	-0.1705513611385966	2
+Myeloid dendritic cell 1	-0.17065756884015315	2
+Beta cell(β cell)	-0.17084733397600066	2
+Innate lymphoid cell	-0.1708554870857855	2
+Activated effector cell	-0.1709708169355511	2
+Epithelial hair follicle stem cell	-0.1711703692816068	2
+Portal vein epithelial cell	-0.1711703692816068	2
+Adipose-derived stromal cell	-0.1711703692816068	2
+Adipose-derived stem cell	-0.1711703692816068	2
+Corneal endothelial cell	-0.1711703692816068	2
+Bulge stem cell	-0.1711703692816068	2
+Class switched memory B IgGκ cell	-0.17146226192989988	2
+Negative mesenchymal stem cell	-0.17146226192989988	2
+Lymphoid cell	-0.17146226192989988	2
+Switched memory B cell	-0.17146226192989988	2
+Unswitched plasmablast	-0.17146226192989988	2
+Activated CD4+ T cell	-0.17146226192989988	2
+Circulating activated B cell	-0.17146226192989988	2
+Non class-switched memory B cell	-0.17146226192989988	2
+CD27+ memory B cell	-0.17146226192989988	2
+Regulatory B cell	-0.17146226192989988	2
+Resting naive B cell	-0.17146226192989988	2
+Resting memory B cell	-0.17146226192989988	2
+Memory CD27- B cell	-0.17146226192989988	2
+Memory CD27+ B cell	-0.17146226192989988	2
+T1 (Transitional) B cell	-0.17146226192989988	2
+Marginal zone(MZ)-like B cell	-0.17146226192989988	2
+Plasmablast like cell	-0.17146226192989988	2
+Pro-B cell	-0.17146226192989988	2
+Immature transitional B cell	-0.17146226192989988	2
+IgM only B cell	-0.17146226192989988	2
+Plasmablast B cell	-0.17146226192989988	2
+Peripheral blood mononuclear cell (PBMC)	-0.17146226192989988	2
+Multipotent mesenchymal stroma cell	-0.17146226192989988	2
+Monocyte lineage	-0.17146226192989988	2
+Class switched plasmablast	-0.17146226192989988	2
+Pericyte	-0.17146226192989988	2
+Double-negative memory B cell	-0.17146226192989988	2
+Double-negative B cell	-0.17146226192989988	2
+Terminal differentiated B cell	-0.17146226192989988	2
+T2 (Transitional) B cell	-0.17146226192989988	2
+Retina cell	-0.1720389174088169	2
+Mantle B cell	-0.17223057311708428	2
+Myofibroblast	-0.17263119717214687	2
+Mesothelial cell	-0.17263119717214687	2
+Sinusoidal endothelial cell	-0.17266774261454504	2
+Dividing plasma B cell	-0.17295352717976253	2
+CLEC9A+ dendritic cell	-0.17298592182537456	2
+Immune oligodendroglial cell(imOLG)	-0.17298592182537456	2
+Blood cell	-0.17298592182537456	2
+Conventional dendritic cell(cDC)	-0.1731826646608851	2
+hMSC-treated B cell	-0.17320266739991919	2
+Dendritic cell 2A	-0.17329574648687535	2
+Dendritic cell progenitor	-0.17375425611580558	2
+Lake et al.Science.Ex8	-0.17390001397976035	2
+Regulatory T(Treg) cell	-0.17475406105568406	2
+Exhausted T(Tex) cell	-0.17476687712748706	2
+Epiblast cell	-0.17476687712748706	2
+Myeloid conventional dendritic cell	-0.17476687712748706	2
+Cardiac precursor cell	-0.17487565707703326	2
+Cardiomyocyte	-0.17487565707703326	2
+Smooth muscle cell	-0.17487565707703326	2
+Monocyte progenitor cell	-0.17499213689739065	2
+Dermal cell	-0.17522052261444238	2
+Follicular cytotoxic CD8+ T cell	-0.17522912896320092	2
+Follicular regulatory T(Tfr) cell	-0.17522912896320092	2
+Memory CD4+ T cell	-0.17522912896320092	2
+Exhausted CD8+ T progenitor cell	-0.17522912896320092	2
+Follicular T helper-like memory cell	-0.17522912896320092	2
+T follicular helper cell	-0.17522912896320092	2
+Circulating T follicular helper cell	-0.17522912896320092	2
+Effector memory CD4+ T cell	-0.17522912896320092	2
+T helper 17(Th17) cell	-0.17522912896320092	2
+Activated tissue resident memory CD8+ T cell	-0.17522912896320092	2
+Activated effector memory CD8+ T cell	-0.17522912896320092	2
+T helper 1(Th1) cell	-0.17522912896320092	2
+Tissue resident memory CD8+ T cell	-0.17522912896320092	2
+Ventral lateral ganglionic eminence precursor cell	-0.17555285165529175	2
+MKI67+ progenitor cell	-0.17555285165529175	2
+D1-MSN(medium spiny neuron)	-0.17555285165529175	2
+White preadipocyte	-0.17583357323486085	2
+Prehypertrophic chondrocyte	-0.1764884830444075	2
+CD1C+_B dendritic cell	-0.17714127228741594	2
+Lake et al.Science.In3	-0.17741920304670686	2
+Liver bud hepatic cell	-0.1775234900637468	2
+Type 3 dendritic cell (DC3)	-0.1779918632214753	2
+Mature dendritic cell	-0.1779918632214753	2
+CD1C+ dentritic cell	-0.1779918632214753	2
+CCR7+ dendritic cell	-0.17877924315352015	2
+Eosinophil	-0.17879871789251278	2
+Pro-neutrophil	-0.17879871789251278	2
+Myeloid-derived suppressor cell	-0.17879871789251278	2
+Naive CD4 T cell	-0.17881643782310797	2
+B progenitor cell	-0.17881643782310797	2
+Granulocyte-monocyte progenitor	-0.17911822255477378	2
+Limbal epithelial stem cell	-0.17913891268029253	2
+Effector memory CD8+ T cell	-0.17913891268029253	2
+Artery cell	-0.17913891268029253	2
+M2 macrophage	-0.17913891268029253	2
+Pancreatic stem cell	-0.17913891268029253	2
+Globose basal cell	-0.17913891268029253	2
+Tip cell	-0.17913891268029253	2
+Angiogenic T cell	-0.17913891268029253	2
+Endocrine progenitor cell	-0.17913891268029253	2
+DCLK1+ progenitor cell	-0.17924286820468105	2
+CD56bright Natural killer cell	-0.17927207044886243	2
+Fetal myoblast	-0.17927207044886243	2
+Effector CD8+ memory T (Tem) cell	-0.17927344989439847	2
+Mature osteoblast	-0.17941837941610525	2
+Interstitial macrophage	-0.17943682281578385	2
+T cell	8.099206735730048	3
+Natural killer cell	6.830479022109247	3
+CD8+ T cell	4.864354315634137	3
+Cytotoxic T cell	1.692384482203354	3
+Natural killer T(NKT) cell	1.4160245268992318	3
+Regulatory T(Treg) cell	1.2452758456959676	3
+CD4+ T cell	1.1557979474842346	3
+Natural killer T (NKT) cell	0.9188071804299915	3
+Effector memory CD8+ T cell	0.8830450747661824	3
+Activated CD8+ T cell	0.725105412934767	3
+Immune cell	0.6318452230284077	3
+Exhausted T(Tex) cell	0.5996794073430972	3
+Naive CD8+ T cell	0.5939982696027959	3
+Tissue resident memory T(TRM) cell	0.49740303115101236	3
+Gamma delta(γδ) T cell	0.47413300267462916	3
+Lymphocyte	0.44880011351884275	3
+Mucosa-associated invariant T (MAIT) cell	0.41625407511943774	3
+Memory CD8+ T cell	0.3380214317483744	3
+Cytotoxic CD4+ T cell	0.32809302168909926	3
+Microglial cell	0.3164848809317644	3
+CD8 T cell	0.31539545176311523	3
+T helper 1(Th1) cell	0.3052795406769433	3
+T follicular helper(Tfh) cell	0.19571044746010072	3
+Exhausted CD8+ T cell	0.1846831921175356	3
+Cytotoxic CD8+ T cell	0.1420130500582845	3
+Effector CD8+ T cell	0.12563445209811464	3
+Regulatory CD4+ T cell	0.11857197090692101	3
+Effector memory T cell	0.05249337254955388	3
+T helper 17(Th17) cell	0.0386302412005747	3
+Innate lymphoid cell	0.0386302412005747	3
+Activated T cell	0.010205117505933182	3
+Effector memory CD4+ T cell	-0.03344564288350682	3
+Exhausted CD4+ T cell	-0.046091482023963556	3
+Naive T(Th0) cell	-0.07103263798164974	3
+Memory T cell	-0.07718981686788781	3
+Memory CD4+ T cell	-0.0809880024843243	3
+Effector CD4+ T cell	-0.09694285892493976	3
+Plasmacytoid dendritic cell	-0.10320259614142924	3
+Naive CD4+ T cell	-0.10423254266622548	3
+Astrocyte	-0.11517884211607769	3
+Progenitor cell	-0.11857398675289872	3
+Intermediate progenitor cell	-0.11857398675289872	3
+Definitive endoderm cell	-0.11857398675289872	3
+Mast cell	-0.13828750365024178	3
+Radial glial cell	-0.15963130159973515	3
+Outer radial glia	-0.15963130159973515	3
+Dendritic cell lineage	-0.16006600988418043	3
+Effector CD8 T cell	-0.21077388301705388	3
+Monocyte	-0.21119648421656367	3
+Finally highly effector (TEMRA) memory T cell	-0.21379969070021398	3
+Leukocyte	-0.23144713053299606	3
+CD8+ recently activated effector memory or effector T cell (CTL)	-0.23204878267803936	3
+CD4+ recently activated effector memory or effector T cell (CTL)	-0.23703691658949802	3
+Effector CD8+ memory T (Tem) cell	-0.23966196646860827	3
+Effector T(Teff) cell	-0.24001730822405878	3
+Regulatory T (Treg) cell	-0.24187869788190725	3
+T helper cell	-0.24813441239109793	3
+SLC16A7+ cell	-0.24963215785363332	3
+Sertoli cell	-0.2502312748668585	3
+Hematopoietic cell	-0.2520172261591908	3
+CD8+ mucosal-associated invariant T cell(CD8+ MAIT)	-0.2574624596270309	3
+Gonadal endothelial cell	-0.25748944806483753	3
+Cytotoxic CD8 T cell	-0.2659312934707383	3
+Terminal effector CD8+ T cell	-0.26727585140655463	3
+Effector regulatory T(eTreg) cell	-0.27046605207266333	3
+CD4+ cytotoxic T2 cell	-0.2722359586579319	3
+Multilymphoid progenitor cell	-0.2725361150603946	3
+Effector natural killer cell	-0.27499622847557126	3
+CD4 T cell	-0.2756847654701681	3
+Activated effector cell	-0.2767315418952459	3
+GZMK CD8 cell	-0.2780144267572747	3
+Megakaryocyte	-0.2791215836527162	3
+NK and T cell	-0.27966647808885087	3
+Early effector T cell	-0.2809615178296653	3
+Oogenesis phase fetal germ cell	-0.28135301842996	3
+B cell	-0.2814267041694497	3
+lrNK cell	-0.2816852922885667	3
+Tissue resident cell	-0.2835591372753767	3
+Neural progenitor cell	-0.28366300223354185	3
+Central memory T cell	-0.28481182622705364	3
+Myeloid cell	-0.2859874450349254	3
+CD4+ cytotoxic T1 cell	-0.2866700831910674	3
+Cytotoxic CD4+ T2 cell	-0.2866700831910674	3
+Naive cytotoxic T cell	-0.2866759820295222	3
+Proliferative CD8+ T cell	-0.2866759820295222	3
+Regulatory CD8+ T cell	-0.2866759820295222	3
+Cytotoxic lymphocyte	-0.2876507418827545	3
+Senescent CD8+ T Cell	-0.28796347312658216	3
+T cell & Natural killer cell	-0.28860671759098533	3
+Cytotoxic T cell 2	-0.2898602838571761	3
+Naive T cell	-0.2902677503798218	3
+Acinar cell	-0.29090449577308525	3
+Cytotoxic T helper 1 cell	-0.2911097519829667	3
+T helper(Th) cell	-0.2911097519829667	3
+T helper 2(Th2) cell	-0.29191107663828786	3
+AXL+SIGLEC6+ dendritic cell	-0.2920922948310907	3
+Activated CD4+ T cell	-0.2924716779419551	3
+CD141+CLEC9A+ dendritic cell	-0.29274088196728965	3
+Eosinophil	-0.2942494629985046	3
+M1 macrophage	-0.2942494629985046	3
+Tc 17 cell	-0.2952935173449881	3
+Tissue resident memory CD4+ T cell	-0.2952935173449881	3
+Effector memory CD8 T cell	-0.295544502739319	3
+Transitional CD8+ T cell	-0.295544502739319	3
+CD56+ natural killer cell	-0.29677553858064737	3
+CD34+ pre-T cell	-0.29677553858064737	3
+Mait-like cell	-0.2976963175522641	3
+Granulocyte-monocyte progenitor	-0.29857031042247906	3
+Regulatory T cell 1	-0.29942389137540576	3
+CD25+LAG3+ T cell	-0.29942389137540576	3
+CD4 peripherally derived regulatory T cell	-0.29942389137540576	3
+Exausted T(Tex) cell	-0.29942389137540576	3
+CD25 LAG3+ T cell	-0.29942389137540576	3
+Meiotic prophase fetal germ cell	-0.30013819831542893	3
+Intestinal cell	-0.30127112181796145	3
+Enterocyte progenitor cell	-0.30127112181796145	3
+Responding conventional T cell	-0.30284413205257804	3
+Highly differentiated effector CD8 + T cell	-0.30310705933990306	3
+Short-lived effector cell (SLEC)	-0.30310705933990306	3
+Granulosa cell	-0.3037267044444845	3
+Homeostatic chondrocyte	-0.3037267044444845	3
+Liver bud hepatic cell	-0.3037267044444845	3
+Stromal cell	-0.30420605801156647	3
+Proliferative T cell	-0.30420605801156647	3
+Proliferative CD4+ T cell	-0.30420605801156647	3
+CD4+ T helper cell	-0.30420605801156647	3
+Cardiomyocyte	-0.30420605801156647	3
+Dividing T cell	-0.30420605801156647	3
+Mesoderm cell	-0.3051808178647988	3
+Neuronal intermediate progenitor cell	-0.3051808178647988	3
+Neuron	-0.3051808178647988	3
+Mesendodermal cell	-0.3051808178647988	3
+Neuroendocrine cell	-0.3065508940355606	3
+Brush cell (Tuft cell)	-0.3065508940355606	3
+T helper1 (Th1) cell	-0.30705466285160876	3
+Memory B cell	-0.30705466285160876	3
+Memory Stem Cell(Tscm)	-0.30705466285160876	3
+T peripheral helper(Tph) cell	-0.30705466285160876	3
+CD4+ T helper 1 cell	-0.30705466285160876	3
+CD8+ T helper 1 cell	-0.30705466285160876	3
+Circulating T follicular helper cell	-0.30705466285160876	3
+Alpha cell (α cell)	-0.3072201741768791	3
+Ciliated cell	-0.3072201741768791	3
+FOXN4+ cell	-0.3078020039546461	3
+Thymus seeding progenitor (TSP)	-0.30797140310519344	3
+Secretory progenitor cell	-0.30797140310519344	3
+Smooth muscle cell	-0.30797140310519344	3
+Activated natural killer cell	-0.3080009493754981	3
+AXL+ SIGLEC6+ dendritic cell	-0.3080009493754981	3
+Myeloid conventional dendritic cell	-0.3080009493754981	3
+Axl+ CD123+ Plasmacytoid dendritic cell (CD123+ Axl+DC)	-0.3080009493754981	3
+CD1C+_A dendritic cell	-0.3080009493754981	3
+Axl+ CD11c+ Plasmacytoid dendritic cell (CD11c+ Axl+DC)	-0.3080009493754981	3
+Neural stem cell	-0.3080105036910939	3
+Oligodendrocyte progenitor cell	-0.3080497665200894	3
+Paneth cell	-0.3082245924684818	3
+Mitotic arrest phase fetal germ cell	-0.3082245924684818	3
+CD1C-CD141- dendritic cell	-0.3082245924684818	3
+Cytotoxic natural killer cell	-0.30843320370532823	3
+Naive CD8+ T cell	4.440128927328588	4
+T cell	3.830139892463197	4
+Naive CD4+ T cell	3.7575078650471188	4
+Central memory CD4+ T cell	3.149532115037097	4
+Central memory CD8+ T cell	2.955286259894979	4
+Naive T(Th0) cell	2.916166223814287	4
+Naive CD4 T cell	2.774392734024828	4
+CD4+ T cell	2.6239063845887953	4
+CD8+ T cell	2.209197061309173	4
+Central memory T cell	1.6725538343464945	4
+Natural killer cell	1.2123356377818175	4
+B cell	0.5738547414626783	4
+Natural killer T (NKT) cell	0.44859180810836197	4
+Regulatory T(Treg) cell	0.4068672671344649	4
+Natural killer T(NKT) cell	0.3719677114701199	4
+Dendritic cell	0.34475154903988625	4
+Macrophage	0.34475154903988625	4
+Immune cell	0.20473272231841017	4
+Naive CD8 T cell	0.14440543447638135	4
+Basal cell	0.0960065683672517	4
+Basal epithelial cell	0.0960065683672517	4
+Memory T cell	0.08933536093655572	4
+Naive T cell	0.06056197041574014	4
+Stem memory T cell	0.06056197041574014	4
+Activated dendritic cell	0.06056197041574014	4
+Oligodendrocyte	0.05731930611776058	4
+Memory CD4+ T cell	0.03234821441376394	4
+Regulatory CD4+ T cell	-0.029571055252393428	4
+CD8 T cell	-0.029571055252393428	4
+Gamma delta(γδ) T cell	-0.029571055252393428	4
+Lymphocyte	-0.029571055252393428	4
+Cytotoxic T cell	-0.029571055252393428	4
+Mitotic arrest phase fetal germ cell	-0.3326052071195699	4
+Astrocyte	-0.3420130378295874	4
+Leydig precursor cell	-0.38213729119023077	4
+Sertoli cell	-0.3836200483184111	4
+Endothelial cell	-0.3842813916490427	4
+Goblet cell	-0.3852607346089676	4
+Activated CD4+ T cell	-0.38923516995451835	4
+T helper cell	-0.38923516995451835	4
+Epidermal cell	-0.3893373900405773	4
+Stem cell	-0.3917464899114334	4
+Multilymphoid progenitor cell	-0.3970904510716092	4
+Effector CD4+ T cell	-0.3971150116170509	4
+Mitotic fetal germ cell	-0.39760565329715536	4
+Ionocyte cell	-0.3984224061159374	4
+Enterocyte	-0.40893190536547724	4
+Granulosa cell	-0.4113011056508551	4
+Spermatogonial cell	-0.41559946060447783	4
+Epithelial cell	-0.41559946060447783	4
+Trophoblast cell	-0.41559946060447783	4
+Embryonic stem cell	-0.41559946060447783	4
+Spermatogonial stem cell	-0.41559946060447783	4
+Lake et al.Science.Ex5	-0.41619988641592454	4
+Migration phase fetal germ cell	-0.41619988641592454	4
+Secretory cell	-0.4167774895037544	4
+Club cell (Clara cell)	-0.4167774895037544	4
+CCR7+ dendritic cell	-0.41800856047533386	4
+AIRE-enriched cell	-0.41800856047533386	4
+CD4+ central memory like T (Tcm-like) cell	-0.41800856047533386	4
+Conventional dendritic cell(cDC)	-0.41800856047533386	4
+Plasmacytoid dendritic cell(pDC)	-0.41800856047533386	4
+Tissue resident memory T(TRM) cell	-0.41800856047533386	4
+Thymus seeding progenitor (TSP)	-0.41800856047533386	4
+T memory stem cell	-0.41800856047533386	4
+Naive B cell	-0.41800856047533386	4
+Recent thymic T-cell emigrant	-0.41800856047533386	4
+Cancer cell	-0.41800856047533386	4
+Migratory dendritic cell	-0.41800856047533386	4
+Central memory T helper 1 cell	-0.41800856047533386	4
+Circulating memory T cell	-0.41800856047533386	4
+M1 macrophage	-0.41800856047533386	4
+Effector T(Teff) cell	-0.41800856047533386	4
+Memory B cell	-0.41800856047533386	4
+Effector CD4+ memory T (Tem) cell	-0.41800856047533386	4
+Monocyte	-0.41800856047533386	4
+Migratory langerhans cell	-0.41800856047533386	4
+Memory Stem Cell(Tscm)	-0.41800856047533386	4
+Memory CD4 T cell	-0.41800856047533386	4
+Fibroblast	-0.4182341793045642	4
+Primitive endoderm cell	-0.4182341793045642	4
+Fibrocartilage chondrocyte	-0.4182341793045642	4
+Alpha cell (α cell)	-0.4197818988243074	4
+Ciliated epithelial cell	-0.42021713445868275	4
+Oligodendrocyte progenitor cell	-0.42092870385361214	4
+Ciliated cell	-0.42092870385361214	4
+Oogenesis phase fetal germ cell	-0.4230717813749146	4
+Leydig cell	-0.4235874908837101	4
+Microglial cell	-0.4235874908837101	4
+T helper(Th) cell	-0.4235874908837101	4
+Lake et al.Science.Ex4	-0.4237443016790545	4
+SLC16A7+ cell	-0.4237443016790545	4
+Activated CD8+ T cell	-0.4241347256188633	4
+Regulatory CD8+ T cell	-0.4241347256188633	4
+Proliferative T cell	-0.4241347256188633	4
+Proliferative CD8+ T cell	-0.4241347256188633	4
+Early effector T cell	-0.4241347256188633	4
+NK and T cell	-0.4241347256188633	4
+Proliferative CD4+ T cell	-0.4241347256188633	4
+Naive cytotoxic T cell	-0.4241347256188633	4
+CD4 T cell	-0.4241347256188633	4
+Exhausted CD4+ T cell	-0.4241347256188633	4
+Dividing T cell	-0.4241347256188633	4
+CD4+ T helper cell	-0.4241347256188633	4
+Memory CD8+ T cell	-0.4241347256188633	4
+Stromal cell	-0.4241347256188633	4
+Cardiomyocyte	-0.4241347256188633	4
+Exhausted CD8+ T cell	-0.4241347256188633	4
+Effector CD8+ T cell	-0.4241347256188633	4
+Distal tubule & loop of Henle cell	-0.4244905371035623	4
+Epiblast cell	-0.4246253672989678	4
+Plasmacytoid dendritic cell	-0.4246844766798378	4
+Regulatory T (Treg) cell	-0.4246844766798378	4
+Morula cell (Blastomere)	-0.42588840213786644	4
+Lymphoblast	-0.4266460455757784	4
+Retinoid acid signaling-responsive fetal germ cell	-0.4266460455757784	4
+Monocyte	14.70671728025557	5
+Macrophage	8.105636654680183	5
+Microglial cell	6.715425818584166	5
+Myeloid cell	4.043960110395736	5
+Dendritic cell	3.8548580152481184	5
+Neutrophil	2.726712336147237	5
+Astrocyte	1.4166509605180213	5
+B cell	1.1960423297547036	5
+Classical monocyte	0.8647359806104715	5
+CD14+ monocyte	0.8443176065645259	5
+Paneth cell	0.7839652098615436	5
+Endothelial cell	0.7058775041640061	5
+M1 macrophage	0.6031677240767701	5
+Fibroblast	0.5902958924157766	5
+Natural killer cell	0.51444331728552	5
+CD1C-CD141- dendritic cell	0.5096831007009175	5
+Conventional dendritic cell 2(cDC2)	0.41310066695698866	5
+Intermediate monocyte	0.3910760324989369	5
+Natural killer T (NKT) cell	0.3849979753822328	5
+Mesenchymal stem cell	0.3767488582020827	5
+CD16+ monocyte	0.3560066566674138	5
+CD4+ T cell	0.3079156363505652	5
+Myeloid dendritic cell	0.30373298190646764	5
+Kupffer cell	0.2785036486962624	5
+Oligodendrocyte	0.27043756694655535	5
+Epithelial cell	0.25485734495897905	5
+Leukocyte	0.23480315436248023	5
+Immune cell	0.21943507828457673	5
+Mast cell	0.1821917759181062	5
+T cell	0.17719866468250162	5
+M2 macrophage	0.17646921643061325	5
+Non-classical monocyte	0.17114239665317216	5
+Antigen-presenting cell	0.16855215808443605	5
+Mesenchymal cell	0.15573458855154942	5
+Oligodendrocyte progenitor cell	0.14218394561620085	5
+CD1C+_B dendritic cell	0.14004796051079385	5
+Neuron	0.1390608600959574	5
+Granulocyte	0.13765041894995564	5
+Mesenchymal stromal cell	0.13697812638074597	5
+Monocyte-derived dendritic cell	0.13547760053941277	5
+Regulatory T(Treg) cell	0.13174504636698264	5
+Cardiomyocyte	0.12438645265974023	5
+Monocyte-derived macrophage	0.10312530977163417	5
+Monocyte Myeloid-derived suppressor cell (M-MDSC)	0.10312070257007927	5
+Natural killer T(NKT) cell	0.10310415265053785	5
+Mononuclear phagocyte	0.10014053118353292	5
+Cholangiocyte	0.08987245549000591	5
+Cancer stem cell	0.0808855572136335	5
+Dendritic cell lineage	0.07588189350518279	5
+Alveolar macrophage	0.06800830429927786	5
+Effector memory T cell	0.06291285771952865	5
+Memory T cell	0.06260786751282252	5
+Memory CD4+ T cell	0.059151516643434265	5
+Basophil	0.05767700934669629	5
+Mitotic arrest phase fetal germ cell	0.05524501215247395	5
+Mitotic fetal germ cell	0.048611264110122725	5
+Naive CD4+ T cell	0.03533463078987053	5
+Gonadal endothelial cell	0.034894204651256616	5
+Oogenesis phase fetal germ cell	0.03321621940519729	5
+Oligodendrocyte precursor cell	0.030699354449135543	5
+Progenitor cell	0.02298889613679864	5
+Myeloid derived suppressor cell (MDSC)	0.02285678142640123	5
+Sertoli cell	0.019306594155056575	5
+T helper(Th) cell	0.009743359422225106	5
+CD14 monocyte	0.006074873217321867	5
+T helper 17(Th17) cell	-0.00187329958363189	5
+Activated CD4+ T cell	-0.0033236584876184688	5
+Effector memory CD4+ T cell	-0.008304933983111143	5
+Regulatory T (Treg) cell	-0.015032839625275284	5
+Multilymphoid progenitor cell	-0.01536150758195305	5
+Megakaryocyte	-0.018360963138712032	5
+CD14+CD16+ monocyte	-0.019578582782345595	5
+Ciliated cell	-0.021757153665880505	5
+T helper cell	-0.023037058627234205	5
+Liver bud hepatic cell	-0.02441767317643645	5
+Naive B cell	-0.03845765479179327	5
+CD8+ T cell	-0.0387711002072222	5
+Excitatory neuron	-0.04319533290197857	5
+Granulosa cell	-0.045180463414696656	5
+Ductal cell	-0.04569731357207649	5
+Naive T(Th0) cell	-0.04813290435514394	5
+Histiocyte	-0.05259988843684615	5
+Basal cell	-0.05351760662627968	5
+SLC16A7+ cell	-0.054774254477718574	5
+Hepatocyte	-0.06202414284511215	5
+Central memory T cell	-0.06329760777282813	5
+Hematopoietic stem cell	-0.06902364170869112	5
+Activated microglial cell	-0.06914949825373516	5
+Pan-macrophage	-0.06914949825373516	5
+Central memory CD4+ T cell	-0.07002551341499229	5
+T follicular helper(Tfh) cell	-0.07002551341499229	5
+T helper 1(Th1) cell	-0.07002551341499229	5
+Acinar cell	-0.07143632033198728	5
+Tumor‐associated macrophage (TAM)	-0.07469418987843389	5
+Trophectoderm cell	-0.07678418253381855	5
+Granulocyte-monocyte progenitor	-0.08086444209393893	5
+Adipose-derived stem cell	-0.08340993985479317	5
+Meiotic prophase fetal germ cell	-0.09035113607380788	5
+Mature dendritic cell	-0.09325552781332333	5
+Stem cell	-0.09511912099244998	5
+Migration phase fetal germ cell	-0.09640007477823578	5
+Lymphocyte	-0.09815876511070097	5
+T helper 2(Th2) cell	-0.09815876511070097	5
+Responder T cell	-0.09815876511070097	5
+Regulatory CD4+ T cell	-0.09815876511070097	5
+Podocyte	-0.10018646143142233	5
+Ionocyte cell	-0.10994422411188898	5
+Fibrocartilage chondrocyte	-0.11061127274717011	5
+CD1C+_A dendritic cell	-0.11260927719366702	5
+Leydig cell	-0.1146749620265761	5
+Follicular helper (Tfh) T cell	-0.11548031173464744	5
+Secretory cell	-0.11729721110149308	5
+Ciliated epithelial cell	-0.11739028878776328	5
+Retinoid acid signaling-responsive fetal germ cell	-0.11963417352189692	5
+Type 3 dendritic cell (DC3)	-0.11982488052784984	5
+Delta cell	-0.12184914476140936	5
+Follicular B cell	-0.12274024200749349	5
+Monocyte derived dendritic cell	-0.12476560982970966	5
+Effector T(Teff) cell	-0.1258655410110476	5
+Neural progenitor cell	-0.1266756644683213	5
+Gonadal mitotic phase fetal germ cell	-0.1268313412945782	5
+Effector CD4+ T cell	-0.129276612770938	5
+Secretory progenitor cell	-0.13092118608589232	5
+CD141+CLEC9A+ dendritic cell	-0.13397279450067884	5
+Eosinophil	-0.13469395686869098	5
+Proliferative CD4+ T cell	-0.13757472214870442	5
+Gamma delta(γδ) T cell	-0.13757472214870442	5
+Plasmacytoid dendritic cell	-0.1378400006090745	5
+Exhausted CD4+ T cell	-0.13800819441332182	5
+AXL+SIGLEC6+ dendritic cell	-0.13940734474306002	5
+Enterocyte progenitor cell	-0.14198778472463122	5
+Hematopoietic cell	-0.14330033921046761	5
+Homeostatic chondrocyte	-0.14964299137768203	5
+CLEC10A+ dendritic cell	-0.152450402682458	5
+Natural regulatory T cell	-0.1545513811205003	5
+Leydig precursor cell	-0.15927939254125248	5
+Meyloid cell	-0.16372478920071445	5
+Beta cell(β cell)	-0.16759588169925246	5
+Lymphoid-primed multipotent progenitor cell(LMPP)	-0.1688319001534593	5
+Stromal cell	-0.16909596749557304	5
+Activated memory B cell	-0.17165643837348143	5
+Pan monocyte	-0.1717420832795766	5
+Polymorphonuclear myeloid-derived suppressor(PMN-MDSC) cell	-0.1721637961586466	5
+CLEC9A+ dendritic cell	-0.17273939509429373	5
+Myofibroblast	-0.17357876859418234	5
+Effector CD8+ memory T (Tem) cell	-0.17388473150536413	5
+Immature B cell	-0.17389981753453534	5
+DCLK1+ progenitor cell	-0.17395880666814437	5
+Myeloid-derived suppressor cell	-0.17585059649705068	5
+FGFR1HighNME5- epithelial cell	-0.1762563444230549	5
+Neuroendocrine cell	-0.1763976554929373	5
+Brush cell (Tuft cell)	-0.1763976554929373	5
+Glial cell	-0.1768624226567269	5
+Cytotoxic CD4+ T cell	-0.17778465790209078	5
+Hofbauer cell	-0.17812583709199195	5
+Myeloid conventional dendritic cell	-0.1786033073327953	5
+FOXN4+ cell	-0.17936121007724062	5
+Dendritic cell 2A	-0.17956264420470885	5
+Intermediate monocyte cell	-0.17956391448289635	5
+CD16 monocyte	-0.18001535346530392	5
+Plasmacytoid dendritic cell(pDC)	-0.18008619449509658	5
+Naive CD8+ T cell	-0.18017519483630176	5
+Monocyte progenitor cell	-0.18080618663703688	5
+Blood cell	-0.1809492732630475	5
+Conventional dendritic cell(cDC)	-0.18169554989263195	5
+Pro-inflammatory macrophage	-0.1817619402265447	5
+M1 microglial cell	-0.18196730914694875	5
+Immature neutrophil	-0.18489980123859462	5
+Prehypertrophic chondrocyte	-0.18534570547963372	5
+Granulocytic-UNK	-0.1854540442124927	5
+AXL+ SIGLEC6+ dendritic cell	-0.18652746145106158	5
+MKI67+ progenitor cell	-0.1868815845513875	5
+Morula cell (Blastomere)	-0.18692896852500354	5
+Neuroepithelial cell	-0.18705724123998627	5
+Pre-dendritic cell	-0.18719184202992664	5
+FGFR1LowNME5- epithelial cell	-0.18734745346900467	5
+Monocytic myeloid-derived suppressor cell	-0.1875909428357314	5
+Suppressive monocyte	-0.1875909428357314	5
+Immature myeloid cell	-0.1875909428357314	5
+CD16+ dendritic cell	-0.1875909428357314	5
+Multipotent progenitor cell	-0.1876043778574257	5
+Epiblast cell	-0.18763736819792712	5
+Cancer cell	-0.18891561986019983	5
+Alpha cell (α cell)	-0.18912782006752935	5
+1-cell stage cell (Blastomere)	-0.189299863959824	5
+Circulating fetal cell	-0.18980896690180202	5
+Mesothelial cell	-0.19090905968716895	5
+Red blood cell (erythrocyte)	-0.19101004001487687	5
+Conventional dendritic cell 1(cDC1)	-0.19106932458260897	5
+Conventional dendritic cell 2-B (cDC2-B)	-0.19112136348828188	5
+Myoblast	-0.19177084161442384	5
+Proliferative chondrocyte	-0.19181871315764154	5
+Innate lymphoid cell	-0.19185693867344258	5
+Platelet	-0.19202063898665728	5
+Primitive endoderm cell	-0.1930334441223437	5
+Pelvic epithelial cell	-0.1930463242827479	5
+Pit progenitor cell	-0.19311288933893925	5
+Interferon responsive secretory cell	-0.19321093037750472	5
+Germinal center cell	-0.19373511964379297	5
+Mature B cell	-0.19373511964379297	5
+Follicular cell	-0.19373511964379297	5
+Embryonic stem cell	-0.1940163516789428	5
+Regulatory chondrocyte	-0.19406723098354728	5
+Retinal pigment epithelial cell	-0.19428198561878401	5
+Tissue resident macrophage	-0.19464995516454803	5
+Pericyte	-0.194840624392711	5
+Neural stem cell	-0.19539237226163766	5
+Atypical B cell(ABC)	-0.1954473566543717	5
+Vascular smooth muscle cell(VSMC)	-0.19559974576602154	5
+Septum transversum mesenchyme cell	-0.1968946887183999	5
+Hepatic stellate cell	-0.1968946887183999	5
+Tissue resident memory T(TRM) cell	-0.1970506215638316	5
+Multipotent mesenchymal stroma cell	-0.1970817867648555	5
+Monocyte lineage	-0.1970817867648555	5
+Dental pulp stem cell	-0.1970817867648555	5
+CD14+ monocyte-derived macrophage	-0.1970817867648555	5
+Haematopoietic cell	-0.1970817867648555	5
+CD14+ CD1c+ dendritic cell	-0.1970817867648555	5
+Fully activated dendritic cell	-0.1970817867648555	5
+Urine-derived stem cell	-0.1970817867648555	5
+CD14+ endothelial progenitor cell	-0.1970817867648555	5
+Hematopoietic precursor cell	-0.1970817867648555	5
+Inflammatory monocyte	-0.1970817867648555	5
+CD14++CD16- monocyte	-0.1970817867648555	5
+Inflammatory dendritic cell	-0.1970817867648555	5
+Circulating progenitor cell	-0.1970817867648555	5
+Bone marrow stem cell	-0.1970817867648555	5
+CD14+ macrophage	-0.1970817867648555	5
+Classical dendritic cell b(cDCb)	-0.19740045127735614	5
+Zygote	-0.19740045127735614	5
+White blood cell	-0.19752614742900784	5
+Mature neutrophil	-0.19770660396290468	5
+CD4+ cytotoxic T1 cell	-0.1979305294517937	5
+Gland ductal cell	-0.19837296433407495	5
+Transitional basal progenitor cell	-0.19837296433407495	5
+Biliary cell	-0.19837296433407495	5
+Residual embryonic cell	-0.19837296433407495	5
+Inner Cell	-0.19837296433407495	5
+Developing nephron	-0.19837296433407495	5
+Trophoblast cell	-0.19837296433407495	5
+Columnar epithelial cell	-0.19837296433407495	5
+Lake et al.Science.Ex8	-0.19850796916928454	5
+Adipocyte	-0.1986036452591706	5
+lmmLeydig cell	-0.1986036452591706	5
+Adipocyte progenitor cell	-0.1986036452591706	5
+Limbal stem cell	-0.1988397177832274	5
+Cardiac progenitor cell	-0.19893315524391922	5
+Demyelinating macrophage	-0.1992998108309261	5
+M0 macrophage	-0.1992998108309261	5
+Demyelinating microglial cell	-0.1992998108309261	5
+Infiltrated mononuclear cell	-0.1992998108309261	5
+Activated macrophage	-0.1992998108309261	5
+Polymorphonuclear myeloid-derived suppressor cell	-0.19930012397338823	5
+Conventional dendritic cell	-0.19930012397338823	5
+Granulocytic myeloid-derived suppressor cell(G-MDSC)	-0.19930012397338823	5
+Pre-conventional dendritic cell	-0.19930012397338823	5
+Dendritic cell progenitor	-0.19930012397338823	5
+Conventional dendritic cell 2-A (cDC2-A)	-0.19930012397338823	5
+Transitional dendritic cell	-0.19930012397338823	5
+Axl+ CD11c+ Plasmacytoid dendritic cell (CD11c+ Axl+DC)	-0.19930012397338823	5
+Naive progenitor cell	-0.19930012397338823	5
+Polymorphonuclear neutrophil(PMN)	-0.19936601611269586	5
+Neutrophil lineage	-0.19936601611269586	5
+Activated effector cell	-0.19942916375459055	5
+Hepatic cell	-0.19952398069489397	5
+LGR5+ stem cell	-0.19959070069905196	5
+Germline stem cell	-0.19974062599046272	5
+Germinal stem cell	-0.19974062599046272	5
+Sinusoidal endothelial cell	-0.19993197551398395	5
+Corneal epithelial cell	-0.200082377159715	5
+Airway basal cell	-0.20019680874176135	5
+Dorsal lateral ganglionic eminence precursor cell	-0.20019680874176135	5
+Sensory neuron	-0.20019680874176135	5
+Venular endothelial cell	-0.20051045116930888	5
+Stem-cell-derived-alpha cell	-0.20061220741740596	5
+Reticular fibroblast	-0.20061220741740596	5
+Inflammatory Dendritic Epidermal Cell (IDEC)	-0.20061220741740596	5
+Preadipocyte	-0.20061220741740596	5
+Macroglial cell	-0.20069038058498018	5
+Human-induced pluripotent stem cell (iPSC)	-0.20106491520230607	5
+Naive human pluripotent stem cell	-0.20106491520230607	5
+Adipose-derived stromal cell	-0.20106491520230607	5
+Subpallium cell	-0.20106525638297168	5
+Lateral ganglionic eminence cell	-0.20106525638297168	5
+Dorsal medial ganglionic eminence precursor cell	-0.20106525638297168	5
+Lake et al.Science.Ex6	-0.20106525638297168	5
+Homeostatic microglial cell	-0.20114432057513879	5
+Memory B cell	-0.20118683121384967	5
+CD16+ dendritic cell (CD16+ DC)	-0.20118683121384967	5
+Germinal center B cell	-0.20141205000176698	5
+Venous cell	-0.20146944922166873	5
+Vascular endothelial cell	-0.20146944922166873	5
+Endometrial stem cell	-0.20146944922166873	5
+Microglia‐like cell	-0.20172385843566742	5
+Cardiosphere-derived cell	-0.20193277610721602	5
+Neural crest-derived cell	-0.20195367253756683	5
+Memory T-cell	-0.20206306226034815	5
+Effector CD8+ T cell	-0.20206306226034815	5
+Oligodendrocyte‐like cell	-0.20210558411434043	5
+Normal cell	-0.20212370741879684	5
+Damage-associated transient progenitor cell	-0.20212706610043565	5
+Pretubular aggregate cell	-0.20226078471995262	5
+Inflammatory fibroblast	-0.2023437541911571	5
+Age-associated B cell	-0.20236130964820814	5
+Classical dendritic cell a(cDCa)	-0.20236130964820814	5
+Goblet cell	-0.2023676870113761	5
+Tissue migratory CD4+ T  cell (TMC)	-0.20239511516258357	5
+Spermatogonial stem cell	-0.20244882544032336	5
+Corneocyte-like cell	-0.20261561320245053	5
+Myeloid progenitor cell	-0.20270942667020803	5
+Fat cell	-0.20270942667020803	5
+Monocyte-dendritic cell progenitor cell	-0.20280297569343583	5
+Mono-macrophage	-0.20280297569343583	5
+Macrophage-dendritic cell progenitor cell	-0.20280297569343583	5
+Early response secretory cell	-0.20283630190210114	5
+Truncated radial glial cell	-0.20283630190210114	5
+Capillary cell	-0.20288823987024152	5
+Exausted T(Tex) cell	-0.20290581952868922	5
+Lymphoblastoid cell	-0.20290581952868922	5
+Immune oligodendroglial cell(imOLG)	-0.2030969237917147	5
+Activated B cell	-0.2030969237917147	5
+Tuft progenitor cell	-0.20312614196086062	5
+Basal epithelial cell	-0.2032415203487679	5
+A2 astrocyte	-0.20326171493861458	5
+OxPhos monocyte	-0.20331906752655687	5
+Portal vein epithelial cell	-0.2037298201243141	5
+Syncytiotrophoblast	-0.2037298201243141	5
+Pro-neutrophil	-0.2037298201243141	5
+Non-β endocrine cell	-0.2038123462967645	5
+Radial glial cell	-0.2038183393889752	5
+Epicardium-derived cell	-0.2038183393889752	5
+Somatic cell	-0.2038183393889752	5
+Interneuron	-0.2038183393889752	5
+Interstitial cell	-0.2038183393889752	5
+Effector chondrocyte	-0.2038850112854788	5
+Chronically activated CD4+ T cell	-0.2039505392232801	5
+Naive CD4 T cell	-0.2039505392232801	5
+CD4+ cytotoxic T2 cell	-0.2039505392232801	5
+Tissue resident memory CD4+ T cell	-0.2039505392232801	5
+CD25+LAG3+ T cell	-0.2039505392232801	5
+CD25 LAG3+ T cell	-0.2039505392232801	5
+Effector T cell	-0.2039505392232801	5
+Naive T cell	-0.2039505392232801	5
+FOXP3+ natural regulatory T (Treg) cell	-0.2039505392232801	5
+CD4+ central memory like T (Tcm-like) cell	-0.2039505392232801	5
+CD4+ Terminally Differentiated Effector Memory Cell	-0.2039505392232801	5
+Activated T cell	-0.2039505392232801	5
+Activated effector memory CD4+ T cell	-0.2039505392232801	5
+Activated CD25+ regulatory T cell	-0.2039505392232801	5
+T peripheral helper(Tph) cell	-0.2039505392232801	5
+CD4 T cell	-0.2039505392232801	5
+Regulatory CD25+ T cell	-0.2039505392232801	5
+Memory regulatory T cell	-0.2039505392232801	5
+Lymphoid cell	-0.2039505392232801	5
+T helper2 (Th2) cell	-0.2039505392232801	5
+Pathogenic T peripheral helper cell	-0.2039505392232801	5
+Effector memory CD8+ T cell	-0.2039505392232801	5
+Double-positive T cell	-0.2039505392232801	5
+Peripheral blood mononuclear cell (PBMC)	-0.2039505392232801	5
+Circulating T follicular helper cell	-0.2039505392232801	5
+CD8+ mucosal-associated invariant T cell(CD8+ MAIT)	-0.2039505392232801	5
+CD8+ recently activated effector memory or effector T cell (CTL)	-0.2039505392232801	5
+Exhausted T(Tex) cell	-0.2039505392232801	5
+Induced regulatory T (Treg) cell	-0.2039505392232801	5
+Central memory T helper 1 cell	-0.2039505392232801	5
+T helper 9(Th9) cell	-0.2039505392232801	5
+CD4+ recently activated effector memory or effector T cell (CTL)	-0.2039505392232801	5
+Activated regulatory T cell	-0.2039505392232801	5
+Activated tissue resident memory CD4+ T cell	-0.2039505392232801	5
+Effector regulatory T(eTreg) cell	-0.2039505392232801	5
+EMRA CD4+ T cell	-0.2039505392232801	5
+Early activated CD4+ T cell	-0.2039505392232801	5
+T helper17 (Th17) cell	-0.2039505392232801	5
+T helper1 (Th1) cell	-0.2039505392232801	5
+Suppressor T cell	-0.2039505392232801	5
+Enteroendocrine cell	-0.20395288115111876	5
+Interstitial macrophage	-0.20405658354567688	5
+Dividing T cell	-0.20405865807759596	5
+Plasmablast	-0.20405865807759596	5
+Müller glial cell	-0.2041942180692346	5
+Early CD34+ megakaryocyte-erythroid progenitor cell	-0.20420528666655455	5
+CD34+ megakaryocyte-erythroid progenitor cell	-0.20420528666655455	5
+4-cell stage cell (Blastomere)	-0.20424695025638115	5
+CCR7+ dendritic cell	-0.20424831586446046	5
+Migratory langerhans cell	-0.20424831586446046	5
+Activated langerhans cell	-0.20424831586446046	5
+Natural killer cell	15.159490028933341	6
+T cell	3.157387829104552	6
+Cytotoxic T cell	2.6975474626751277	6
+Natural killer T (NKT) cell	2.4879565713337	6
+CD8+ T cell	2.2475783572850747	6
+Microglial cell	2.001189494215073	6
+Monocyte	1.5312321952168948	6
+Natural killer T(NKT) cell	1.4833044807112863	6
+Cytotoxic CD4+ T cell	1.1145569090867564	6
+Astrocyte	0.9248577826754317	6
+Macrophage	0.7957192340006856	6
+Plasmacytoid dendritic cell(pDC)	0.7950542780564784	6
+Plasma cell	0.7942024819297504	6
+Myeloid cell	0.47654228792167563	6
+Red blood cell (erythrocyte)	0.4713310325190068	6
+Effector CD8+ T cell	0.4025812540952574	6
+B cell	0.37369975619167706	6
+Plasmablast	0.3592311621899878	6
+Regulatory T(Treg) cell	0.34930419341844965	6
+Immune cell	0.33828739714543343	6
+Lymphocyte	0.26784362540040996	6
+Progenitor cell	0.2551747706888385	6
+CD16+ monocyte	0.2536203567797737	6
+Transitional B cell	0.2507805541785978	6
+Plasmacytoid dendritic cell	0.2453643158346455	6
+Exhausted T(Tex) cell	0.21793171113006526	6
+Effector CD8+ memory T (Tem) cell	0.19886042552609068	6
+Cytotoxic CD8+ T cell	0.18276571545843387	6
+Gamma delta(γδ) T cell	0.1554849350249128	6
+Erythroid cell	0.1550250448831937	6
+Effector CD4+ T cell	0.1319408139415048	6
+Basophil	0.12631996520322386	6
+Oligodendrocyte	0.1206228309916171	6
+Activated CD8+ T cell	0.11824161080712568	6
+Trophectoderm cell	0.11030595457997605	6
+Hematopoietic stem cell	0.04575963266938912	6
+Fibroblast	0.023986986576120167	6
+Effector memory CD4+ T cell	0.02392060557276248	6
+Schwann cell	0.020854534939830797	6
+Leukocyte	0.008911526389023023	6
+Stem cell	0.00850931714325666	6
+Non-classical monocyte	-0.021853828895503247	6
+CD14+ monocyte	-0.023846587948664507	6
+CD16 monocyte	-0.029572468634936455	6
+T helper 1(Th1) cell	-0.03931511165678997	6
+Exhausted CD4+ T cell	-0.040608137046621876	6
+Activated T cell	-0.04135400822701714	6
+Paneth cell	-0.04335734260361191	6
+Epithelial cell	-0.04685240875400711	6
+Outer radial glia	-0.04967122396342421	6
+Radial glial cell	-0.04967122396342421	6
+Brush cell (Tuft cell)	-0.049956774574721766	6
+Neuron	-0.054741439387391816	6
+Beta cell(β cell)	-0.06137981028385534	6
+Activated CD4+ T cell	-0.07120593172555222	6
+Primordial germ cell	-0.07120593172555222	6
+Antibody-secreting cell	-0.07120593172555222	6
+Memory B cell	-0.07120593172555222	6
+Immature B cell	-0.07120593172555222	6
+Naive B cell	-0.07120593172555222	6
+Mucosa-associated invariant T (MAIT) cell	-0.08186968286879558	6
+CD4+ recently activated effector memory or effector T cell (CTL)	-0.08239229552386622	6
+Multilymphoid progenitor cell	-0.08616131053714358	6
+CD1C-CD141- dendritic cell	-0.08671420572915567	6
+T helper 17(Th17) cell	-0.0897581677884714	6
+Finally highly effector (TEMRA) memory T cell	-0.09635322501281167	6
+CD8+ recently activated effector memory or effector T cell (CTL)	-0.09637859089923824	6
+Mast cell	-0.09708251893579044	6
+Effector CD8 T cell	-0.09857858188812496	6
+Definitive endoderm cell	-0.10013173645451723	6
+Intermediate progenitor cell	-0.10013173645451723	6
+Regulatory T (Treg) cell	-0.10019066070499275	6
+Regulatory CD4+ T cell	-0.10350823834037473	6
+T follicular helper(Tfh) cell	-0.10350823834037473	6
+Mesenchymal stem cell	-0.10416886184005017	6
+Neutrophil	-0.10594037659600014	6
+Mitotic fetal germ cell	-0.11892667276063991	6
+Gonadal endothelial cell	-0.12131968969901923	6
+Oogenesis phase fetal germ cell	-0.12356762490756401	6
+SLC16A7+ cell	-0.12407042103590821	6
+CD4+ cytotoxic T1 cell	-0.12748443170456408	6
+Tissue resident memory T(TRM) cell	-0.12813642762161695	6
+Mitotic arrest phase fetal germ cell	-0.1297086572716356	6
+Hematopoietic cell	-0.1310681858356223	6
+Terminal effector CD8+ T cell	-0.1334981426975431	6
+Sertoli cell	-0.1349380401619074	6
+Endothelial cell	-0.13617345419135612	6
+Gonadal mitotic phase fetal germ cell	-0.13652921082417152	6
+Young neuron	-0.13845655480092983	6
+Effector regulatory T(eTreg) cell	-0.13960297198695215	6
+AXL+SIGLEC6+ dendritic cell	-0.14128888010273227	6
+Granulocyte-monocyte progenitor	-0.14157360862077328	6
+Memory CD8+ T cell	-0.14473331015754165	6
+Cytotoxic lymphocyte	-0.1464296594885366	6
+Cytotoxic CD4+ T2 cell	-0.14928928037893752	6
+CD141+CLEC9A+ dendritic cell	-0.1503135257500556	6
+Cytotoxic T cell 2	-0.15539410966834658	6
+Meiotic prophase fetal germ cell	-0.15540245658588508	6
+CD4+ cytotoxic T2 cell	-0.15628070385841084	6
+Naive CD8+ T cell	-0.15948394032809893	6
+Secretory cell	-0.16053680564833836	6
+Goblet cell	-0.1637079704224313	6
+Migration phase fetal germ cell	-0.1648391391048804	6
+Effector T(Teff) cell	-0.16619306894940683	6
+Ciliated cell	-0.16678647569317454	6
+Leydig cell	-0.16838065338909278	6
+Ciliated epithelial cell	-0.1685807786989218	6
+CD34+ pre-T cell	-0.16876241225030003	6
+Dendritic cell	-0.17030529600065844	6
+Oligodendrocyte progenitor cell	-0.17037949674330907	6
+Megakaryocyte	-0.17065003774174894	6
+Epiblast cell	-0.17178116101444793	6
+Innate lymphoid cell	-0.1720843594942597	6
+M1 macrophage	-0.17302922741121152	6
+Innate Lymphoid cell	-0.1735764209549964	6
+Pericyte	-0.1748341932317543	6
+Neuroendocrine cell	-0.17541921582198836	6
+Acinar cell	-0.17570790195111968	6
+Cytotoxic CD8 T cell	-0.17576951965200732	6
+Intraepithelial lymphocyte cell	-0.17649425532868307	6
+Responding conventional T cell	-0.17662675462221797	6
+Cytotoxic natural killer cell	-0.17779917473261828	6
+Effector memory CD8+ T cell	-0.1781052579424904	6
+Exausted T(Tex) cell	-0.17875926823605937	6
+Secretory progenitor cell	-0.17895945954139195	6
+Fibrocartilage chondrocyte	-0.18096266344254805	6
+Neural progenitor cell	-0.18134123938300234	6
+Mid radical glial cell	-0.18273546916984876	6
+Lake et al.Science.In5	-0.183218510543225	6
+CD8+ mucosal-associated invariant T cell(CD8+ MAIT)	-0.1833835973871166	6
+CD4+ T cell	-0.18390302317142435	6
+Retinoid acid signaling-responsive fetal germ cell	-0.18401584551202987	6
+T cell & Natural killer cell	-0.1845554495729085	6
+Effector memory T cell	-0.1864618792418892	6
+Activated memory T cell	-0.18675916658315983	6
+Memory T cell	-0.18726116349990163	6
+FGFR1HighNME5- epithelial cell	-0.18738255254123634	6
+M2 macrophage	-0.18782653850217804	6
+CD3/CD28-stimulated NK cell	-0.1882512280438965	6
+Mesenchymal cell	-0.18875557748842708	6
+Effector natural killer cell	-0.18892238566458056	6
+CD56+ natural killer cell	-0.18892238566458056	6
+T helper(Th) cell	-0.1889532161603386	6
+CD4+ cytotoxic T lymphocyte	-0.18909490487364292	6
+Classical monocyte	-0.19053000252741767	6
+Natural killer T(NKT)-like cell	-0.19108371721405393	6
+Granulosa cell	-0.19137649294528256	6
+MKI67+ progenitor cell	-0.19137992713331958	6
+DCLK1+ progenitor cell	-0.19138159155202797	6
+Activated memory B cell	-0.1914308366096616	6
+Memory CD4+ T cell	-0.19169258991325497	6
+Lake et al.Science.Ex1	-0.19178563570221244	6
+Liver bud hepatic cell	-0.19221391927428844	6
+Lymphoid-primed multipotent progenitor cell(LMPP)	-0.19221470546842914	6
+Erythroid lineage cell	-0.19250997934137867	6
+Erythrocyte	-0.19250997934137867	6
+Central memory T cell	-0.1926200637767826	6
+Innate lymphoid cell (ILCs)	-0.19272650362564053	6
+Ionocyte cell	-0.19273182322650326	6
+Activated natural killer cell	-0.1927333810836646	6
+Thymus seeding progenitor (TSP)	-0.19301145495418892	6
+Glial cell	-0.19308282788033265	6
+Interstitial macrophage	-0.19334444767926062	6
+Interstitial cell	-0.19349436191470476	6
+Highly differentiated effector CD8 + T cell	-0.1937015587335568	6
+Exhausted CD8+ T cell	-0.1939216095390143	6
+Basal cell	-0.194033282407478	6
+Short-lived effector cell (SLEC)	-0.19416739677445946	6
+Neural stem cell	-0.19428144003188033	6
+Naive T(Th0) cell	-0.1944929983058672	6
+Senescent CD8+ T Cell	-0.1947559876628593	6
+Leydig precursor cell	-0.19536619571144603	6
+Zona glomerulosa cell	-0.19554517824161122	6
+Myeloid-derived suppressor cell	-0.195616222401164	6
+Mesenchymal stromal cell	-0.195961236903487	6
+Mono-macrophage	-0.1962558832136896	6
+γ δ T cell	-0.1962558832136896	6
+Globose basal cell	-0.19633329715025993	6
+Naive human pluripotent stem cell	-0.1964076619734744	6
+Papillary fibroblast	-0.19644907294101438	6
+LGR5+ stem cell	-0.19711841417169296	6
+Distal stem cell	-0.19711841417169296	6
+Eosinophil	-0.19742155452702456	6
+Activated effector cell	-0.19742155452702456	6
+NK and T cell	-0.19742155452702456	6
+Morula cell (Blastomere)	-0.1974429388865591	6
+Smooth muscle cell	-0.19762195623086606	6
+Cytotoxic T helper 1 cell	-0.1982787894972352	6
+Ensheathing glial cell	-0.19838026636313483	6
+Neural crest-like cell	-0.19838026636313483	6
+Stromal cell	-0.19838026636313483	6
+Non-neuron	-0.19838026636313483	6
+Resting naive B cell	-0.19908562812128042	6
+Memory CD27+ B cell	-0.19908562812128042	6
+Class switched plasmablast	-0.19908562812128042	6
+Chronically activated CD4+ T cell	-0.19908562812128042	6
+Switched memory B cell(Sw MB)	-0.19908562812128042	6
+Live CD19+ cell	-0.19908562812128042	6
+Mature progenitor cell	-0.19908562812128042	6
+Dividing plasma B cell	-0.19908562812128042	6
+Lymph node cell	-0.19908562812128042	6
+IgM memory B cell	-0.19908562812128042	6
+Chronically activated CD8+ T cell	-0.19908562812128042	6
+hMSC-treated B cell	-0.19908562812128042	6
+Activated peripheral helper T cell	-0.19908562812128042	6
+Classical B cell	-0.19908562812128042	6
+TolDC-induced regulatory T cell	-0.19908562812128042	6
+Plasmablast like cell	-0.19908562812128042	6
+Terminal differentiated B cell	-0.19908562812128042	6
+Tonsil cell	-0.19908562812128042	6
+Germinal center B cell	-0.19908562812128042	6
+Pre-B cell	-0.19908562812128042	6
+Classical plasma cell	-0.19908562812128042	6
+Unswitched plasmablast	-0.19908562812128042	6
+Regulatory B(Breg) cell	-0.19908562812128042	6
+Immature transitional B cell	-0.19908562812128042	6
+Plasmablast B cell	-0.19908562812128042	6
+Activated cell	-0.19908562812128042	6
+CD4 peripherally derived regulatory T cell	-0.19908562812128042	6
+Antibody Secreting B cell	-0.19908562812128042	6
+Recent bone marrow B-cell emigrant(RBE)	-0.19908562812128042	6
+Intestinal stem cell	-0.19926190544126413	6
+1-cell stage cell (Blastomere)	-0.19950695007592872	6
+Alpha cell (α cell)	-0.2000654352081827	6
+Mait-like cell	-0.20034658725430293	6
+Helper innate lymphoid cell	-0.20034658725430293	6
+Conventional dendritic cell 2(cDC2)	-0.20060579216271862	6
+CD56dim Natural killer cell	-0.2006925617187438	6
+Revertant memory CD8+ T(TEMRA) cell	-0.2006925617187438	6
+Profibrotic macrophage	-0.2006925617187438	6
+Tumor‐associated macrophage (TAM)	-0.2006925617187438	6
+AXL+ SIGLEC6+ dendritic cell	-0.2006925617187438	6
+Dendritic cell progenitor	-0.2006925617187438	6
+Transitional dendritic cell	-0.2006925617187438	6
+Marginal-associated macrophage	-0.2006925617187438	6
+M1 microglial cell	-0.2006925617187438	6
+Homeostatic microglial cell	-0.2006925617187438	6
+Lake et al.Science.Ex3	-0.2008921460470829	6
+Early erythrocyte	-0.20100386311437007	6
+Cone photoreceptor cell	-0.20101058315192702	6
+Lymphoid progenitor cell	-0.20101816325015157	6
+CD34+ thymocyte	-0.20101816325015157	6
+Early T cell progenitor (ETP)	-0.20101816325015157	6
+Pre-T cell	-0.20101816325015157	6
+Megakaryocyte progenitor cell	-0.2010456537074212	6
+Mesoderm cell	-0.20105165839004766	6
+Neuronal intermediate progenitor cell	-0.20105165839004766	6
+Mesendodermal cell	-0.20105165839004766	6
+lrNK cell	-0.20105165839004766	6
+Lung epithelial cell	-0.20113557470010593	6
+T helper 2(Th2) cell	-0.20128115260714366	6
+Naive progenitor cell	-0.20173053415459666	6
+Myeloid dendritic cell	-0.20180100857315103	6
+Conventional dendritic cell	-0.20180100857315103	6
+Primitive endoderm cell	-0.20180100857315103	6
+Pro-Natural killer cell (pro-NK cell)	-0.20180100857315103	6
+CD1C+_B dendritic cell	-0.20187248654718343	6
+Syncytiotrophoblast	-0.20205349980137477	6
+Granulocyte	-0.20205349980137477	6
+Portal vein epithelial cell	-0.20205349980137477	6
+Platelet	-0.20205349980137477	6
+Pro-neutrophil	-0.20205349980137477	6
+Oocyte	-0.20213075995025795	6
+Endocrine cell	-0.20231893856028926	6
+Tissue resident memory CD4+ T cell	-0.20246446924118683	6
+FOXN4+ cell	-0.2026104640097308	6
+Activated langerhans cell	-0.2026104640097308	6
+Alveolar macrophage	-0.20268532077190507	6
+Myelinating schwann cell	-0.20311376297537487	6
+Mature oligodendrocyte	-0.20311376297537487	6
+Naive CD4+ T cell	-0.20314207201907364	6
+Enterocyte progenitor cell	-0.20325660903184434	6
+Ductal cell	-0.20325660903184434	6
+Enteroendocrine cell	-0.20339112936199202	6
+Polymorphonuclear myeloid-derived suppressor(PMN-MDSC) cell	-0.20357135823843267	6
+Microglia‐like cell	-0.20357135823843267	6
+CD34+ pre-B cell	-0.20365652119749805	6
+Cartilage Progenitor cell	-0.20365652119749805	6
+Cycling B cell	-0.20365652119749805	6
+Isthmus cell	-0.20365652119749805	6
+Secretory transient-amplifying cell	-0.20365652119749805	6
+T cell	8.105068614040073	7
+CD4+ T cell	4.953790160988546	7
+CD8+ T cell	3.579173201422994	7
+Regulatory T(Treg) cell	2.482225934108121	7
+Natural killer cell	2.4340081527832873	7
+Effector memory T cell	2.289347403527149	7
+Memory CD4+ T cell	1.3992237812860058	7
+T follicular helper(Tfh) cell	1.3288487997921512	7
+Keratinocyte	1.2527894922898444	7
+Natural killer T (NKT) cell	1.24693148594325	7
+Lymphocyte	1.1275514368093966	7
+Natural killer T(NKT) cell	1.1014955017522385	7
+Naive CD4+ T cell	0.6510492092904706	7
+Naive CD8+ T cell	0.5472386828147245	7
+Naive T(Th0) cell	0.4826051141604907	7
+Innate lymphoid cell	0.4131522614264818	7
+Trophectoderm cell	0.38816935972699806	7
+Immune cell	0.24397397977083432	7
+Trophoblast cell	0.15879852223421329	7
+B cell	0.15539311141749665	7
+Activated T cell	0.08939625835224257	7
+Regulatory CD4+ T cell	0.047285084482486306	7
+CD8 T cell	0.046560761171396646	7
+Gamma delta(γδ) T cell	0.04354793032894064	7
+Mast cell	0.03662625613898707	7
+Effector CD4+ T cell	0.01675351591207555	7
+Memory CD8+ T cell	0.015977601147172428	7
+Cytotoxic T cell	-8.878366384210353e-05	7
+Effector CD8+ T cell	-0.005781245617628152	7
+Follicular helper (Tfh) T cell	-0.00950416085148129	7
+Trophoblast stem cell	-0.021925426136473795	7
+Dendritic cell lineage	-0.025433127604105148	7
+Principal cell	-0.028321637854105224	7
+T helper cell	-0.22551860357371958	7
+Mitotic fetal germ cell	-0.230761330588827	7
+Multilymphoid progenitor cell	-0.24630381775656263	7
+Memory T cell	-0.24758977195234985	7
+Activated CD4+ T cell	-0.2504866075627781	7
+CD4 T cell	-0.2781278152892811	7
+Exhausted CD4+ T cell	-0.2800579854735711	7
+Epithelial cell	-0.28625956534802954	7
+Acinar cell	-0.293547697907539	7
+Dividing T cell	-0.2952059822137269	7
+Ciliated cell	-0.295306387953452	7
+Ciliated epithelial cell	-0.295306387953452	7
+Central memory T cell	-0.2955351079744035	7
+Activated effector cell	-0.2968281419524289	7
+Neural progenitor cell	-0.2978027225922174	7
+Monocyte	-0.3005652961059746	7
+T helper 2(Th2) cell	-0.3005692266254331	7
+Sertoli cell	-0.3006931456250163	7
+Dendritic cell 2A	-0.3021638598970679	7
+Exhausted CD8+ T cell	-0.3030958192783396	7
+Proliferative CD4+ T cell	-0.3030958192783396	7
+Proliferative CD8+ T cell	-0.3030958192783396	7
+Regulatory CD8+ T cell	-0.3030958192783396	7
+Activated CD8+ T cell	-0.3030958192783396	7
+Gonadal endothelial cell	-0.3043191702929658	7
+Oogenesis phase fetal germ cell	-0.3045704198746726	7
+Microglial cell	-0.3045704198746726	7
+Exhausted T(Tex) cell	-0.30481842467499115	7
+T cell & Natural killer cell	-0.30481842467499115	7
+Epidermal cell	-0.3084531500902222	7
+Differentiated keratinocyte	-0.3084531500902222	7
+Intermediate keratinocyte	-0.3084531500902222	7
+SLC16A7+ cell	-0.31331345053544213	7
+Fibroblast	-0.3169207392996109	7
+Regulatory T (Treg) cell	-0.3169207392996109	7
+Capsular fibroblast(Fb2)	-0.3169207392996109	7
+FGFR1HighNME5- epithelial cell	-0.3169207392996109	7
+Central memory CD8+ T cell	-0.31888376075698094	7
+Memory Stem Cell(Tscm)	-0.31888376075698094	7
+Stem cell	-0.31888376075698094	7
+Resident memory CD8+ T cell	-0.31888376075698094	7
+Mucosa-associated invariant T (MAIT) cell	-0.31888376075698094	7
+Effector memory CD4+ T cell	-0.31888376075698094	7
+Mural cell	-0.31888376075698094	7
+Migratory langerhans cell	-0.31888376075698094	7
+Naive-like T cell	-0.31888376075698094	7
+Helper innate lymphoid cell	-0.31888376075698094	7
+Lymphoid progenitor cell	-0.31888376075698094	7
+Lymphoid cell	-0.31888376075698094	7
+Circulating fetal cell	-0.31888376075698094	7
+Innate Lymphoid cell	-0.31888376075698094	7
+Intestinal cell	-0.32252046925257705	7
+Enterocyte progenitor cell	-0.32252046925257705	7
+Neuroendocrine cell	-0.323624785547513	7
+Paneth cell	-0.323624785547513	7
+Epiblast cell	-0.323624785547513	7
+Brush cell (Tuft cell)	-0.323624785547513	7
+Thymus seeding progenitor (TSP)	-0.3238454007432482	7
+Plasmacytoid dendritic cell	-0.3238454007432482	7
+B progenitor cell	-0.3238454007432482	7
+Naive CD4 T cell	-0.3238454007432482	7
+Naive cytotoxic T cell	-0.32477736012451985	7
+CD4+ T helper cell	-0.32477736012451985	7
+Proliferative T cell	-0.32477736012451985	7
+Stromal cell	-0.32477736012451985	7
+Early effector T cell	-0.32477736012451985	7
+Cardiomyocyte	-0.32477736012451985	7
+NK and T cell	-0.32477736012451985	7
+Pathogenic T peripheral helper cell	-0.32541730486300535	7
+Effector regulatory T(eTreg) cell	-0.32541730486300535	7
+TolDC-induced regulatory T cell	-0.32541730486300535	7
+Endothelial cell	-0.3259203771380702	7
+Oligodendrocyte	-0.3259203771380702	7
+Morula cell (Blastomere)	-0.3259203771380702	7
+Meiotic prophase fetal germ cell	-0.32597585491616504	7
+Mesangial cell	-0.32626155392558126	7
+Sympathoadrenal cell	-0.32626155392558126	7
+Smooth muscle cell	-0.32626155392558126	7
+Inner Cell	-0.32626155392558126	7
+Effector Th2-like cell	-0.32626155392558126	7
+Pan-trophectoderm cell	-0.32626155392558126	7
+Oligodendrocyte progenitor cell	-0.3263977435022334	7
+Astrocyte	-0.3263977435022334	7
+Activated natural killer cell	-0.32649996552117144	7
+Axl+ CD123+ Plasmacytoid dendritic cell (CD123+ Axl+DC)	-0.32649996552117144	7
+Effector T(Teff) cell	-0.32649996552117144	7
+Axl+ CD11c+ Plasmacytoid dendritic cell (CD11c+ Axl+DC)	-0.32649996552117144	7
+Leukocyte	-0.32649996552117144	7
+AXL+ SIGLEC6+ dendritic cell	-0.32649996552117144	7
+Myeloid cell	-0.32649996552117144	7
+Cytotoxic CD8 T cell	-0.32649996552117144	7
+Effector natural killer cell	-0.32649996552117144	7
+CD1C+_A dendritic cell	-0.32649996552117144	7
+Myeloid conventional dendritic cell	-0.32649996552117144	7
+Homeostatic chondrocyte	-0.3266278150402131	7
+4-cell stage cell (Blastomere)	-0.3266278150402131	7
+Airway secretory cell	-0.32669629190297333	7
+Gonadal mitotic phase fetal germ cell	-0.32669629190297333	7
+Basal cell	-0.32669629190297333	7
+Pancreatic polypeptide cell	-0.32669629190297333	7
+Double-negative T cell	-0.3267735978215936	7
+Effector memory CD8+ T cell	-0.3267735978215936	7
+T helper(Th) cell	-0.3267735978215936	7
+CD4+ recently activated effector memory or effector T cell (CTL)	-0.3267735978215936	7
+CD4+ cytotoxic T1 cell	-0.3267735978215936	7
+CD4+ cytotoxic T2 cell	-0.3267735978215936	7
+CD8+ mucosal-associated invariant T cell(CD8+ MAIT)	-0.3267735978215936	7
+Natural killer T(NKT)-like cell	-0.3267735978215936	7
+CD8+ recently activated effector memory or effector T cell (CTL)	-0.3267735978215936	7
+CD4+ central memory like T (Tcm-like) cell	-0.3267735978215936	7
+T cell	7.29454325818891	8
+CD4+ T cell	3.6639695371743066	8
+CD8+ T cell	2.321480829412583	8
+T follicular helper(Tfh) cell	1.65566629343206	8
+Regulatory T(Treg) cell	1.3770521209746158	8
+Natural killer cell	1.2551192406147378	8
+Naive CD4+ T cell	1.0937590458523787	8
+T helper 1(Th1) cell	0.8301998451951285	8
+Effector memory T cell	0.802298759141803	8
+Natural killer T(NKT) cell	0.6968604753201015	8
+Natural killer T (NKT) cell	0.669576009859665	8
+Effector memory CD8+ T cell	0.6610407196892032	8
+Immune cell	0.4722192652351927	8
+Memory T cell	0.257708143442895	8
+Lymphocyte	0.23923365270172475	8
+Naive T(Th0) cell	0.2374409699714638	8
+Memory CD4+ T cell	0.23384022443594957	8
+Naive CD8+ T cell	0.23384022443594957	8
+Central memory T cell	0.20377187048250942	8
+CD8 T cell	0.19890242015822393	8
+Gamma delta(γδ) T cell	0.1966560373988869	8
+Plasmacytoid dendritic cell	0.18006555315670195	8
+Cytotoxic T cell	0.1574867778056472	8
+Regulatory CD4+ T cell	0.1574867778056472	8
+B cell	-0.2936357702117342	8
+T helper cell	-0.29370098933202077	8
+Astrocyte	-0.31237582385285256	8
+Gonadal endothelial cell	-0.326702373454928	8
+CD4 T cell	-0.3311018619376723	8
+Monocyte	-0.3329820395558975	8
+Regulatory CD8+ T cell	-0.33334824469700935	8
+Mitotic fetal germ cell	-0.33380142572165367	8
+Memory Stem Cell(Tscm)	-0.33459771253523474	8
+Activated T cell	-0.33459771253523474	8
+Activated CD4+ T cell	-0.3351166316845975	8
+Effector CD4+ T cell	-0.3353333172531864	8
+Dendritic cell	-0.3566590631566409	8
+DCLK1+ progenitor cell	-0.36688460543033763	8
+Oogenesis phase fetal germ cell	-0.36688460543033763	8
+Regulatory T (Treg) cell	-0.36688460543033763	8
+Naive CD4 T cell	-0.3702059024106254	8
+B progenitor cell	-0.3702059024106254	8
+Multilymphoid progenitor cell	-0.3702059024106254	8
+Dendritic cell 2A	-0.3702059024106254	8
+Thymus seeding progenitor (TSP)	-0.3702059024106254	8
+Activated effector cell	-0.37038291216154906	8
+Intestinal cell	-0.37038291216154906	8
+Sertoli cell	-0.37038291216154906	8
+Acinar cell	-0.37038291216154906	8
+Enterocyte progenitor cell	-0.37038291216154906	8
+Leukocyte	-0.3719985851408863	8
+Activated tissue resident memory CD4+ T cell	-0.3719985851408863	8
+Activated effector memory CD4+ T cell	-0.3719985851408863	8
+Memory CD4 T cell	-0.3719985851408863	8
+Memory T(Tm) cell	-0.3719985851408863	8
+Effector memory CD4+ T cell	-0.3719985851408863	8
+Stem cell	-0.3719985851408863	8
+TolDC-induced regulatory T cell	-0.3719985851408863	8
+CD4+ cytotoxic T2 cell	-0.3719985851408863	8
+Senescent CD8+ T Cell	-0.3719985851408863	8
+CD4+ central memory like T (Tcm-like) cell	-0.3719985851408863	8
+CD4+ cytotoxic T1 cell	-0.3719985851408863	8
+Naive cytotoxic T cell	-0.37251750429024905	8
+Cardiomyocyte	-0.37251750429024905	8
+Memory CD8+ T cell	-0.37251750429024905	8
+Exhausted CD8+ T cell	-0.37251750429024905	8
+Exhausted CD4+ T cell	-0.37251750429024905	8
+Dividing T cell	-0.37251750429024905	8
+NK and T cell	-0.37251750429024905	8
+Proliferative T cell	-0.37251750429024905	8
+Stromal cell	-0.37251750429024905	8
+CD4+ T helper cell	-0.37251750429024905	8
+Proliferative CD4+ T cell	-0.37251750429024905	8
+Early effector T cell	-0.37251750429024905	8
+Effector CD8+ T cell	-0.37251750429024905	8
+Proliferative CD8+ T cell	-0.37251750429024905	8
+Activated CD8+ T cell	-0.37251750429024905	8
+CD4+ T helper 1 cell	-0.37376697212847443	8
+CD8+ T helper 1 cell	-0.37376697212847443	8
+Cytotoxic T helper 1 cell	-0.37376697212847443	8
+T peripheral helper(Tph) cell	-0.37376697212847443	8
+T helper(Th) cell	-0.37376697212847443	8
+T helper 2(Th2) cell	-0.37376697212847443	8
+T helper 17(Th17) cell	-0.37376697212847443	8
+Effector T(Teff) cell	-0.37376697212847443	8
+Memory B cell	-0.37376697212847443	8
+Innate lymphoid cell	-0.37376697212847443	8
+T helper1 (Th1) cell	-0.37376697212847443	8
+Circulating T follicular helper cell	-0.37376697212847443	8
+Tissue resident cell	-0.37376697212847443	8
+Endothelial cell	-0.3739836576970633	8
+Morula cell (Blastomere)	-0.3739836576970633	8
+Oligodendrocyte	-0.3739836576970633	8
+Monocyte	11.05530071237208	9
+Macrophage	8.689130767301874	9
+Microglial cell	7.710881141268658	9
+Myeloid cell	2.8170719765701415	9
+Dendritic cell	2.6179030804678196	9
+CD1C-CD141- dendritic cell	1.4897993811800574	9
+Natural killer cell	1.4595073030348595	9
+Natural killer T (NKT) cell	1.4114986156594773	9
+Astrocyte	1.2312287315891002	9
+Neutrophil	0.9620962290927872	9
+Paneth cell	0.8510011822134937	9
+B cell	0.8322286719165934	9
+M1 macrophage	0.6142788970629182	9
+CD16+ monocyte	0.5743928883614224	9
+CD14+ monocyte	0.29998589559356287	9
+M2 macrophage	0.24346411549807012	9
+Kupffer cell	0.22237146040355346	9
+Oligodendrocyte	0.1761759041268574	9
+Gonadal endothelial cell	0.16299504991266342	9
+Antigen-presenting cell	0.16137491602219736	9
+Oogenesis phase fetal germ cell	0.13256107506298254	9
+Mitotic arrest phase fetal germ cell	0.13080873457484876	9
+Fibroblast	0.11958112876644922	9
+Natural killer T(NKT) cell	0.10849130764070743	9
+Neuron	0.10540420356728117	9
+Epithelial cell	0.10339908024358009	9
+Alveolar macrophage	0.10203052601915893	9
+Endothelial cell	0.10165612245248211	9
+Immune cell	0.08951401409103692	9
+Mitotic fetal germ cell	0.07066170152954854	9
+Non-classical monocyte	0.06915402494018551	9
+Beta cell(β cell)	0.06475974089347286	9
+Ciliated cell	0.058972258289004584	9
+Effector memory T cell	0.048946349911591865	9
+CD16 monocyte	0.029811011099612286	9
+Stem cell	0.025378026849662953	9
+Multilymphoid progenitor cell	0.010277849420398256	9
+Sertoli cell	0.0037530015662873054	9
+Intermediate progenitor cell	-0.0038275786486431022	9
+SLC16A7+ cell	-0.006439194638755651	9
+Mononuclear phagocyte	-0.00870826939633274	9
+Hepatocyte	-0.020118490581862197	9
+Progenitor cell	-0.023415689793947373	9
+Liver bud hepatic cell	-0.02345223730344344	9
+Plasmacytoid dendritic cell(pDC)	-0.026860264984241027	9
+Pan-macrophage	-0.029897000583381822	9
+Monocyte-derived macrophage	-0.029897000583381822	9
+Activated microglial cell	-0.029897000583381822	9
+Histiocyte	-0.029897000583381822	9
+Leydig cell	-0.02990918601336643	9
+Eosinophil	-0.03150569689387479	9
+Oligodendrocyte progenitor cell	-0.03383594768620285	9
+Mesenchymal cell	-0.04045230613313917	9
+Granulosa cell	-0.04561286097738069	9
+T cell	-0.04615270252354491	9
+Podocyte	-0.0508346701387838	9
+Mast cell	-0.05389060123830524	9
+Hematopoietic cell	-0.059728155881981826	9
+Retinoid acid signaling-responsive fetal germ cell	-0.0643227940904151	9
+Meiotic prophase fetal germ cell	-0.06634739775300864	9
+Trophectoderm cell	-0.06731662366375482	9
+Classical monocyte	-0.06735692506744989	9
+Brush cell (Tuft cell)	-0.0751663323104004	9
+Memory T cell	-0.07863740561012177	9
+CD4+ T cell	-0.08905797043802163	9
+Oligodendrocyte precursor cell	-0.08929605257582302	9
+Tumor‐associated macrophage (TAM)	-0.09191643816685033	9
+Memory CD4+ T cell	-0.09406971132350599	9
+Adipose-derived stem cell	-0.09571348182023962	9
+Mature dendritic cell	-0.09610323830271866	9
+Hematopoietic stem cell	-0.09705425379180616	9
+Acinar cell	-0.0974139759080443	9
+Ionocyte cell	-0.0999875067060435	9
+Gonadal mitotic phase fetal germ cell	-0.10150378608914219	9
+Secretory cell	-0.1022845467293034	9
+Effector CD8+ memory T (Tem) cell	-0.10572067980523808	9
+Delta cell	-0.10623167008110079	9
+Migration phase fetal germ cell	-0.10750365241139095	9
+Myeloid derived suppressor cell (MDSC)	-0.1096385127105499	9
+Plasmacytoid dendritic cell	-0.1183637186122919	9
+Regulatory T(Treg) cell	-0.11946644185000202	9
+Fibrocartilage chondrocyte	-0.1205335193756129	9
+Granulocyte-monocyte progenitor	-0.12415151242620658	9
+Enterocyte progenitor cell	-0.12612513259203	9
+Cytotoxic CD4+ T cell	-0.1287760151061866	9
+Exhausted CD4+ T cell	-0.13238301806157574	9
+CD1C+_B dendritic cell	-0.13698184365624455	9
+Granulocyte	-0.13831856038626605	9
+Ciliated epithelial cell	-0.1406076522342786	9
+Neuroendocrine cell	-0.14115593577027882	9
+Secretory progenitor cell	-0.14285232265588996	9
+Monocyte Myeloid-derived suppressor cell (M-MDSC)	-0.14973482808578836	9
+Dendritic cell lineage	-0.14973482808578836	9
+Homeostatic chondrocyte	-0.15540189412850158	9
+CLEC10A+ dendritic cell	-0.15693463942858488	9
+Leukocyte	-0.15723607971083853	9
+CD141+CLEC9A+ dendritic cell	-0.1642175214629328	9
+Activated memory B cell	-0.16487198383179763	9
+Basal cell	-0.16892112132879844	9
+Natural regulatory T cell	-0.17029946881867497	9
+MKI67+ progenitor cell	-0.1722157988028154	9
+AXL+SIGLEC6+ dendritic cell	-0.17234794879916782	9
+Mono-macrophage	-0.1740549880207388	9
+DCLK1+ progenitor cell	-0.17455917521090608	9
+Meyloid cell	-0.1749894614166096	9
+Morula cell (Blastomere)	-0.17554339057685167	9
+M1 microglial cell	-0.1763622244972622	9
+Naive CD8+ T cell	-0.1784286001806861	9
+Goblet cell	-0.17942855734224833	9
+Myeloid dendritic cell	-0.1805972107887087	9
+Epiblast cell	-0.1812121986994011	9
+Neural progenitor cell	-0.18134553331401515	9
+Alpha cell (α cell)	-0.1817146097312089	9
+CD8+ T cell	-0.18204226942076684	9
+Immature B cell	-0.18326589733707604	9
+Myofibroblast	-0.18372587497976925	9
+Lymphoid-primed multipotent progenitor cell(LMPP)	-0.1838351176396621	9
+Megakaryocyte	-0.18714433998650787	9
+Regulatory T (Treg) cell	-0.18858757847152532	9
+FGFR1HighNME5- epithelial cell	-0.1898175226087552	9
+Stromal cell	-0.1900689948252649	9
+Tissue resident memory T(TRM) cell	-0.19019968181345	9
+Prehypertrophic chondrocyte	-0.19062738591432668	9
+CLEC9A+ dendritic cell	-0.19063271315895264	9
+Monocyte derived dendritic cell	-0.19207376605250068	9
+Intermediate monocyte cell	-0.19339409277945	9
+Immature neutrophil	-0.1934268132831814	9
+Regulatory chondrocyte	-0.1936221110309228	9
+Mature B cell	-0.19449940221732812	9
+Embryonic stem cell	-0.1945479703356017	9
+Leydig precursor cell	-0.1955433222206138	9
+Glial cell	-0.19559310325755927	9
+Circulating fetal cell	-0.19579013686633687	9
+CD8+ recently activated effector memory or effector T cell (CTL)	-0.19639042363671752	9
+Pan monocyte	-0.19698801263972493	9
+Mature neutrophil	-0.19738000562177296	9
+Proliferative chondrocyte	-0.1974565886853391	9
+Atypical B cell(ABC)	-0.19769713171404904	9
+Interneuron	-0.1978832742790581	9
+Interferon responsive secretory cell	-0.1979805809332934	9
+Naive CD4+ T cell	-0.19978725144171536	9
+1-cell stage cell (Blastomere)	-0.20030006656566657	9
+CD14 monocyte	-0.2004564789344283	9
+Effector memory CD4+ T cell	-0.2008902073313412	9
+FOXN4+ cell	-0.20112716359065863	9
+Lake et al.Science.Ex8	-0.20131709041270598	9
+Type 3 dendritic cell (DC3)	-0.2013873138818965	9
+Intestinal cell	-0.2016658329850986	9
+Homeostatic microglial cell	-0.20177869379092575	9
+Pit progenitor cell	-0.20189428743202587	9
+Vascular smooth muscle cell(VSMC)	-0.20194199792482206	9
+γ δ T cell	-0.2024289763122344	9
+CD1C+_A dendritic cell	-0.20246535710490243	9
+Multipotent progenitor cell	-0.20279064909600292	9
+Corneocyte-like cell	-0.20294864444206256	9
+Club cell (Clara cell)	-0.20294864444206256	9
+Pre-dendritic cell	-0.20330814393888788	9
+Germinal stem cell	-0.20333309628760488	9
+Germline stem cell	-0.20333309628760488	9
+White blood cell	-0.20343025128855455	9
+Oligodendrocyte‐like cell	-0.20358951646171988	9
+AXL+ SIGLEC6+ dendritic cell	-0.20373987654164827	9
+Neuronal intermediate progenitor cell	-0.20391544982624946	9
+Inter-mediate progenitor cell	-0.20391544982624946	9
+Granulocytic-UNK	-0.20392009447728351	9
+Retinal pigment epithelial cell	-0.20408958255844373	9
+Effector CD8+ T cell	-0.2043659579055655	9
+Germinal center cell	-0.20439554260079032	9
+Follicular cell	-0.20439554260079032	9
+Blood cell	-0.20462293701278392	9
+Thalamic cell	-0.20494906817257247	9
+Cancer cell	-0.20528938983483477	9
+Demyelinating macrophage	-0.20528938983483477	9
+CD14+CD16+ monocyte	-0.20528938983483477	9
+M0 macrophage	-0.20528938983483477	9
+Demyelinating microglial cell	-0.20528938983483477	9
+Activated macrophage	-0.20528938983483477	9
+Hofbauer cell	-0.20528938983483477	9
+Infiltrated mononuclear cell	-0.20528938983483477	9
+Primitive endoderm cell	-0.2055377736152638	9
+Naive B cell	-0.20561326526735446	9
+Lymphocyte	-0.20562192488529335	9
+Cardiomyocyte	-0.20563196630152653	9
+Macrophage-dendritic cell progenitor cell	-0.20563196630152653	9
+Monocyte-dendritic cell progenitor cell	-0.20563196630152653	9
+Monocyte progenitor cell	-0.20580991220639563	9
+lmmLeydig cell	-0.20581874993235155	9
+Adipocyte progenitor cell	-0.20581874993235155	9
+Adipocyte	-0.20581874993235155	9
+Red blood cell (erythrocyte)	-0.20607928043344959	9
+FGFR1LowNME5- epithelial cell	-0.20640144492159868	9
+Conventional dendritic cell 1(cDC1)	-0.206815499611542	9
+Lake et al.Science.In6	-0.2069635938129674	9
+Pericyte	-0.2069795672412901	9
+Effector CD4+ T cell	-0.20699478271079783	9
+Inflammatory fibroblast	-0.20704667858818704	9
+T helper 2(Th2) cell	-0.2071872861006352	9
+Mid radical glial cell	-0.20724470424939093	9
+Radial glial cell	-0.20724470424939093	9
+Mesenchymal stem cell	-0.2073373201106188	9
+Dendritic cell progenitor	-0.20739597947845675	9
+Transitional dendritic cell	-0.20739597947845675	9
+Neural crest-derived cell	-0.20754941938129745	9
+Naive progenitor cell	-0.20796504259072035	9
+Macroglial cell	-0.20830337645677222	9
+Truncated radial glial cell	-0.2084615717513829	9
+Cortical neuron	-0.2085356939097055	9
+Upper layer cell	-0.2085356939097055	9
+Goblet progenitor cell	-0.2086119822798688	9
+LGR5+ stem cell	-0.20898057943576634	9
+Activated effector cell	-0.20955103480517154	9
+Memory B cell	-0.20961645058835562	9
+CD16+ dendritic cell (CD16+ DC)	-0.20961645058835562	9
+Myeloid progenitor cell	-0.20962082607787866	9
+Fat cell	-0.20962082607787866	9
+Early T cell progenitor (ETP)	-0.20976329895650148	9
+Age-associated B cell	-0.20988257103571437	9
+Classical dendritic cell a(cDCa)	-0.20988257103571437	9
+Innate lymphoid cell	-0.21013342402694213	9
+Neuroepithelial cell	-0.21014254414177472	9
+Adipose-derived stromal cell	-0.21014254414177472	9
+Tissue resident macrophage	-0.21014254414177472	9
+Naive human pluripotent stem cell	-0.21014254414177472	9
+Human-induced pluripotent stem cell (iPSC)	-0.21014254414177472	9
+Proximal stem cell	-0.21020489794360953	9
+Memory T-cell	-0.21040451058108237	9
+Central memory T cell	-0.21040451058108237	9
+CAR-T cell	-0.21044594914925221	9
+Corneal epithelial cell	-0.21061636868304712	9
+Polymorphonuclear myeloid-derived suppressor(PMN-MDSC) cell	-0.21070926416463331	9
+Monocyte-derived dendritic cell	-0.21070926416463331	9
+Pelvic epithelial cell	-0.21070926416463331	9
+Pro-inflammatory macrophage	-0.21073081031288007	9
+Non-β endocrine cell	-0.21079410171961266	9
+Limbal stem cell	-0.21079410171961266	9
+OxPhos monocyte	-0.2111717543915802	9
+Conventional dendritic cell(cDC)	-0.21125720563480468	9
+Interstitial macrophage	-0.21143717348094457	9
+Normal cell	-0.21149229037568437	9
+Tuft progenitor cell	-0.2115509337476382	9
+Cone photoreceptor cell	-0.2115659258899951	9
+Müller glial cell	-0.21157362452443637	9
+Effector chondrocyte	-0.21175493602483925	9
+Germinal center B cell	-0.21191472260230307	9
+Myeloid dendritic cell 1	-0.21195772569098148	9
+Revertant memory CD8+ T(TEMRA) cell	-0.2120412537367581	9
+Short-lived effector cell (SLEC)	-0.2120412537367581	9
+Effector CD8 T cell	-0.2120412537367581	9
+Cytotoxic T cell	-0.2120412537367581	9
+Profibrotic macrophage	-0.2120412537367581	9
+Marginal-associated macrophage	-0.2120412537367581	9
+CD4+ recently activated effector memory or effector T cell (CTL)	-0.2120412537367581	9
+CD56dim Natural killer cell	-0.2120412537367581	9
+Secretory transient-amplifying cell	-0.21222488525557937	9
+Innate Lymphoid cell	-0.21222488525557937	9
+CD56bright Natural killer cell	-0.21249281231500003	9
+Mesenchymal stromal cell	-0.21249281231500003	9
+Proliferative lymphocyte	-0.21257313195556538	9
+Plasmablast	-0.21257313195556538	9
+Dividing T cell	-0.21257313195556538	9
+Cycling transient-amplifying cell	-0.21257313195556538	9
+8-cell stage cell (Blastomere)	-0.21270312804460337	9
+Damage-associated transient progenitor cell	-0.21271379914496572	9
+Migratory langerhans cell	-0.2127430340840328	9
+CCR7+ dendritic cell	-0.2127430340840328	9
+Activated langerhans cell	-0.2127430340840328	9
+Exhausted T(Tex) cell	-0.21281306314170909	9
+Megakaryocyte progenitor cell	-0.21285275785090071	9
+Basal epithelial cell	-0.21286818034406205	9
+Activated B cell	-0.21292431420789382	9
+Immune oligodendroglial cell(imOLG)	-0.21292431420789382	9
+Follicular B cell	-0.21292431420789382	9
+Ductal cell	-0.21299712654940053	9
+Pretubular aggregate cell	-0.213031115649785	9
+Germ cell	-0.21310492988733903	9
+Early response secretory cell	-0.2131821100280399	9
+Intestinal stem cell	-0.21326754219924873	9
+Oocyte	-0.21333591537530927	9
+Polymorphonuclear myeloid-derived suppressor cell	-0.2134345321539736	9
+Pre-conventional dendritic cell	-0.2134345321539736	9
+Intermediate monocyte	-0.2134345321539736	9
+Monocytic myeloid-derived suppressor cell	-0.2134345321539736	9
+CD16+ dendritic cell	-0.2134345321539736	9
+Suppressive monocyte	-0.2134345321539736	9
+Myeloid-derived suppressor cell	-0.2134345321539736	9
+Immature myeloid cell	-0.2134345321539736	9
+Axl+ CD11c+ Plasmacytoid dendritic cell (CD11c+ Axl+DC)	-0.2134345321539736	9
+Conventional dendritic cell 2-A (cDC2-A)	-0.2134345321539736	9
+Conventional dendritic cell	-0.2134345321539736	9
+Granulocytic myeloid-derived suppressor cell(G-MDSC)	-0.2134345321539736	9
+Conventional dendritic cell 2-B (cDC2-B)	-0.2134345321539736	9
+4-cell stage cell (Blastomere)	-0.2134494341656759	9
+Neurogenic retinal progenitor cell	-0.2134503062489716	9

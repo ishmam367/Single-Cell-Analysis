@@ -9,6 +9,7 @@ import configparser
 import subprocess
 from sklearn.metrics import accuracy_score, f1_score, precision_score
 import argparse
+import pickle
 
 BASE_DIR      = os.path.dirname(os.path.abspath(__file__))
 BASE_DATA_DIR = os.path.join(BASE_DIR, 'dataset')
@@ -178,13 +179,13 @@ def single_cell_analysis(adata,dataset_id,num_neighbors_values, num_pcs_values, 
             # Group the data by "Cluster" and find the cell type with the highest Z-score in each group
             highest_zscores = df.groupby('Cluster')['Z-score'].idxmax()
             print ('**********************************************')
-            print ('highest Z_score before dropping null values ', highest_zscores)
-            # Filter out NaN values from highest_zscores
-            #highest_zscores = highest_zscores.dropna()
-            #highest_zscores = highest_zscores.reset_index(drop=True)
-            #print ('highest Z_score after dropping null values ', highest_zscores)
+            highest_zscores.fillna('Unknown', inplace=True)
+            print("Index of highest zscore after replacement:", highest_zscores.index)
             # Extract the corresponding cell types for the highest Z-scores
-            cell_types_with_highest_zscores = df.loc[highest_zscores, 'Cell Type'].tolist()
+            df.reset_index(inplace=True, drop=True)
+            cell_types_with_highest_zscores = df.loc[highest_zscores.index, 'Cell Type'].tolist()
+
+            #cell_types_with_highest_zscores = df.loc[highest_zscores, 'Cell Type'].tolist()
             print ('cell type with highest Z-Score ' , cell_types_with_highest_zscores)
             
             #  Create a dictionary of cluster value (number) and corresponding identified cell type. 
@@ -212,8 +213,15 @@ def single_cell_analysis(adata,dataset_id,num_neighbors_values, num_pcs_values, 
             if num_pcs == 40 and num_neighbors == 10:
             # Extract the golden standard only when PCA is 40 and number of neighbors is 10
                 golden_standard = adata_copy.obs['cell_types']
+                if np.nan in golden_standard.unique():
+                    golden_standard = golden_standard.astype('str')
+                    golden_standard = golden_standard.replace('nan', 'Unknown')
             
             predicted_cell_types = adata_copy.obs['cell_types']
+            if np.nan in predicted_cell_types.unique():
+                predicted_cell_types = predicted_cell_types.astype('str')
+                predicted_cell_types = predicted_cell_types.replace('nan', 'Unknown')
+            
             # Store the PCA and number of neighbors values along with the corresponding cell types
             pca_neighbors_dict[(num_pcs, num_neighbors)] = predicted_cell_types
             
@@ -225,6 +233,7 @@ def single_cell_analysis(adata,dataset_id,num_neighbors_values, num_pcs_values, 
     accuracies = []
     precisions = []
     f1_scores = []
+
     # Exclude the point where PCA=40 and num_neighbors=10
     excluded_combination = (40, 10)
     # Initialize a separate list to store num_pcs_values for evaluation metrics
@@ -233,6 +242,11 @@ def single_cell_analysis(adata,dataset_id,num_neighbors_values, num_pcs_values, 
     for (num_pcs, num_neighbors), predicted_cell_types in pca_neighbors_dict.items():
         if (num_pcs, num_neighbors) != excluded_combination:
             # Calculate accuracy by comparing predicted cell types with the golden standard
+            print("="*100)
+            print(type(golden_standard), type(predicted_cell_types))
+            print(golden_standard)
+            print(predicted_cell_types)
+            print("="*100)
             accuracy = accuracy_score(golden_standard, predicted_cell_types)
             precision = precision_score(golden_standard, predicted_cell_types, average='weighted')
             f1 = f1_score(golden_standard, predicted_cell_types, average='weighted')

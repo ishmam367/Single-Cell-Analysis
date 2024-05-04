@@ -8,42 +8,45 @@ import matplotlib.pyplot as plt
 import configparser
 import subprocess
 from sklearn.metrics import accuracy_score, f1_score, precision_score
+import argparse
+import pickle
+
+BASE_DIR      = os.path.dirname(os.path.abspath(__file__))
+BASE_DATA_DIR = os.path.join(BASE_DIR, 'dataset')
+BASE_IMG_DIR  = os.path.join(BASE_DIR, 'Images')
+BASE_RESULT_DIR = os.path.join(BASE_DIR, 'result')
+
+def parse_add_args(parser: argparse.ArgumentParser) -> argparse.ArgumentParser:
+    parser.add_argument('--dataset_id', type=str, help='Unique identifier of the dataset')
+
+    return parser
 
 
-def download_data(url, data_fname, save_dir,extracted_file_path):
-    os.makedirs(save_dir, exist_ok=True)
-    file_path = os.path.join(save_dir, data_fname)
-    
-    res = requests.get(url)
-    with open(file_path, 'wb') as file:
-        file.write(res.content)
-    
-    # Extract the downloaded file
-    with tarfile.open(file_path, 'r:gz') as tar:
-        tar.extractall(save_dir)
-    
-    
-    
-    print(f"Data downloaded and extracted to {extracted_file_path}")
-    return extracted_file_path
-
-
-def preprocessing(extracted_file_path, min_mean, max_mean, images_dir):
-    # Step 1: Read in the count matrix into an AnnData object
-    adata = sc.read_10x_mtx(
-        extracted_file_path,
-        var_names='gene_symbols'
-    )
+def load_anndata(dataset_id):
+    dataset_path = os.path.join(BASE_DATA_DIR, dataset_id)
+    adata = sc.read_10x_mtx(dataset_path, var_names='gene_symbols', cache=True)
     adata.var_names_make_unique()
+    return adata
+
+
+# def load_anndata(dataset_id):
+#     dataset_dir = os.path.join(BASE_DATA_DIR, dataset_id)
     
-    
-    
+#     for filename in os.listdir(dataset_dir):
+#         if filename.endswith(".tar.gz"):
+#             file_path = os.path.join(dataset_dir, filename)
+#             with tarfile.open(file_path, 'r:gz') as tar:
+#                 tar.extractall(dataset_dir)
+#                 print(f"Extracted {filename} in {dataset_dir}")
+
+
+def preprocessing(dataset_id,adata,Base_IMG_DIR):
     # Step 2: Preprocessing
     # Show genes with the highest fraction of counts in each single cell
     #root_dir = os.path.dirname(os.path.abspath(__file__))
     #images_dir = os.path.join(root_dir, 'Images')
     #os.makedirs(images_dir, exist_ok=True)
-    highest_expr_genes_path = os.path.join(images_dir, 'highest_expr_genes.png')
+    highest_expr_genes_path = os.path.join(Base_IMG_DIR, f'{dataset_id}_highest_expr_genes.png')
     # Plot the figure
     sc.pl.highest_expr_genes(adata, n_top=20, show=False)
     plt.title('Highest Expressed genes')
@@ -51,9 +54,6 @@ def preprocessing(extracted_file_path, min_mean, max_mean, images_dir):
     # Save the figure
     plt.savefig(highest_expr_genes_path, dpi=300)
     plt.close()    
-    
-
-    
     
     # Basic filtering
     sc.pp.filter_cells(adata, min_genes=200)
@@ -64,15 +64,13 @@ def preprocessing(extracted_file_path, min_mean, max_mean, images_dir):
     sc.pp.calculate_qc_metrics(adata, qc_vars=['mt'], percent_top=None, log1p=False, inplace=True)
     
     # Violin plot of computed quality measures
-    violin_plot_path = os.path.join(images_dir, 'violin_plot.png')
+    violin_plot_path = os.path.join(Base_IMG_DIR, f'{dataset_id}_violin_plot.png')
     sc.pl.violin(adata, ['n_genes_by_counts', 'total_counts', 'pct_counts_mt'], jitter=0.4, multi_panel=True)
     plt.savefig(violin_plot_path, dpi=300)
     plt.close()   
     
-    
-    
     # Remove cells with too many mitochondrial genes or too many total counts
-    scatter_plot_path = os.path.join(images_dir, 'scatter_plot.png')
+    scatter_plot_path = os.path.join(Base_IMG_DIR, f'{dataset_id}_scatter_plot.png')
     sc.pl.scatter(adata, x='total_counts', y='pct_counts_mt')
     sc.pl.scatter(adata, x='total_counts', y='n_genes_by_counts')
     plt.savefig(scatter_plot_path, dpi=300)
@@ -87,45 +85,38 @@ def preprocessing(extracted_file_path, min_mean, max_mean, images_dir):
     sc.pp.log1p(adata)
     
     # Identify highly-variable genes
-    highly_variable_gene_path = os.path.join(images_dir, 'highly_variable_gene.png')
-    sc.pp.highly_variable_genes(adata, min_mean=min_mean, max_mean=max_mean, min_disp=0.5)
+    highly_variable_gene_path = os.path.join(Base_IMG_DIR, f'{dataset_id}_highly_variable_gene.png')
+    sc.pp.highly_variable_genes(adata, min_mean=0.0125, max_mean=3.0, min_disp=0.5)
     sc.pl.highly_variable_genes(adata)
     plt.savefig(highly_variable_gene_path, dpi=300)
     plt.close()
     
-    
     # Set the .raw attribute of the AnnData object to the normalized and logarithmized raw gene expression
     adata.raw = adata
-    
     # Actually do the filtering
     adata = adata[:, adata.var.highly_variable]
-    
     # Regress out effects of total counts per cell and the percentage of mitochondrial genes
     sc.pp.regress_out(adata, ['total_counts', 'pct_counts_mt'])
-    
     # Scale the data to unit variance
     sc.pp.scale(adata, max_value=10)
-    
-    
     # Return the processed AnnData object
     return adata
 
 
 
-
-def run_pca(adata, n_pcs,images_dir):
-    sc.tl.pca(adata, svd_solver='arpack', n_comps=n_pcs)
+def run_pca(adata,dataset_id,images_dir):
+    sc.tl.pca(adata, svd_solver='arpack', n_comps=60)
     sc.pl.pca(adata, color='CST3')
-    PCA_path = os.path.join(images_dir, 'PCA.png')
+    PCA_path = os.path.join(images_dir, f'{dataset_id}_PCA.png')
     plt.savefig(PCA_path, dpi=300)
     plt.close()
     print('data before annotation\n',adata.obs)
     return adata
-    
-    
+
+
+
 cluster_to_cell_type_dict = {}
-def single_cell_analysis(adata, num_neighbors_values, num_pcs_values, images_dir,num_genes,method):
-    
+def single_cell_analysis(adata,dataset_id,num_neighbors_values, num_pcs_values, images_dir):
     '*****************COMPUTING AND EMBEDDING NEIGHBOURHOOD GRAPH***********'
     pca_neighbors_dict = {}
     for i, num_pcs in enumerate(num_pcs_values):
@@ -139,11 +130,11 @@ def single_cell_analysis(adata, num_neighbors_values, num_pcs_values, images_dir
             sc.tl.umap(adata_copy)
             title_str = f"PCA-{num_pcs}_Neighbors-{num_neighbors}"
             # Plot UMAP with the custom title
-            sc.pl.umap(adata_copy, color=['CST3', 'NKG7', 'PPBP'], use_raw=False, title=title_str)
+            sc.pl.umap(adata_copy, color=['CST3', 'NKG7'], use_raw=False, title=title_str)
             
             # Save the UMAP figure with the custom title
-            umap_path = os.path.join(images_dir, f'UMAP_PCA-{num_pcs}_Neighbors-{num_neighbors}.png')
-            plt.title(f'UMAP for PCA-{num_pcs}_Neighbors-{num_neighbors}')
+            umap_path = os.path.join(images_dir, f'{dataset_id}_UMAP_PCA-{num_pcs}_Neighbors-{num_neighbors}.png')
+            plt.title(f'UMAP for PCA-{num_pcs}_Neighbors-{num_neighbors} in dataset_{dataset_id}')
             plt.savefig(umap_path, dpi=300)
             plt.close() 
             
@@ -151,16 +142,16 @@ def single_cell_analysis(adata, num_neighbors_values, num_pcs_values, images_dir
             
             sc.tl.leiden(adata_copy, key_added='leiden')
             sc.pl.umap(adata_copy, color=['leiden', 'CST3'])
-            UMAP_path_leiden = os.path.join(images_dir, f'UMAP_WITH_LEIDEN_PCA-{num_pcs}_Neighbors-{num_neighbors}.png')
-            plt.title(f'Umap with Leiden CLustering for PCA-{num_pcs}_Neighbors-{num_neighbors}')
+            UMAP_path_leiden = os.path.join(images_dir, f'{dataset_id}_UMAP_WITH_LEIDEN_PCA-{num_pcs}_Neighbors-{num_neighbors}.png')
+            plt.title(f'Umap with Leiden CLustering for PCA-{num_pcs}_Neighbors-{num_neighbors} in dataset_{dataset_id}')
             plt.savefig(UMAP_path_leiden, dpi=300)
             plt.close()
             
             '*****************Finding Marker Genes ***********'
-            sc.tl.rank_genes_groups(adata_copy, 'leiden', method=method)
-            sc.pl.rank_genes_groups(adata_copy, n_genes=num_genes, sharey=False)
-            marker_genes_path = os.path.join(images_dir, f'Finding_marker_genes_PCA-{num_pcs}_Neighbors-{num_neighbors}.png')
-            plt.title(f'Finding Marker genes for PCA-{num_pcs}_Neighbors-{num_neighbors}')
+            sc.tl.rank_genes_groups(adata_copy, 'leiden', method='t-test')
+            sc.pl.rank_genes_groups(adata_copy, n_genes=25, sharey=False)
+            marker_genes_path = os.path.join(images_dir, f'{dataset_id}_Finding_marker_genes_PCA-{num_pcs}_Neighbors-{num_neighbors}.png')
+            plt.title(f'Marker genes for PCA-{num_pcs}_Neighbors-{num_neighbors} in dataset_{dataset_id}')
             plt.savefig(marker_genes_path, dpi=300)
             plt.close()
             
@@ -170,11 +161,11 @@ def single_cell_analysis(adata, num_neighbors_values, num_pcs_values, images_dir
             '*****************creating SCSA result***********'
             
             df = pd.DataFrame({group + '_' + key[:1]: result[key][group] for group in groups for key in ['names', 'logfoldchanges','scores','pvals']})
-            df.to_csv(f"diff_exp_result_PCA-{num_pcs}_Neighbors-{num_neighbors}.csv")
+            df.to_csv(f"{dataset_id}_diff_exp_result_PCA-{num_pcs}_Neighbors-{num_neighbors}.csv")
             
             # Generate input and output file names dynamically based on PCA and number of neighbors
-            input_file_name = f"diff_exp_result_PCA-{num_pcs}_Neighbors-{num_neighbors}.csv"
-            output_file_name = f"scsa_result_PCA-{num_pcs}_Neighbors-{num_neighbors}.txt"
+            input_file_name = f"{dataset_id}_diff_exp_result_PCA-{num_pcs}_Neighbors-{num_neighbors}.csv"
+            output_file_name = f"{dataset_id}_scsa_result_PCA-{num_pcs}_Neighbors-{num_neighbors}.txt"
             
             # Run the script using subprocess with dynamically generated input and output file names
             script_path = "./run_scsa.sh"
@@ -189,10 +180,13 @@ def single_cell_analysis(adata, num_neighbors_values, num_pcs_values, images_dir
             # Group the data by "Cluster" and find the cell type with the highest Z-score in each group
             highest_zscores = df.groupby('Cluster')['Z-score'].idxmax()
             print ('**********************************************')
-            print ('highest Z_score is ', highest_zscores)
-
+            highest_zscores.fillna('Unknown', inplace=True)
+            print("Index of highest zscore after replacement:", highest_zscores.index)
             # Extract the corresponding cell types for the highest Z-scores
-            cell_types_with_highest_zscores = df.loc[highest_zscores, 'Cell Type'].tolist()
+            df.reset_index(inplace=True, drop=True)
+            cell_types_with_highest_zscores = df.loc[highest_zscores.index, 'Cell Type'].tolist()
+
+            #cell_types_with_highest_zscores = df.loc[highest_zscores, 'Cell Type'].tolist()
             print ('cell type with highest Z-Score ' , cell_types_with_highest_zscores)
             
             #  Create a dictionary of cluster value (number) and corresponding identified cell type. 
@@ -212,26 +206,35 @@ def single_cell_analysis(adata, num_neighbors_values, num_pcs_values, images_dir
             #unique cell types 
             print('unique cell types', adata_copy.obs['cell_types'].unique())
             sc.pl.umap(adata_copy, color=["leiden", "cell_types"])
-            final_cell_type_data = os.path.join(images_dir, f'final_cell_type_PCA-{num_pcs}_Neighbors-{num_neighbors}.png')
-            plt.title(f'SCSA cell type annotation for PCA-{num_pcs}_Neighbors-{num_neighbors}')
+            final_cell_type_data = os.path.join(images_dir, f'{dataset_id}_final_cell_type_PCA-{num_pcs}_Neighbors-{num_neighbors}.png')
+            plt.title(f'SCSA cell type annotation for PCA-{num_pcs}_Neighbors-{num_neighbors}for_{dataset_id}')
             plt.savefig(final_cell_type_data, dpi=300)
             plt.close()
             '******************Calculating and plotting Evaluation matrics*********************'
             if num_pcs == 40 and num_neighbors == 10:
             # Extract the golden standard only when PCA is 40 and number of neighbors is 10
                 golden_standard = adata_copy.obs['cell_types']
+                if np.nan in golden_standard.unique():
+                    golden_standard = golden_standard.astype('str')
+                    golden_standard = golden_standard.replace('nan', 'Unknown')
             
             predicted_cell_types = adata_copy.obs['cell_types']
+            if np.nan in predicted_cell_types.unique():
+                predicted_cell_types = predicted_cell_types.astype('str')
+                predicted_cell_types = predicted_cell_types.replace('nan', 'Unknown')
+            
             # Store the PCA and number of neighbors values along with the corresponding cell types
             pca_neighbors_dict[(num_pcs, num_neighbors)] = predicted_cell_types
             
-    
-    
+
+    print("Golden Standard data types:", golden_standard.dtype)
+    print("Predicted Cell Types data types:", predicted_cell_types.dtype)
     print('copied adata\n',adata_copy.obs) 
-    # Initialize lists to store evaluation metrics for each combination
-    accuracies = []
-    precisions = []
-    f1_scores = []
+    # Initialize dictionaries to store evaluation metrics
+    accuracies = {}
+    precisions = {}
+    f1_scores = {}
+
     # Exclude the point where PCA=40 and num_neighbors=10
     excluded_combination = (40, 10)
     # Initialize a separate list to store num_pcs_values for evaluation metrics
@@ -240,6 +243,11 @@ def single_cell_analysis(adata, num_neighbors_values, num_pcs_values, images_dir
     for (num_pcs, num_neighbors), predicted_cell_types in pca_neighbors_dict.items():
         if (num_pcs, num_neighbors) != excluded_combination:
             # Calculate accuracy by comparing predicted cell types with the golden standard
+            print("="*100)
+            print(type(golden_standard), type(predicted_cell_types))
+            print(golden_standard)
+            print(predicted_cell_types)
+            print("="*100)
             accuracy = accuracy_score(golden_standard, predicted_cell_types)
             precision = precision_score(golden_standard, predicted_cell_types, average='weighted')
             f1 = f1_score(golden_standard, predicted_cell_types, average='weighted')
@@ -250,48 +258,64 @@ def single_cell_analysis(adata, num_neighbors_values, num_pcs_values, images_dir
             print(f"F1 score for PCA={num_pcs} and num_neighbors={num_neighbors}: {f1}")
             
             # Append the metrics to the respective lists
-            accuracies.append(accuracy)
-            precisions.append(precision)
-            f1_scores.append(f1)
+            # Store metrics in dictionaries
+            accuracies[(num_pcs, num_neighbors)] = accuracy
+            precisions[(num_pcs, num_neighbors)] = precision
+            f1_scores[(num_pcs, num_neighbors)] = f1
+
             eval_num_pcs_values.append(num_pcs)
             eval_num_neighbour_values.append(num_neighbors)
-    # Plotting the evaluation metrics against the number of principal components
+    
+    # Store evaluation results in a dictionary
+    evaluation_results = {
+        'accuracy': accuracies,
+        'precision': precisions,
+        'f1_score': f1_scores
+    }
+    # Save evaluation results as a pickle file
+    evaluation_results_file = os.path.join(BASE_RESULT_DIR, f'{dataset_id}_evaluation_results.pkl')
+    with open(evaluation_results_file, 'wb') as f:
+        pickle.dump(evaluation_results, f)
+    # Plotting the evaluation metrics against the number of neighbours
     plt.figure(figsize=(10, 6))
-    plt.plot(eval_num_neighbour_values, accuracies, marker='o', label='Accuracy')
-    plt.plot(eval_num_neighbour_values, precisions, marker='o', label='Precision')
-    plt.plot(eval_num_neighbour_values, f1_scores, marker='o', label='F1 Score')
+    plt.plot(eval_num_neighbour_values, accuracies.values(), marker='o', label='Accuracy')
+    plt.plot(eval_num_neighbour_values, precisions.values(), marker='o', label='Precision')
+    plt.plot(eval_num_neighbour_values, f1_scores.values(), marker='o', label='F1 Score')
+
+
 
     # Add labels and title
     plt.xlabel('Number of Neighbours')
     plt.ylabel('Score')
-    plt.title('Change of Evaluation Metrics with Number of Neighbours')
+    plt.title(f'Change of Evaluation Metrics with Number of Neighbours for {dataset_id}')
     plt.legend()
     plt.grid(True)
 
     # Save the plot
-    accuracy_plot_path = os.path.join(images_dir, 'evaluation_metrics_vs_NumOfNeighbours.png')
+    accuracy_plot_path = os.path.join(images_dir, f'{dataset_id}_evaluation_metrics_vs_NumOfNeighbours.png')
     plt.savefig(accuracy_plot_path, dpi=300)
     plt.close()
     # Plotting the evaluation metrics against the number of principal components
     plt.figure(figsize=(10, 6))
-    plt.plot(eval_num_pcs_values, accuracies, marker='o', label='Accuracy')
-    plt.plot(eval_num_pcs_values, precisions, marker='o', label='Precision')
-    plt.plot(eval_num_pcs_values, f1_scores, marker='o', label='F1 Score')
+    plt.plot(eval_num_pcs_values, accuracies.values(), marker='o', label='Accuracy')
+    plt.plot(eval_num_pcs_values, precisions.values(), marker='o', label='Precision')
+    plt.plot(eval_num_pcs_values, f1_scores.values(), marker='o', label='F1 Score')
+
 
     # Add labels and title
     plt.xlabel('Number of Principal Components (PCA)')
     plt.ylabel('Score')
-    plt.title('Change of Evaluation Metrics with PCA')
+    plt.title(f'Change of Evaluation Metrics with PCA for {dataset_id}')
     plt.legend()
     plt.grid(True)
 
     # Save the plot
-    accuracy_plot_path = os.path.join(images_dir, 'evaluation_metrics_vs_pca.png')
+    accuracy_plot_path = os.path.join(images_dir, f'{dataset_id}_evaluation_metrics_vs_pca.png')
     plt.savefig(accuracy_plot_path, dpi=300)
     plt.close()
-
     return adata_copy
-    
+
+
 def save_adata(adata_copy, file_path):
     """
     Save the AnnData object to a file.
@@ -307,56 +331,36 @@ def save_adata(adata_copy, file_path):
         print(f"AnnData object saved to {file_path}")
 
 
-    
-
-##################################################################################################################################################################################
 
 
-
-
-def read_config(file_name):
+def read_config(config_file_name):
     config = configparser.ConfigParser()
-    config.read(file_name)
+    config.read(config_file_name)
     return config
 
 def main():
-    # Step 1: Data Downloading
-    url = "http://cf.10xgenomics.com/samples/cell-exp/1.1.0/pbmc3k/pbmc3k_filtered_gene_bc_matrices.tar.gz"
-    data_fname = "pbmc3k_filtered_gene_bc_matrices.tar.gz"
-    extracted_file_path = 'data/filtered_gene_bc_matrices/hg19/'
+    print(BASE_DIR)
+    print(BASE_IMG_DIR)
+    parser = argparse.ArgumentParser(description='Pipeline Script')
+    parser = parse_add_args(parser)
+    args   = parser.parse_args()
     
-    root_dir = os.path.dirname(os.path.abspath(__file__))
-   
-    images_dir = os.path.join(root_dir, 'Images')
-    save_dir = os.path.join(root_dir, 'data')
-    os.makedirs(images_dir, exist_ok=True)
-    extracted_file_path = download_data(url, data_fname, save_dir,extracted_file_path)
-
+    dataset_id = args.dataset_id
+    adata = load_anndata(dataset_id)
+    adata = run_pca(adata, dataset_id, images_dir=BASE_IMG_DIR)
     # Step 2: Preprocessing
-    config = read_config('config.ini')
-    min_mean = float(config['Preprocessing']['min_mean'])
-    max_mean = float(config['Preprocessing']['max_mean'])
-    num_genes = int(config['FindingMarkerGenes']['num_genes'])
-    method = config['FindingMarkerGenes']['method']
-    adata = preprocessing(extracted_file_path, min_mean, max_mean, images_dir)
+    adata = preprocessing(dataset_id,adata,Base_IMG_DIR=BASE_IMG_DIR)
+    #single cell analysis
+    config = read_config('config2.ini') 
+    # Read num_neighbors_values and num_pcs_values from config
+    num_neighbors_values = [int(x) for x in config['Parameters']['num_neighbors_values'].split(',')]
+    num_pcs_values = [int(x) for x in config['Parameters']['num_pcs_values'].split(',')]
 
-    # # Step 3: PCA
-    n_pcs = int(config['PCA']['n_pcs'])
-    adata = run_pca(adata, n_pcs, images_dir)
-
-    # # Step 4: the complete analysis
-    
-    num_neighbors_values = [4,6,8,9,11,10,12,14,16]     
-    num_pcs_values =[40]   
-    adata = single_cell_analysis(adata, num_neighbors_values, num_pcs_values, images_dir,num_genes,method)
+    adata = single_cell_analysis(adata, dataset_id, num_neighbors_values, num_pcs_values, images_dir=BASE_IMG_DIR)
     
     # # step 5: saving results before annotation
-    results_path = "pbmc3k_processed.h5ad"
+    results_path = f"{dataset_id}_processed.h5ad"
     save_adata(adata, results_path)
-    
-   
-    
-    
+
 if __name__ == "__main__":
     main()
-
