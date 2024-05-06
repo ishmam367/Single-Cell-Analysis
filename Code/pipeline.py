@@ -14,6 +14,7 @@ import pickle
 BASE_DIR      = os.path.dirname(os.path.abspath(__file__))
 BASE_DATA_DIR = os.path.join(BASE_DIR, 'dataset')
 BASE_IMG_DIR  = os.path.join(BASE_DIR, 'Images')
+BASE_RESULT_DIR = os.path.join(BASE_DIR, 'result')
 
 def parse_add_args(parser: argparse.ArgumentParser) -> argparse.ArgumentParser:
     parser.add_argument('--dataset_id', type=str, help='Unique identifier of the dataset')
@@ -229,10 +230,10 @@ def single_cell_analysis(adata,dataset_id,num_neighbors_values, num_pcs_values, 
     print("Golden Standard data types:", golden_standard.dtype)
     print("Predicted Cell Types data types:", predicted_cell_types.dtype)
     print('copied adata\n',adata_copy.obs) 
-    # Initialize lists to store evaluation metrics for each combination
-    accuracies = []
-    precisions = []
-    f1_scores = []
+    # Initialize dictionaries to store evaluation metrics
+    accuracies = {}
+    precisions = {}
+    f1_scores = {}
 
     # Exclude the point where PCA=40 and num_neighbors=10
     excluded_combination = (40, 10)
@@ -257,16 +258,31 @@ def single_cell_analysis(adata,dataset_id,num_neighbors_values, num_pcs_values, 
             print(f"F1 score for PCA={num_pcs} and num_neighbors={num_neighbors}: {f1}")
             
             # Append the metrics to the respective lists
-            accuracies.append(accuracy)
-            precisions.append(precision)
-            f1_scores.append(f1)
+            # Store metrics in dictionaries
+            accuracies[(num_pcs, num_neighbors)] = accuracy
+            precisions[(num_pcs, num_neighbors)] = precision
+            f1_scores[(num_pcs, num_neighbors)] = f1
+
             eval_num_pcs_values.append(num_pcs)
             eval_num_neighbour_values.append(num_neighbors)
-    # Plotting the evaluation metrics against the number of principal components
+    
+    # Store evaluation results in a dictionary
+    evaluation_results = {
+        'accuracy': accuracies,
+        'precision': precisions,
+        'f1_score': f1_scores
+    }
+    # Save evaluation results as a pickle file
+    evaluation_results_file = os.path.join(BASE_RESULT_DIR, f'{dataset_id}_evaluation_results.pkl')
+    with open(evaluation_results_file, 'wb') as f:
+        pickle.dump(evaluation_results, f)
+    # Plotting the evaluation metrics against the number of neighbours
     plt.figure(figsize=(10, 6))
-    plt.plot(eval_num_neighbour_values, accuracies, marker='o', label='Accuracy')
-    plt.plot(eval_num_neighbour_values, precisions, marker='o', label='Precision')
-    plt.plot(eval_num_neighbour_values, f1_scores, marker='o', label='F1 Score')
+    plt.plot(eval_num_neighbour_values, accuracies.values(), marker='o', label='Accuracy')
+    plt.plot(eval_num_neighbour_values, precisions.values(), marker='o', label='Precision')
+    plt.plot(eval_num_neighbour_values, f1_scores.values(), marker='o', label='F1 Score')
+
+
 
     # Add labels and title
     plt.xlabel('Number of Neighbours')
@@ -281,9 +297,10 @@ def single_cell_analysis(adata,dataset_id,num_neighbors_values, num_pcs_values, 
     plt.close()
     # Plotting the evaluation metrics against the number of principal components
     plt.figure(figsize=(10, 6))
-    plt.plot(eval_num_pcs_values, accuracies, marker='o', label='Accuracy')
-    plt.plot(eval_num_pcs_values, precisions, marker='o', label='Precision')
-    plt.plot(eval_num_pcs_values, f1_scores, marker='o', label='F1 Score')
+    plt.plot(eval_num_pcs_values, accuracies.values(), marker='o', label='Accuracy')
+    plt.plot(eval_num_pcs_values, precisions.values(), marker='o', label='Precision')
+    plt.plot(eval_num_pcs_values, f1_scores.values(), marker='o', label='F1 Score')
+
 
     # Add labels and title
     plt.xlabel('Number of Principal Components (PCA)')

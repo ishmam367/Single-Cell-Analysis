@@ -34,9 +34,9 @@ def generate_summary_table():
 
     # Save the table image
     table_image_path = os.path.join(RESULTS_DIR, 'summary_table.png')
-    fig, ax = plt.subplots(figsize=(16, 8))
+    fig, ax = plt.subplots(figsize=(16, 10))
     ax.axis('off')
-    table(ax, summary_table, loc='center', cellLoc='center', colWidths=[0.25] * len(summary_table.columns),
+    table(ax, summary_table, loc='center', cellLoc='center', colWidths=[0.15] * len(summary_table.columns),
           cellColours=plt.cm.Greens(np.full(summary_table.shape, 0.5)))
     plt.savefig(table_image_path, bbox_inches='tight', pad_inches=0.05)
     plt.show()

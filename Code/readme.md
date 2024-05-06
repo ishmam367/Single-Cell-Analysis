@@ -1,6 +1,6 @@
 > _**Disclaimer:** All essential materials, such as data, documents, pipelines, etc., associated with the BioNets Project, are the intellectual property of the Biomedical Network Science ([BIONETS](https://www.bionets.tf.fau.de/)) lab at [FAU Erlangen-Nürnberg](https://www.fau.eu/). Kindly acknowledge that any duplication of content from this source makes you liable.
 
-![CELL IMAGES](docs/assets/cell.jpg)
+![CELL IMAGES](docs/assetsf/cell.jpg)
 
 Welcome to the Biomedical Network Science (BioNets) Project repository for the Winter'23/24 semester at [Friedrich-Alexander University Erlangen-Nürnberg](https://www.fau.eu/). This repository contains necessary files and documents for the BioNets project called **"Exploring the impact of hyper-parameter variation in Single Cell Analysis"**, proposed by Biomedical Network Science ([BIONETS](https://www.bionets.tf.fau.de/)) lab, supervised by [Prof. Dr. David B. Blumenthal](https://www.bionets.tf.fau.de/person/david-b-blumenthal/), and [Dr. Anne Hartebrodt](https://www.bionets.tf.fau.de/person/anne-hartebrodt/) at FAU Erlangen-Nürnberg.
 
@@ -17,54 +17,55 @@ The core goals of the project are as follows:
     - Doing cell type annotation for each of them
     - Computing and visualizing evaluation metrics for each set of parameters to analyze the impact of parameter change
 - Tuning this pipeline to work for multiple datasets for result comparison. 
+- Making a Summary report to compare all the results from different datasets. 
 
 ## Project Structure
 
 ```bash
 fau-bionets-project-ws23
-├── dataset/                            # Data directory
-│   ├── disease_id1/                    # Disease Name 1, e.g. Diabetes II                           
-│   │   │                # Case samples
-│   │   │   │   ├── barcodes.tsv.gz
-│   │   │   │   ├── features.tsv.gz
-│   │   │   │   └── matrix.mtx.gz
-│   │   │   └── control/                # Control samples
-│   │   │       ├── barcodes.tsv.gz
-│   │   │       ├── features.tsv.gz
-│   │   │       └── matrix.mtx.gz
-│   │   ├── dataset_id2/
-│   │   └── ...
-│   ├── disease_id2/                    # Disease Name 2, e.g. MPN
-│   └── ...
-├── pipelines/                          # Main pipeline modules
-│   ├── services/                       # Pipeline services
-│   │   ├── adata_handler.py            # Script for data loading, saving, etc
-│   │   ├── adata_preprocessor.py       # Script for preprocessing
-│   │   ├── cell_type_annotation.py     # Script for automatic cell annotation
-│   │   └── diff_gene_exp_analysis.py   # Script for DGE analysis
-│   ├── summary_cell_anno.py            # Script for generating summary results
-│   ├── run_pipelines.sh                # Script for running the whole pipeline
-│   └── cleaner.sh                      # Script for cleaning temporary files (optional)
-├── results/                            # Results directory
-│   ├── summary/                        # Summary results directory
-│   ├── disease_id1/                    # Results directory of Disease 1
-│   │   ├── dataset_id1/                # Store results of dataset1
-│   │   ├── dataset_id2/                # Store results of dataset2
-│   │   └── ...
-│   ├── disease_id2/                    # Results directory of Disease 2
-│   └── ...
-├── dashboard/                          # Streamlit Dashboard directory
-│   ├── .streamlit/                     # Contains Streamlit config file
-│   ├── pages/                          # Contains pages of Dashboard
-│   │   ├── 1_Summary.py                # Summary page of Dashboard
-│   │   ├── 2_Individual_Results.py     # Individual results page of Dashboard
-│   │   └── 3_Comparison.py             # Comparison page of Dashboard
-│   └── _Home.py                        # Home page of Dashboard
+├── dataset/                          # Data directory
+│   ├── dataset_1/                    # dataset name example: mpn_hI108                        
+│   │   │                
+│   │   │── barcodes.tsv.gz
+│   │   ├── features.tsv.gz
+│   │   │── matrix.mtx.gz
+│   │   
+│   │── dataset_2/                     # dataset name example: disbetesII_h1                          
+│   │   │                
+│   │   │── barcodes.tsv.gz
+│   │   ├── features.tsv.gz
+│   │   │── matrix.mtx.gz
+│   │    
+│   │── dataset_3/                    #  dataset name example: pbmc3k                         
+│   │   │                
+│   │   │── barcodes.tsv.gz
+│   │   ├── features.tsv.gz
+│   │   │── matrix.mtx.gz
+│   │  
+│   
+│   
+├── Images/                           # Contains all the Images genrated during analysis 
+│   
+├── result/                            # Results directory
+│   ├── dataset_1_evalujation_results.pkl # file to store evaluation result of dataset 1
+│   ├── dataset_2_evalujation_results.pkl # file to store evaluation result of dataset 2
+│   │── dataset_3_evalujation_results.pkl # file to store evaluation result of dataset 1
+│   │── summary_table.png               # summary table to compare the result of all the datasets
+│   
 ├── docs/                               # Documents directory for snapshots, videos, etc
 │   ├── assets/                         # Contains readme assets
 │   ├── presentation/                   # Contains presentation files
 │   └── report/                         # Contains report files
-└── README.md                           # Project documentation
+│   
+│   
+├── readme.md                           # read.me file containing all the necessary info about the project   
+├── pipeline.py                         # Main Code logic to do all the analysis
+├── generate_summary.py                 # Code to generate summary table with all the dataset
+├── requirements.txt                    # list of required modules to install and run
+├── run_scsa.sh                         # code to run the annotation process
+├── run_single.sh                       # Code to run analysis for a single dataset of choice
+├── run.sh                              # file to run the entire pipeline and generate summary
+
 ```
 
 ## Project Details
@@ -79,8 +80,14 @@ In total there are 3 diffferent datasets from 2 different resources. Two data so
 - **Myeloproliferative Neoplasm (MPN):**  This dataset presents an in-depth examination of platelets obtained from patients diagnosed with myeloproliferative neoplasms (MPNs), with a specific focus on essential thrombocythemia (ET). Carried out by researchers, the study unveiled noteworthy metabolic changes influencing abnormal platelet function and inflammation in MPNs, employing single-cell RNA sequencing (scRNA-Seq) analysis of primary PBMC samples. Particularly, transcripts associated with platelet activation, mTOR, and oxidative phosphorylation (OXPHOS) were observed to be heightened in ET platelets. [[source-url](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE244589)].
 
 ### 2. Pipeline Description
-Out pipeline mainly does 3 things
-The Key task achieved by our pipeline can be divided into three key parts: For each set of hyper parameters( in our case the hyper parameters are 1. Number of Principal Components 2. Number of Neighbours) (i) Preprocessing and clustering the data, (ii) Automatic cell-type annotation, and (iii)Computing and visualizing evaluation metrics. The main script is written in [[script-url](pipeline.py)] which has the logic to apply these 3 parts for all the dataset. To run the entire pipeline for all the dataset at once, just run the script named [[script-url](run.sh)]. If you want to chek the pipeline for a single dataset, run the script named [[script-url](run_single.sh)].
+Our pipeline mainly does 4 things
+The Key task achieved by our pipeline can be divided into three key parts: For each set of hyper parameters( in our case the hyper parameters are 1. Number of Principal Components 2. Number of Neighbours) 
+(i) Preprocessing and clustering the data
+(ii) Automatic cell-type annotation
+(iii) Computing and visualizing evaluation metrics. The main script is written in [[script-url](pipeline.py)] which has the logic to apply these 3 parts for all the dataset.
+(iv) Generating the summary table of all these datasets. this is done with [[script-url](generate_summary.py)]
+
+To run the entire pipeline for all the dataset at once and to generate the summary table automatically, just run the script named [[script-url](run.sh)]. If you want to chek the pipeline for a single dataset, run the script named [[script-url](run_single.sh)].
 Please refer to the environment setup section for detailed instructions on running the pipelines.
 
 #### 2.1. Preprocessing and clustering data
@@ -102,15 +109,16 @@ the following image shows the impact of changing PCA on the evaluatuion metric
 ![PCA vs Evaluation Metric](docs/assets/evaluation_metrics_vs_pca.png) 
 
 the following image shows the impact of changing Number of Neighbours on the evaluatuion metric
-![Num_neighbours vs Evaluation Metric](docs/assets/evaluation_metrics_vs_NumOfNeighbours.png) 
+![Num_neighbours vs Evaluation Metric](docs/assets/evaluation_metrics_vs_NumOfNeighbours.png)
 
+#### 2.4 Generating Summary Table
+After finding out all the accuracies, precision, f1 score for each set of parameters for every dataset, we store the results in  .pkl file and generate the summary report for comparison. This is stored in the result folder. The following is an example summary table
+![Summary Table](docs/assets/summary_table.png)
 
-
-### 4. Results
+### 3. Results
 In progress
 
-- Presentation slide: [pptx-url](./docs/presentation/Project%20BioNets%20-%20WS23.pptx), or [googleslide-url](https://docs.google.com/presentation/d/18BIoMRegnRVYEGkMIPnDYuD5Apvs-wQcIb0sJqPO0b0/edit?usp=share_link)
-- Report: [report-url](./docs/report/report.pdf)
+
 
 ## Environment Setup
 
@@ -203,6 +211,4 @@ python3 -m streamlit run dashboard/_Home.py
 
 ## Conclusion
 
-The BioNets project offers comprehensive pipelines for large-scale scRNA-seq data analysis, contributing to advancements in biomedical network science. By integrating automatic cell-type annotation and differential gene expression analysis, our project facilitates deeper insights into disease mechanisms. Furthermore, the interactive dashboard promises enhanced data exploration and comparison, empowering researchers with intuitive tools for comprehensive data interpretation and hypothesis generation.
-
-Feel free to explore the intriguing world of Biomedical Network Science through this project repository!
+In conclusion, this project represents a significant effort toward automating key stages of single-cell RNA sequencing (scRNA-seq) data analysis. By developing robust pipelines for data preprocessing, clustering, cell type annotation, and evaluation metric computation, we aim to streamline the analytical process, enabling researchers to obtain valuable insights more efficiently.It helps them have a clear idea about the impact of parameter change in different datasets and within the same dataset. Through the implementation of these automated workflows, we anticipate facilitating broader accessibility to scRNA-seq analysis tools and fostering a deeper understanding of cellular dynamics.

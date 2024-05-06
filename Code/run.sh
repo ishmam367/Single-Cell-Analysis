@@ -14,3 +14,7 @@ for dataset_id in $datasets; do
 
     echo ""
 done
+echo "---------------------------- Summary Generation Started ----------------------------"
+# Run generate_summary.py after all datasets are processed
+python3 "${PROJECT_DIR}/generate_summary.py"
+echo "---------------------------- Summary Generation Ended ----------------------------"
