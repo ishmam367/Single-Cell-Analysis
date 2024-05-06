@@ -1,6 +1,6 @@
 > _**Disclaimer:** All essential materials, such as data, documents, pipelines, etc., associated with the BioNets Project, are the intellectual property of the Biomedical Network Science ([BIONETS](https://www.bionets.tf.fau.de/)) lab at [FAU Erlangen-Nürnberg](https://www.fau.eu/). Kindly acknowledge that any duplication of content from this source makes you liable.
 
-![CELL IMAGES](docs/assetsf/cell.jpg)
+![CELL IMAGES](docs/assets/cell.jpg)
 
 Welcome to the Biomedical Network Science (BioNets) Project repository for the Winter'23/24 semester at [Friedrich-Alexander University Erlangen-Nürnberg](https://www.fau.eu/). This repository contains necessary files and documents for the BioNets project called **"Exploring the impact of hyper-parameter variation in Single Cell Analysis"**, proposed by Biomedical Network Science ([BIONETS](https://www.bionets.tf.fau.de/)) lab, supervised by [Prof. Dr. David B. Blumenthal](https://www.bionets.tf.fau.de/person/david-b-blumenthal/), and [Dr. Anne Hartebrodt](https://www.bionets.tf.fau.de/person/anne-hartebrodt/) at FAU Erlangen-Nürnberg.
 
