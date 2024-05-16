@@ -1,6 +1,6 @@
 > _**Disclaimer:** All essential materials, such as data, documents, pipelines, etc., associated with the BioNets Project, are the intellectual property of the Biomedical Network Science ([BIONETS](https://www.bionets.tf.fau.de/)) lab at [FAU Erlangen-Nürnberg](https://www.fau.eu/). Kindly acknowledge that any duplication of content from this source makes you liable.
 
-![CELL IMAGES](docs/assets/cell.jpg)
+![CELL IMAGES](docs/assets/cell1.jpg)
 
 Welcome to the Biomedical Network Science (BioNets) Project repository for the Winter'23/24 semester at [Friedrich-Alexander University Erlangen-Nürnberg](https://www.fau.eu/). This repository contains necessary files and documents for the BioNets project called **"Exploring the impact of hyper-parameter variation in Single Cell Analysis"**, proposed by Biomedical Network Science ([BIONETS](https://www.bionets.tf.fau.de/)) lab, supervised by [Prof. Dr. David B. Blumenthal](https://www.bionets.tf.fau.de/person/david-b-blumenthal/), and [Dr. Anne Hartebrodt](https://www.bionets.tf.fau.de/person/anne-hartebrodt/) at FAU Erlangen-Nürnberg.
 
@@ -89,6 +89,8 @@ The Key task achieved by our pipeline can be divided into three key parts: For e
 
 To run the entire pipeline for all the dataset at once and to generate the summary table automatically, just run the script named [[script-url](run.sh)]. If you want to chek the pipeline for a single dataset, run the script named [[script-url](run_single.sh)].
 Please refer to the environment setup section for detailed instructions on running the pipelines.
+here is an image descriing te pipeline process.
+![CELL IMAGES](docs/assets/pipeline.jpg)
 
 #### 2.1. Preprocessing and clustering data
 The preprocessing pipeline begins by applying quality control measures to exclude low-quality observations, considering thresholds for mitochondrial gene expression, UMIs, and detected genes. Subsequently, the data undergoes normalization via logarithmic transformation and Pearson correlation, followed by the selection of highly variable genes and principal component analysis (PCA) for dimensionality reduction. Lastly, a neighborhood graph is constructed for visualization purposes, and clustering techniques like Leiden are employed to identify cell populations.
@@ -122,91 +124,38 @@ In progress
 
 ## Environment Setup
 
-This section provides step-by-step instructions for setting up the required environment on Linux, or MacOS systems. Please note that the setup process for MacOS systems with Silicon-based processors may vary slightly.
-
-### Used Technology
-1. [Python3.x](https://www.python.org), and [Anaconda](https://anaconda.org) distribution (for Silicon Based MacOS)
-2. [Scanpy](https://scanpy.readthedocs.io/en/stable/) - it is a Python package and a scalable toolkit for analyzing single-cell gene expression data built jointly with [anndata](https://anndata.readthedocs.io/en/latest/).
-3. [Omicverse](https://omicverse.readthedocs.io/en/latest/) - Omicverse is the fundamental package for multi omics included bulk and single cell RNA-seq analysis with Python.
-4. [Streamlit](https://streamlit.io) - Streamlit is a promising open-source Python library, which enables developers to build attractive user interfaces in no time.
+This section provides step-by-step instructions for setting up the required environment on Linux Operating System
 
 ### Linux
 
 ```bash
 # Create a virtual environment and activate
-python3 -m venv <env_name>
-source <env_name>/bin/activate
-
+python3 -m venv <environment_name>
+source <environment_name>/bin/activate
 # Upgrade pip
 pip install --upgrade pip
-
 # Install required Python packages
-pip install pandas numpy scipy scikit-learn seaborn matplotlib jupyter openpyxl scanpy anndata leidenalg louvain plotly
-
-# Install PyTorch, PyTorch Geometric and additional packages for CPU-only operations
-pip install torch===2.0.0 torchvision torchaudio --index-url https://download.pytorch.org/whl/cpu
-pip install torch_geometric
-pip install pyg_lib torch_scatter torch_sparse torch_cluster torch_spline_conv -f https://data.pyg.org/whl/torch-2.1.0+cpu.html
-
-# Install Omicverse package
-pip install -U omicverse
-
-# Install Streamlit for Dashboard
-pip install streamlit
-
-# [if needed] Deactivate and remove virtual environment
+pip install -r requirements.txt
+# Deactivate and remove virtual environment if needed
 deactivate
-rm -rf <env_name>
-```
-
-### MacOS (Silicon Based)
-
-```bash
-# Create a conda environment and activate
-conda create -n <conda_env_name> python=<python_version>
-conda activate <conda_env_name>
-
-# Install required Python packages
-conda install -c conda-forge pandas numpy scipy scikit-learn seaborn matplotlib jupyterlab scanpy anndata pymde python-igraph leidenalg
-pip install louvain plotly
-
-# Install PyTorch, PyTorch Geometric and additional packages for CPU-only operations
-conda install pytorch torchvision torchaudio cpuonly -c pytorch
-pip install torch_geometric
-conda install s_gd2 -c conda-forge
-
-# Install Omicverse package
-pip install -U omicverse
-
-# Install Streamlit for Dashboard
-conda install -c conda-forge streamlit
-
-# [if needed] Deactivate and remove conda environment
-conda deactivate
-conda remove -n <conda_env_name> --all
-```
+rm -rf <environment_name>
 
 ### Run the Project
 
 ```bash
 # Clone the repository
-git clone git@github.com:sujitdebnath/fau-bionets-project-ws23.git
-cd fau-bionets-project-ws23
+git clone git@github.com:ishmam367/Single-Cell-Analysis.git
+cd Code
 
-# Create a venv and install everything
-# and then activate virtural environment
-source <env_name>/bin/activate
-# or conda environment
-conda activate <conda_env_name>
+# Create and activate virtual environment
+source <environment_name>/bin/activate
 
-# Run the pipeline
-cd pipelines
-sh run_pipelines.sh
+# Run the entire pipeline on all dataset with summary report
+sh run.sh
 
-# Run the dashboard
-streamlit run dashboard/_Home.py
-# or
-python3 -m streamlit run dashboard/_Home.py
+#Run pipeline for a single dataset of your choosing (select one value from the given option as dataset id)
+sh run_single.sh
+
 ```
 
 ## Conclusion

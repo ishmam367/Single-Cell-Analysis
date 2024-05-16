@@ -2,8 +2,6 @@ import os
 import numpy as np
 import pandas as pd
 import scanpy as sc
-import requests
-import tarfile
 import matplotlib.pyplot as plt
 import configparser
 import subprocess
@@ -28,24 +26,7 @@ def load_anndata(dataset_id):
     adata.var_names_make_unique()
     return adata
 
-
-# def load_anndata(dataset_id):
-#     dataset_dir = os.path.join(BASE_DATA_DIR, dataset_id)
-    
-#     for filename in os.listdir(dataset_dir):
-#         if filename.endswith(".tar.gz"):
-#             file_path = os.path.join(dataset_dir, filename)
-#             with tarfile.open(file_path, 'r:gz') as tar:
-#                 tar.extractall(dataset_dir)
-#                 print(f"Extracted {filename} in {dataset_dir}")
-
-
 def preprocessing(dataset_id,adata,Base_IMG_DIR):
-    # Step 2: Preprocessing
-    # Show genes with the highest fraction of counts in each single cell
-    #root_dir = os.path.dirname(os.path.abspath(__file__))
-    #images_dir = os.path.join(root_dir, 'Images')
-    #os.makedirs(images_dir, exist_ok=True)
     highest_expr_genes_path = os.path.join(Base_IMG_DIR, f'{dataset_id}_highest_expr_genes.png')
     # Plot the figure
     sc.pl.highest_expr_genes(adata, n_top=20, show=False)
@@ -180,26 +161,19 @@ def single_cell_analysis(adata,dataset_id,num_neighbors_values, num_pcs_values, 
             # Group the data by "Cluster" and find the cell type with the highest Z-score in each group
             highest_zscores = df.groupby('Cluster')['Z-score'].idxmax()
             print ('**********************************************')
+            #filling  NaN values with Unknown to avoid further errors
             highest_zscores.fillna('Unknown', inplace=True)
-            print("Index of highest zscore after replacement:", highest_zscores.index)
-            # Extract the corresponding cell types for the highest Z-scores
             df.reset_index(inplace=True, drop=True)
             cell_types_with_highest_zscores = df.loc[highest_zscores.index, 'Cell Type'].tolist()
-
-            #cell_types_with_highest_zscores = df.loc[highest_zscores, 'Cell Type'].tolist()
             print ('cell type with highest Z-Score ' , cell_types_with_highest_zscores)
             
             #  Create a dictionary of cluster value (number) and corresponding identified cell type. 
             #  We will add a column to adata with cell types for each cluster number.
             cluster_to_cell_type = {cluster_num: cell_type for cluster_num, cell_type in enumerate(cell_types_with_highest_zscores)}
             print('Cluster_to_cell_type ', cluster_to_cell_type)
+            # we use a dictionary to keep track of the hyper parameters as key and the cluster names as values
             cluster_to_cell_type_dict[(num_pcs, num_neighbors)] = cluster_to_cell_type
-
             print ('printing cluster_to_cell_type_dict',cluster_to_cell_type_dict)
-            print("***********************")
-            print('copied adata', adata_copy)
-            print("***********************")
-        
             adata_copy.obs['leiden'] = adata_copy.obs['leiden'].astype(int)
             # Map cluster numbers to cell type 
             adata_copy.obs['cell_types'] = adata_copy.obs['leiden'].map(cluster_to_cell_type)
@@ -242,12 +216,7 @@ def single_cell_analysis(adata,dataset_id,num_neighbors_values, num_pcs_values, 
     eval_num_neighbour_values = []
     for (num_pcs, num_neighbors), predicted_cell_types in pca_neighbors_dict.items():
         if (num_pcs, num_neighbors) != excluded_combination:
-            # Calculate accuracy by comparing predicted cell types with the golden standard
-            print("="*100)
-            print(type(golden_standard), type(predicted_cell_types))
-            print(golden_standard)
-            print(predicted_cell_types)
-            print("="*100)
+            # Calculate evaluation by comparing predicted cell types with the golden standard
             accuracy = accuracy_score(golden_standard, predicted_cell_types)
             precision = precision_score(golden_standard, predicted_cell_types, average='weighted')
             f1 = f1_score(golden_standard, predicted_cell_types, average='weighted')
@@ -276,21 +245,18 @@ def single_cell_analysis(adata,dataset_id,num_neighbors_values, num_pcs_values, 
     evaluation_results_file = os.path.join(BASE_RESULT_DIR, f'{dataset_id}_evaluation_results.pkl')
     with open(evaluation_results_file, 'wb') as f:
         pickle.dump(evaluation_results, f)
+        
     # Plotting the evaluation metrics against the number of neighbours
     plt.figure(figsize=(10, 6))
     plt.plot(eval_num_neighbour_values, accuracies.values(), marker='o', label='Accuracy')
     plt.plot(eval_num_neighbour_values, precisions.values(), marker='o', label='Precision')
     plt.plot(eval_num_neighbour_values, f1_scores.values(), marker='o', label='F1 Score')
-
-
-
     # Add labels and title
     plt.xlabel('Number of Neighbours')
     plt.ylabel('Score')
     plt.title(f'Change of Evaluation Metrics with Number of Neighbours for {dataset_id}')
     plt.legend()
     plt.grid(True)
-
     # Save the plot
     accuracy_plot_path = os.path.join(images_dir, f'{dataset_id}_evaluation_metrics_vs_NumOfNeighbours.png')
     plt.savefig(accuracy_plot_path, dpi=300)
@@ -334,6 +300,7 @@ def save_adata(adata_copy, file_path):
 
 
 def read_config(config_file_name):
+    'Function to read the parameters from the config file'
     config = configparser.ConfigParser()
     config.read(config_file_name)
     return config
@@ -348,9 +315,9 @@ def main():
     dataset_id = args.dataset_id
     adata = load_anndata(dataset_id)
     adata = run_pca(adata, dataset_id, images_dir=BASE_IMG_DIR)
-    # Step 2: Preprocessing
+    #Preprocessing
     adata = preprocessing(dataset_id,adata,Base_IMG_DIR=BASE_IMG_DIR)
-    #single cell analysis
+    #reading config file
     config = read_config('config2.ini') 
     # Read num_neighbors_values and num_pcs_values from config
     num_neighbors_values = [int(x) for x in config['Parameters']['num_neighbors_values'].split(',')]
@@ -358,7 +325,7 @@ def main():
 
     adata = single_cell_analysis(adata, dataset_id, num_neighbors_values, num_pcs_values, images_dir=BASE_IMG_DIR)
     
-    # # step 5: saving results before annotation
+    # # step 5: saving results file  after annotation
     results_path = f"{dataset_id}_processed.h5ad"
     save_adata(adata, results_path)
 
