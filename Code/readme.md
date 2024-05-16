@@ -90,6 +90,7 @@ The Key task achieved by our pipeline can be divided into three key parts: For e
 To run the entire pipeline for all the dataset at once and to generate the summary table automatically, just run the script named [[script-url](run.sh)]. If you want to chek the pipeline for a single dataset, run the script named [[script-url](run_single.sh)].
 Please refer to the environment setup section for detailed instructions on running the pipelines.
 here is an image descriing te pipeline process.
+
 ![CELL IMAGES](docs/assets/pipeline.jpg)
 
 #### 2.1. Preprocessing and clustering data
@@ -108,14 +109,16 @@ In this stage, automatic cell type annotation has been performed using the SCSA 
 #### 2.3. Computing and visualizing evaluation metrics
 After cell type annotation, evaluation metrics like f1 score, precision and accuracy is measured for each set of parameters. To calculate the metrics, we take annotation result of the standard scanpy hyperparameters to be the goldern standard and compare the result of other parameters based on that. We plot separately the effect of changing PCA and changing Number of neighbours on the evaluation metrics
 the following image shows the impact of changing PCA on the evaluatuion metric
+
 ![PCA vs Evaluation Metric](docs/assets/evaluation_metrics_vs_pca.png) 
 
 the following image shows the impact of changing Number of Neighbours on the evaluatuion metric
+
 ![Num_neighbours vs Evaluation Metric](docs/assets/evaluation_metrics_vs_NumOfNeighbours.png)
 
 #### 2.4 Generating Summary Table
 After finding out all the accuracies, precision, f1 score for each set of parameters for every dataset, we store the results in  .pkl file and generate the summary report for comparison. This is stored in the result folder. The following is an example summary table
-![Summary Table](docs/assets/summary_table.png)
+![Summary Table](docs/assets/summary_table_neighbours.png)
 
 ### 3. Results
 In progress
