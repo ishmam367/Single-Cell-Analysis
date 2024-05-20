@@ -1,4 +1,4 @@
-> _**Disclaimer:** All essential materials, such as data, documents, pipelines, etc., associated with the BioNets Project, are the intellectual property of the Biomedical Network Science ([BIONETS](https://www.bionets.tf.fau.de/)) lab at [FAU Erlangen-Nürnberg](https://www.fau.eu/). Kindly acknowledge that any duplication of content from this source makes you liable.
+> **Disclaimer:** All essential materials, such as data, documents, pipelines, etc., associated with the BioNets Project, are the intellectual property of the Biomedical Network Science ([BIONETS](https://www.bionets.tf.fau.de/)) lab at [FAU Erlangen-Nürnberg](https://www.fau.eu/). Kindly acknowledge that any duplication of content from this source makes you liable.
 
 ![CELL IMAGES](docs/assets/cell1.jpg)
 
@@ -121,13 +121,48 @@ After finding out all the accuracies, precision, f1 score for each set of parame
 ![Summary Table](docs/assets/summary_table_neighbours.png)
 
 ### 3. Results
-In progress
+In this section the result of my project will be presented. To find the presentation of the project go [here](docs/presentation/Presentation.pptx). and to find the report go [here](docs/report/report.pdf). Keep in mind that the presentation doesn't have all the latest updates of the work but the report does. 
+
+#### 3.1. Evaluation Metric Visualization
+Here we will show the change of evalluation metric such as f1 score, accuracy and precision for each dataset when varying the hyperparameters such as PCA value and number of neighbour
+**Diabetes Dataset** The figures below shows the effect of varying neighbours on evaluation metric
+
+![diabetesII_h1_evaluation_metrics_vs_NumOfNeighbours](docs/assets/diabetesII_h1_evaluation_metrics_vs_NumOfNeighbours.png)
+
+The figures below shows the effect of varying PCA value on evaluation metric
+![diabetesII_h1_evaluation_metrics_vs_pca.png](docs/assets/diabetesII_h1_evaluation_metrics_vs_pca.png)
+
+**MPN Dataset:** The figures below shows the effect of varying neighbours on evaluation metric
+
+![diabetesII_h1_evaluation_metrics_vs_NumOfNeighbours](docs/assets/mpn_HI108_evaluation_metrics_vs_NumOfNeighbours.png)
+
+The figures below shows the effect of varying PCA value on evaluation metric
+![diabetesII_h1_evaluation_metrics_vs_pca.png](docs/assets/mpn_HI108_evaluation_metrics_vs_pca.png)
+
+**pbmc3k Dataset:** The figures below shows the effect of varying neighbours on evaluation metric
+
+![diabetesII_h1_evaluation_metrics_vs_NumOfNeighbours](docs/assets/pbmc3k_evaluation_metrics_vs_NumOfNeighbours.png)
+
+The figures below shows the effect of varying PCA value on evaluation metric
+![diabetesII_h1_evaluation_metrics_vs_pca.png](docs/assets/pbmc3k_evaluation_metrics_vs_pca.png)
 
 
+**Summary Heatmap Visualization:** The figure below demonstrates the distribution of cell types according to all annotation methods for Type 2 Diabetes (a) and Myeloproliferative Neoplasm (MPN) diseases (b).
+**Summary Table Varying Number of Neighbours:** 
+below is the summary table for all the datasets to show change of evaluation metrics by varying number of neighbours 
+![Summary Table Varying Number of Neighbours](docs/assets/summary_table_neighbours.png)
 
-## Environment Setup
+**Summary Table Varying PCA Value:** 
+below is the summary table for all the datasets to show change of evaluation metrics by varying PCA value
+![Summary Table Varying PCA Value](docs/assets/summary_table_PCA.pngä)
 
+## 4. Environment Setup
 This section provides step-by-step instructions for setting up the required environment on Linux Operating System
+
+### Used Technologies:
+1. [Python3.x](https://www.python.org)
+2. [Scanpy](https://scanpy.readthedocs.io/en/stable/) - it is a Python package and a scalable toolkit for analyzing single-cell gene expression data built jointly with [anndata](https://anndata.readthedocs.io/en/latest/).
+3. [SCSA](https://github.com/bioinfo-ibms-pumc/SCSA)
 
 ### Linux
 
@@ -161,6 +196,6 @@ sh run_single.sh
 
 ```
 
-## Conclusion
+## 5. Conclusion
 
-In conclusion, this project represents a significant effort toward automating key stages of single-cell RNA sequencing (scRNA-seq) data analysis. By developing robust pipelines for data preprocessing, clustering, cell type annotation, and evaluation metric computation, we aim to streamline the analytical process, enabling researchers to obtain valuable insights more efficiently.It helps them have a clear idea about the impact of parameter change in different datasets and within the same dataset. Through the implementation of these automated workflows, we anticipate facilitating broader accessibility to scRNA-seq analysis tools and fostering a deeper understanding of cellular dynamics.
+In conclusion, this project represents a significant effort toward automating key stages of single-cell RNA sequencing (scRNA-seq) data analysis. By developing robust pipelines for data preprocessing, clustering, cell type annotation, evaluation metric computation and summary generation from all the dataset. we aim to streamline the analytical process, enabling researchers to obtain valuable insights more efficiently.It helps them have a clear idea about the impact of parameter change in different datasets and within the same dataset. Through the implementation of these automated workflows, we anticipate facilitating broader accessibility to scRNA-seq analysis tools and fostering a deeper understanding of cellular dynamics.
