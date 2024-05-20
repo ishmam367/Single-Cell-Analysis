@@ -154,7 +154,7 @@ below is the summary table for all the datasets to show change of evaluation met
 
 **Summary Table Varying PCA Value:** 
 below is the summary table for all the datasets to show change of evaluation metrics by varying PCA value
-![Summary Table Varying PCA Value](docs/assets/summary_table_PCA.pngä)
+![Summary Table Varying PCA Value](docs/assets/summary_table_PCA.png)
 
 ## 4. Environment Setup
 This section provides step-by-step instructions for setting up the required environment on Linux Operating System
