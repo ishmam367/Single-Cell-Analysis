@@ -172,8 +172,6 @@ python3 -m venv <environment_name>
 source <environment_name>/bin/activate
 # Upgrade pip
 pip install --upgrade pip
-# Install required Python packages
-pip install -r requirements.txt
 # Deactivate and remove virtual environment if needed
 deactivate
 rm -rf <environment_name>
@@ -184,11 +182,14 @@ rm -rf <environment_name>
 # Clone the repository
 git clone git@github.com:ishmam367/Single-Cell-Analysis.git
 
-#go to the code folder
+# activate virtual environment
+source <environment_name>/bin/activate
+
+# go to the code folder
 cd Code
 
-# Create and activate virtual environment
-source <environment_name>/bin/activate
+# Install required Python packages
+pip install -r requirements.txt
 
 # Run the entire pipeline on all dataset with summary report
 sh run.sh
