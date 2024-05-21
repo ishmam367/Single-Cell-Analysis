@@ -180,7 +180,7 @@ def single_cell_analysis(adata,dataset_id,num_neighbors_values, num_pcs_values, 
             #unique cell types 
             print('unique cell types', adata_copy.obs['cell_types'].unique())
             sc.pl.umap(adata_copy, color=["leiden", "cell_types"])
-            final_cell_type_data = os.path.join(images_dir, f'{dataset_id}_final_cell_type_PCA-{num_pcs}_Neighbors-{num_neighbors}.png')
+            final_cell_type_data = os.path.join(BASE_RESULT_DIR, f'{dataset_id}_final_cell_type_PCA-{num_pcs}_Neighbors-{num_neighbors}.png')
             plt.title(f'SCSA cell type annotation for PCA-{num_pcs}_Neighbors-{num_neighbors}for_{dataset_id}')
             plt.savefig(final_cell_type_data, dpi=300)
             plt.close()
@@ -258,7 +258,7 @@ def single_cell_analysis(adata,dataset_id,num_neighbors_values, num_pcs_values, 
     plt.legend()
     plt.grid(True)
     # Save the plot
-    accuracy_plot_path = os.path.join(images_dir, f'{dataset_id}_evaluation_metrics_vs_NumOfNeighbours.png')
+    accuracy_plot_path = os.path.join(BASE_RESULT_DIR, f'{dataset_id}_evaluation_metrics_vs_NumOfNeighbours.png')
     plt.savefig(accuracy_plot_path, dpi=300)
     plt.close()
     # Plotting the evaluation metrics against the number of principal components
@@ -276,7 +276,7 @@ def single_cell_analysis(adata,dataset_id,num_neighbors_values, num_pcs_values, 
     plt.grid(True)
 
     # Save the plot
-    accuracy_plot_path = os.path.join(images_dir, f'{dataset_id}_evaluation_metrics_vs_pca.png')
+    accuracy_plot_path = os.path.join(BASE_RESULT_DIR, f'{dataset_id}_evaluation_metrics_vs_pca.png')
     plt.savefig(accuracy_plot_path, dpi=300)
     plt.close()
     return adata_copy

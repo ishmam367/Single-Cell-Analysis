@@ -181,7 +181,8 @@ rm -rf <environment_name>
 ```bash
 # Clone the repository
 git clone git@github.com:ishmam367/Single-Cell-Analysis.git
-
+# inside the cloned repository, clone this repository
+git clone git@github.com:bioinfo-ibms-pumc/SCSA.git
 # activate virtual environment
 source <environment_name>/bin/activate
 
