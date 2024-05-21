@@ -183,6 +183,8 @@ rm -rf <environment_name>
 ```bash
 # Clone the repository
 git clone git@github.com:ishmam367/Single-Cell-Analysis.git
+
+#go to the code folder
 cd Code
 
 # Create and activate virtual environment
