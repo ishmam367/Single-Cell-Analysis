@@ -22,7 +22,7 @@ The core goals of the project are as follows:
 ## Project Structure
 
 ```bash
-fau-bionets-project-ws23
+Code
 ├── dataset/                          # Data directory
 │   ├── dataset_1/                    # dataset name example: mpn_hI108                        
 │   │   │                
@@ -162,7 +162,7 @@ This section provides step-by-step instructions for setting up the required envi
 ### Used Technologies:
 1. [Python3.x](https://www.python.org)
 2. [Scanpy](https://scanpy.readthedocs.io/en/stable/) - it is a Python package and a scalable toolkit for analyzing single-cell gene expression data built jointly with [anndata](https://anndata.readthedocs.io/en/latest/).
-3. [SCSA](https://github.com/bioinfo-ibms-pumc/SCSA)
+3. [SCSA](https://github.com/bioinfo-ibms-pumc/SCSA) - it is a cell type annotation tool. 
 
 ### Linux
 

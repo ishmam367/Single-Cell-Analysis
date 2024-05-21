@@ -325,7 +325,7 @@ def main():
 
     adata = single_cell_analysis(adata, dataset_id, num_neighbors_values, num_pcs_values, images_dir=BASE_IMG_DIR)
     
-    # # step 5: saving results file  after annotation
+    #saving results file  after annotation
     results_path = f"{dataset_id}_processed.h5ad"
     save_adata(adata, results_path)
 
