@@ -51,6 +51,11 @@ Single_Cell_Analysis
 │   ├── dataset_2_evalujation_results.pkl # file to store evaluation result of dataset 2
 │   │── dataset_3_evalujation_results.pkl # file to store evaluation result of dataset 1
 │   │── summary_table.png               # summary table to compare the result of all the datasets
+│   ├── {dataset_id}_final_cell_type_PCA-{num_pcs}_Neighbors-{num_neighbors} # final cell type annotation for that dataset
+├   ├── {dataset_id}_evaluation_metrics_vs_NumOfNeighbours.png
+│   ├── {dataset_id}_evaluation_metrics_vs_PCA.png
+│
+│
 │   
 ├── docs/                               # Documents directory for snapshots, videos, etc
 │   ├── assets/                         # Contains readme assets
@@ -58,7 +63,8 @@ Single_Cell_Analysis
 │   └── report/                         # Contains report files
 │   
 │   
-├── readme.md                           # read.me file containing all the necessary info about the project   
+├── readme.md                           # read.me file containing all the necessary info about the project
+├──config2.ini                          #config file to adjust the hyper parameters
 ├── pipeline.py                         # Main Code logic to do all the analysis
 ├── generate_summary.py                 # Code to generate summary table with all the dataset
 ├── requirements.txt                    # list of required modules to install and run
