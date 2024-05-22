@@ -167,28 +167,27 @@ This section provides step-by-step instructions for setting up the required envi
 ### Linux
 
 ```bash
-# Create a virtual environment and activate
-python3 -m venv <environment_name>
-source <environment_name>/bin/activate
-# Upgrade pip
-pip install --upgrade pip
-# Deactivate and remove virtual environment if needed
-deactivate
-rm -rf <environment_name>
+
 
 ### Run the Project
-
-```bash
 # Clone the repository
 git clone git@github.com:ishmam367/Single-Cell-Analysis.git
 # inside the cloned repository, clone this repository
 git clone git@github.com:bioinfo-ibms-pumc/SCSA.git
-# activate virtual environment
+
+# Create a virtual environment and activate
+python3 -m venv <environment_name>
 source <environment_name>/bin/activate
+
+# Upgrade pip
+pip install --upgrade pip
 
 # Install required Python packages
 pip install -r requirements.txt
 
+# Deactivate and remove virtual environment if needed
+deactivate
+rm -rf <environment_name>
 # Run the entire pipeline on all dataset with summary report
 sh run.sh
 
