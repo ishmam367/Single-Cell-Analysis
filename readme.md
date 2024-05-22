@@ -167,9 +167,8 @@ This section provides step-by-step instructions for setting up the required envi
 ### Linux
 
 ```bash
-
-
 ### Run the Project
+
 # Clone the repository
 git clone git@github.com:ishmam367/Single-Cell-Analysis.git
 # inside the cloned repository, clone this repository
