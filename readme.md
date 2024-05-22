@@ -131,35 +131,29 @@ In this section the result of my project will be presented. To find the presenta
 
 #### 3.1. Evaluation Metric Visualization
 Here we will show the change of evalluation metric such as f1 score, accuracy and precision for each dataset when varying the hyperparameters such as PCA value and number of neighbour
-**Diabetes Dataset** The figures below shows the effect of varying neighbours on evaluation metric
 
-![diabetesII_h1_evaluation_metrics_vs_NumOfNeighbours](docs/assets/diabetesII_h1_evaluation_metrics_vs_NumOfNeighbours.png)
+**Varying Neighbours** The figures below shows the effect of varying neighbours on evaluation metric
+<p align="center">
+  <img src="docs/assets/diabetesII_h1_evaluation_metrics_vs_NumOfNeighbours.png" alt="diabetesII_h1_evaluation_metrics_vs_NumOfNeighbours" width="30%" />
+  <img src="docs/assets/mpn_HI108_evaluation_metrics_vs_NumOfNeighbours.png" alt="mpn_HI108_evaluation_metrics_vs_NumOfNeighbours" width="30%" />
+  <img src="docs/assets/pbmc3k_evaluation_metrics_vs_NumOfNeighbours.png" alt="pbmc3k_evaluation_metrics_vs_NumOfNeighbours" width="30%" />
+</p>
 
-The figures below shows the effect of varying PCA value on evaluation metric
-![diabetesII_h1_evaluation_metrics_vs_pca.png](docs/assets/diabetesII_h1_evaluation_metrics_vs_pca.png)
+**Varying PCA:** The figures below shows the effect of varying PCA on evaluation metric
+<p align="center">
+  <img src="docs/assets/diabetesII_h1_evaluation_metrics_vs_pca.png" alt="diabetesII_h1_evaluation_metrics_vs_pca" width="30%" />
+  <img src="docs/assets/mpn_HI108_evaluation_metrics_vs_pca.png" alt="mpn_HI108_evaluation_metrics_vs_pca" width="30%" />
+  <img src="docs/assets/pbmc3k_evaluation_metrics_vs_pca.png" alt="pbmc3k_evaluation_metrics_vs_pca" width="30%" />
+</p>
 
-**MPN Dataset:** The figures below shows the effect of varying neighbours on evaluation metric
-
-![diabetesII_h1_evaluation_metrics_vs_NumOfNeighbours](docs/assets/mpn_HI108_evaluation_metrics_vs_NumOfNeighbours.png)
-
-The figures below shows the effect of varying PCA value on evaluation metric
-![diabetesII_h1_evaluation_metrics_vs_pca.png](docs/assets/mpn_HI108_evaluation_metrics_vs_pca.png)
-
-**pbmc3k Dataset:** The figures below shows the effect of varying neighbours on evaluation metric
-
-![diabetesII_h1_evaluation_metrics_vs_NumOfNeighbours](docs/assets/pbmc3k_evaluation_metrics_vs_NumOfNeighbours.png)
-
-The figures below shows the effect of varying PCA value on evaluation metric
-![diabetesII_h1_evaluation_metrics_vs_pca.png](docs/assets/pbmc3k_evaluation_metrics_vs_pca.png)
-
-
-**Summary Heatmap Visualization:** The figure below demonstrates the distribution of cell types according to all annotation methods for Type 2 Diabetes (a) and Myeloproliferative Neoplasm (MPN) diseases (b).
-**Summary Table Varying Number of Neighbours:** 
-below is the summary table for all the datasets to show change of evaluation metrics by varying number of neighbours 
+#### 3.2 Summary  Visualization: 
+The figure below demonstrates the distribution of cell types according to all annotation methods for Type 2 Diabetes (a) and Myeloproliferative NeoplHeatmapasm (MPN) diseases (b).
+##### 3.2.1 Summary Heatmap Varying Number of Neighbours:
+below is the summary Heatmap for all the datasets to show change of evaluation metrics by varying number of neighbours 
 ![Summary Table Varying Number of Neighbours](docs/assets/summary_table_neighbours.png)
 
-**Summary Table Varying PCA Value:** 
-below is the summary table for all the datasets to show change of evaluation metrics by varying PCA value
+##### 3.2.2 Summary Heatmap Varying PCA Value:
+below is the summary Heatmap for all the datasets to show change of evaluation metrics by varying PCA value
 ![Summary Table Varying PCA Value](docs/assets/summary_table_PCA.png)
 
 ## 4. Environment Setup
