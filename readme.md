@@ -52,8 +52,8 @@ Single_Cell_Analysis
 │   │── dataset_3_evalujation_results.pkl # file to store evaluation result of dataset 1
 │   │── summary_table.png               # summary table to compare the result of all the datasets
 │   ├── {dataset_id}_final_cell_type_PCA-{num_pcs}_Neighbors-{num_neighbors} # final cell type annotation for that dataset
-├   ├── {dataset_id}_evaluation_metrics_vs_NumOfNeighbours.png
-│   ├── {dataset_id}_evaluation_metrics_vs_PCA.png
+├   ├── {dataset_id}_evaluation_metrics_vs_NumOfNeighbours.png # change of evauation metric varying number of neighbours 
+│   ├── {dataset_id}_evaluation_metrics_vs_PCA.png             # change of evauation metric varying PCA for that dataset
 │
 │
 │   
