@@ -49,7 +49,7 @@ Single_Cell_Analysis
 ├── result/                            # Results directory
 │   ├── dataset_1_evalujation_results.pkl # file to store evaluation result of dataset 1
 │   ├── dataset_2_evalujation_results.pkl # file to store evaluation result of dataset 2
-│   │── dataset_3_evalujation_results.pkl # file to store evaluation result of dataset 1
+│   │── dataset_3_evalujation_results.pkl # file to store evaluation result of dataset 3
 │   │── summary_table.png               # summary table to compare the result of all the datasets
 │   ├── {dataset_id}_final_cell_type_PCA-{num_pcs}_Neighbors-{num_neighbors} # final cell type annotation for that dataset
 ├   ├── {dataset_id}_evaluation_metrics_vs_NumOfNeighbours.png # change of evauation metric varying number of neighbours 
@@ -199,3 +199,4 @@ sh run_single.sh
 
 
 In conclusion, this project represents a significant effort toward automating key stages of single-cell RNA sequencing (scRNA-seq) data analysis. By developing robust pipelines for data preprocessing, clustering, cell type annotation, evaluation metric computation and summary generation from all the dataset. we aim to streamline the analytical process, enabling researchers to obtain valuable insights more efficiently.It helps them have a clear idea about the impact of parameter change in different datasets and within the same dataset. Through the implementation of these automated workflows, we anticipate facilitating broader accessibility to scRNA-seq analysis tools and fostering a deeper understanding of cellular dynamics.
+
