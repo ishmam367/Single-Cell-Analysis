@@ -87,7 +87,7 @@ In total there are 3 diffferent datasets from 2 different resources. Two data so
 
 ### 2. Pipeline Description
 Our pipeline mainly does 4 things
-The Key task achieved by our pipeline can be divided into three key parts: For each set of hyper parameters( in our case the hyper parameters are 1. Number of Principal Components 2. Number of Neighbours) 
+The Key task achieved by our pipeline can be divided into four key parts: For each set of hyper parameters( in our case the hyper parameters are 1. Number of Principal Components 2. Number of Neighbours) 
 (i) Preprocessing and clustering the data
 (ii) Automatic cell-type annotation
 (iii) Computing and visualizing evaluation metrics. The main script is written in [[script-url](pipeline.py)] which has the logic to apply these 3 parts for all the dataset.
@@ -196,5 +196,6 @@ sh run_single.sh
 ```
 
 ## 5. Conclusion
+
 
 In conclusion, this project represents a significant effort toward automating key stages of single-cell RNA sequencing (scRNA-seq) data analysis. By developing robust pipelines for data preprocessing, clustering, cell type annotation, evaluation metric computation and summary generation from all the dataset. we aim to streamline the analytical process, enabling researchers to obtain valuable insights more efficiently.It helps them have a clear idea about the impact of parameter change in different datasets and within the same dataset. Through the implementation of these automated workflows, we anticipate facilitating broader accessibility to scRNA-seq analysis tools and fostering a deeper understanding of cellular dynamics.
