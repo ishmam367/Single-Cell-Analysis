@@ -95,7 +95,7 @@ The Key task achieved by our pipeline can be divided into four key parts: For ea
 
 To run the entire pipeline for all the dataset at once and to generate the summary table automatically, just run the script named [[script-url](run.sh)]. If you want to chek the pipeline for a single dataset, run the script named [[script-url](run_single.sh)].
 Please refer to the environment setup section for detailed instructions on running the pipelines.
-here is an image descriing te pipeline process.
+here is an image describing the pipeline process.
 
 ![CELL IMAGES](docs/assets/pipeline.jpg)
 
@@ -199,4 +199,5 @@ sh run_single.sh
 
 
 In conclusion, this project represents a significant effort toward automating key stages of single-cell RNA sequencing (scRNA-seq) data analysis. By developing robust pipelines for data preprocessing, clustering, cell type annotation, evaluation metric computation and summary generation from all the dataset. we aim to streamline the analytical process, enabling researchers to obtain valuable insights more efficiently.It helps them have a clear idea about the impact of parameter change in different datasets and within the same dataset. Through the implementation of these automated workflows, we anticipate facilitating broader accessibility to scRNA-seq analysis tools and fostering a deeper understanding of cellular dynamics.
+
 
